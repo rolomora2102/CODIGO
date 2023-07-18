@@ -1,0 +1,495 @@
+/* NO MODIFICAR LO DE ABAJO • NO MODIFICAR LO DE ABAJO • */
+/* CÓDIGO SECCIÓN DEL HEADER Y SU MENÚ */
+/* ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  */
+
+/* IMPORTAR TIPOGRAFIA */
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;500;800&display=swap');
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color: #ffffff;
+  height: 100px;
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5% !important;
+}
+
+header::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background-color: #e6e7e8;
+}
+
+.logo img {
+    height: 60px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li:first-child {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+nav ul li:not(:last-child) {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #012c3d;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+/* Cambiar nombre del ID para cambiar color en el menú del Header */
+/* jobs, purpose, contact, profile, closeSession  */
+
+#profile{
+  color: #f8444e;
+}
+
+
+
+/* CÓDIGO SECCIÓN DEL HEADER Y SU MENÚ */
+/* NO MODIFICAR LO DE ARRIBA • NO MODIFICAR LO DE ARRIBA • */
+/* ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ */
+
+/* NO MODIFICAR LO DE ABAJO • NO MODIFICAR LO DE ABAJO • */
+/* CÓDIGO SECCIÓN DEL MENÚ SECUNDARIO */
+/* ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  */
+
+/*Nav bar secundario (cuando se esta logueado)*/
+
+.secondaryNav {
+  position: sticky;
+  top: 100px; /* Altura del menú principal */
+  z-index: 998;
+  background-color: #012c3d;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  padding: 0 5% !important;
+}
+
+.secondaryNav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.secondaryNav ul li:not(:last-child) {
+  margin-right: 25px; 
+}
+
+.secondaryNav ul li a {
+  color: #ffffff;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+/* Cambiar nombre del ID para cambiar color en el menú SECUNDARIO */
+/* collaborators, jobPositions, invitations, searchCandidates, notifications  */
+
+#collaborators{
+  color: #09b49c;
+}
+
+/* CÓDIGO SECCIÓN DEL MENÚ SECUNDARIO */
+/* NO MODIFICAR LO DE ARRIBA • NO MODIFICAR LO DE ARRIBA • */
+/* ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ */
+
+/* <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> */
+/* <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> */
+
+
+/* AQUÍ VA TU CÓDIGO */
+
+.company_form_text {
+  position: relative;
+  color: #ffffff;
+  background-color: #012c3d;
+  width: 375px;
+  height: 60px;
+  margin: 0 auto;
+  margin-top: 25px;
+  font-size: 22pt;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Manrope medium', sans-serif;
+  border-radius: 10px;
+}
+
+#form_info_company {
+  width: 607.5px;
+  height: 600px;
+  padding-top: 25px;
+  padding-left: 25px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+#label_name_company {
+  position: relative;
+  color: #012c3d;
+  font-family: 'Manrope medium', sans-serif;
+  font-size: 14pt;
+  margin-right: 125px;
+  padding-left: 10px;
+}
+
+.input_form_info_company {
+  height: 40px;
+  background-color: #f6f6f6;
+  border-radius: 10px;
+  border-style: none;
+  border: #c9c9c9 solid 2px;
+  font-family: 'Manrope', sans-serif;
+  font-size: 13px;
+  color: #797979;
+  padding-left: 10px;
+}
+
+#input_name_company {
+  width: 570px;
+  margin-top: 8px;
+  margin-bottom: 25px;
+}
+
+#label_locate_company {
+  position: relative;
+  color: #012c3d;
+  font-family: 'Manrope medium', sans-serif;
+  font-size: 14pt;
+  margin-right: 332.5px;
+  padding-left: 10px;
+}
+
+#label_phone_Company {
+  position: relative;
+  color: #012c3d;
+  font-family: 'Manrope medium', sans-serif;
+  font-size: 14pt;
+  margin-right: 5px;
+  padding-left: 12.5px;
+}
+
+#province-dropdown {
+  width: 125px;
+  margin-top: 8px;
+  margin-bottom: 25px;
+  margin-right: 12.5px;
+}
+
+#canton-dropdown {
+  width: 125px;
+  margin-top: 8px;
+  margin-bottom: 25px;
+  margin-right: 12.5px;
+}
+
+#district-dropdown {
+  width: 125px;
+  margin-top: 8px;
+  margin-bottom: 25px;
+  margin-right: 39px;
+}
+
+#input_phone_company {
+  width: 125px;
+  margin-top: 8px;
+  margin-bottom: 25px;
+}
+
+#label_email_Company {
+  position: relative;
+  color: #012c3d;
+  font-family: 'Manrope medium', sans-serif;
+  font-size: 12pt;
+  margin-right: 90px;
+  padding-left: 10px;
+}
+
+#label_password_Company {
+  position: relative;
+  color: #012c3d;
+  font-family: 'Manrope medium', sans-serif;
+  font-size: 12pt;
+  margin-right: 50px;
+  /* padding-left: 0px */
+}
+
+#label_password_check_Company {
+  position: relative;
+  color: #012c3d;
+  font-family: 'Manrope medium', sans-serif;
+  font-size: 12pt;
+  /* padding-left: 0px */
+}
+
+#input_email_company {
+  width: 192.5px;
+  margin-top: 8px;
+  margin-bottom: 25px;
+}
+
+#input_pasword_company {
+  width: 147px;
+  margin-top: 8px;
+  margin-bottom: 25px;
+  margin-left: 27.5px;
+}
+
+#input_pasword_check_company {
+  width: 147px;
+  margin-top: 8px;
+  margin-bottom: 25px;
+  margin-left: 25px;
+}
+
+#input_description_company {
+  width: 570px;
+  height: 140px;
+  margin-top: 8px;
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input_logo_company {
+  display: none;
+  cursor: pointer;
+}
+
+
+#custom_logo_company {
+  width: 565.5px;
+  height: 65px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: #c9c9c9 dashed;
+  border-width: 3px 3px;
+  font-family: 'Manrope medium', sans-serif;
+  font-size: 13px;
+  color: #c9c9c9;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  padding-bottom: 2.5px;
+}
+
+#custom_logo_back {
+  width: 580.5px;
+  height: 80px;
+  background-color: #f6f6f6;
+  border-radius: 10px;
+  border-style: none;
+  border: #c9c9c9 solid 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#iconoFolder{
+  height: 30px;
+  margin-top: 2%;
+  margin-bottom: 1%;
+}
+
+.admin_form_text {
+  position: relative;
+  color: #ffffff;
+  background-color: #012c3d;
+  width: 550px;
+  height: 60px;
+  margin-top: 5px;
+  margin-left: 15px;
+  margin-bottom: 25px;
+  font-size: 22pt;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Manrope medium', sans-serif;
+  border-radius:10px;
+}
+
+#form_info_admin{
+  width: 600px;
+  height: 305px;
+  padding-top: 15px;
+  padding-left: 25px;
+  margin: 0 auto;
+  margin-top: 20px;
+  border-radius: 5px;
+  border-style: none;
+  border: #c9c9c9 solid 1px;
+}
+
+#input_name_admin{
+  width: 225px;
+  margin-top: 4px;
+  margin-bottom: 25px;
+  margin-left: 34px;
+}
+
+#input_lastname_admin{
+  width: 225px;
+  margin-top: 4px;
+  margin-bottom: 25px;
+  margin-left: 34px;
+}
+
+#input_id_admin{
+  width: 225px;
+  margin-top: 4px;
+  margin-bottom: 25px;
+  margin-left: 34px;
+}
+
+#input_phone_admin{
+  width: 225px;
+  margin-top: 4px;
+  margin-bottom: 25px;
+  margin-left: 34px;
+}
+
+#input_email_admin{
+  width: 500px;
+  margin-top: 4px;
+  margin-left: 34px;
+}
+
+.btn_forms_admin_company{
+  cursor: pointer;
+  position: relative;
+  color: #ffffff;
+  background-color: #09b49c;
+  width: 250px;
+  height: 45px;
+  margin: 0 auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font-size: 18pt;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Manrope medium', sans-serif;
+  border: 0;
+  border-radius:10px;
+}
+
+.error {
+  border: 3px solid crimson !important;
+}
+/* AQUÍ VA TU CÓDIGO */
+
+/* <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> */
+
+
+
+
+/* <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> */
+/* <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> */
+
+
+
+
+
+/*  NO MODIFICAR LO DE ABAJO • NO MODIFICAR LO DE ABAJO •
+    CÓDIGO SECCIÓN DEL FOOTER Y SU MENÚ
+↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  */
+
+footer {
+  height: 120px;
+  background-color: #4d4d4d;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0 5%;
+}
+
+.QuantumTechLogo img {
+  height: 25px;
+  margin-left: 5px;
+  line-height: 10px;
+}
+
+.QuantumTechLogo p {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  color: #ffffff;
+  align-items: center;
+  margin-left: 50px;
+}
+
+.menuFooter {
+  display: flex;
+  align-items: center;
+}
+
+.menuFooter ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.menuFooter ul li {
+  margin-left: 20px;
+}
+
+.menuFooter ul li:first-child {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.menuFooter ul li:not(:last-child) {
+  margin-right: 20px;
+}
+
+.menuFooter ul li a {
+  color: #ffffff;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+/*  CÓDIGO SECCIÓN DEL FOOTER Y SU MENÚ
+    NO MODIFICAR LO DE ARRIBA • NO MODIFICAR LO DE ARRIBA •
+↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ */

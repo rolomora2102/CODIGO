@@ -1,0 +1,643 @@
+/* SECCIÓN DEL HEADER Y SU MENÚ */
+/* SECCIÓN DEL HEADER Y SU MENÚ */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #355f80;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5%;
+}
+
+.logo img {
+  height: 60px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li:first-child {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+nav ul li:not(:last-child) {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+
+/* Estilos para el menú hamburguesa en dispositivos móviles y tabletas */
+
+.hamburger {
+  display: none; /* Ocultar por defecto en pantallas grandes */
+  cursor: pointer;
+  padding: 10px;
+  position: relative;
+}
+
+.line {
+  width: 25px;
+  height: 3px;
+  background-color: #ffffff;
+  margin: 5px 0;
+  transition: all 0.3s ease;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu li {
+  margin-left: 20px;
+}
+
+
+/* <><><><><><><><><><><><><><><><><><><><> */
+/* <><><><><><><><><><><><><><><><><><><><> */
+
+@media (max-width: 768px) {
+  /* Estilos para pantallas más pequeñas */
+  
+  .hamburger {
+    display: block; /* Mostrar el menú hamburguesa en pantallas pequeñas */
+  }
+  
+  .menu {
+    display: none; /* Ocultar el menú en pantallas pequeñas */
+    flex-direction: column;
+    background-color: #355f80;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .menu li {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+  
+  .menu a {
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  
+  /* Estilos para la animación del menú hamburguesa */
+  
+  .hamburger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  
+  .hamburger.active .line:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+  }
+}
+
+/* <><><><><><><><><><><><><><><><><><><><> */
+/* <><><><><><><><><><><><><><><><><><><><> */
+
+/* SECCIÓN DEL FONDO Y FORMULARIO DE CONTACTO */
+
+.background-section {
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.floating-text {
+  width: 30%;
+  margin-left: 20%;
+  padding-left: 5%;
+}
+
+.floating-text h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 36pt;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.floating-text h2:nth-child(3),
+.floating-text h2:nth-child(4) {
+  color: #6cd24f;
+  font-weight: 900;
+}
+
+.contact-form {
+  width: 300px;
+  margin-right: 10%;
+  height: 370px;
+  background-color: #d1dee0;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-form h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 28pt;
+  color: #272727;
+}
+
+.contact-form form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"] {
+  width: 220px;
+  height: 25px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 0 10px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 12pt;
+  color: #9b9b9b;
+}
+
+.contact-form input[type="submit"] {
+  width: 244px;
+  height: 50px;
+  border-radius: 8px;
+  background-color: #6cd24f;
+  margin-top: 20px;
+  color: #272727;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 20pt;
+}
+
+
+/* SECCIÓN DE MISIÓN Y VISIÓN */
+.section-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.block {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+#Mision {
+  background-color: #d1deec;
+  text-align: center;
+  padding: 2% 5%;
+}
+
+#Vision {
+  background-color: #bcd0e6;
+  text-align: center;
+  padding: 2% 5%;
+}
+
+.block h2 {
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-size: 40px;
+  color: #355f80;
+  margin-bottom: 10px;
+}
+
+.block h2::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 2px;
+  background: linear-gradient(to left, transparent 0%, #355f80 50%, transparent 100%);
+}
+
+.block p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: #272727;
+  margin: 0 10%;
+  background-color: inherit;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+
+/* SECCIÓN DE NUESTROS VALORES */
+/* TITULAR NUESTROS VALORES */
+#txtNuestrosValores {
+  background-color: #355f80;
+  height: 110px;
+  border: 4pt solid #ffffff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.valores-header {
+  text-align: center;
+}
+
+.valores-header h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 36pt;
+  color: #ffffff;
+}
+
+
+/* GRID VALORES */
+.valores-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.valor-box {
+  background-color: #355f80;
+  border: 2px solid #ffffff;
+  padding: 10%;
+}
+
+.valor-box h3 {
+  font-family: "Roboto Medium", sans-serif;
+  font-size: 30px;
+  color: #d1deec;
+}
+
+.valor-box p {
+  font-family: "Roboto Light", sans-serif;
+  font-size: 12pt;
+  color: #ffffff;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+
+/* SECCIÓN DE NUESTRO EQUIPO */
+/* TÍTULO NUESTRO EQUIPO */
+#nuestroEquipo {
+  background-color: #969696;
+  height: 110px;
+}
+
+.tituloNuestroEquipo {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tituloNuestroEquipo h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 36pt;
+  color: #ffffff;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+
+/* GRID DE LOS 6 INTEGRANTES */
+.tituloNuestroEquipo {
+  background-color: #969696;
+  color: #d50000;
+  height: 110px;
+  border: 4pt solid #ffffff;
+}
+
+.grid-container {
+  /* border: solid 2px #c40000; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Cambiaa 3 columnas */
+  grid-template-rows: repeat(2, 1fr); /* Cambia a 2 filas */
+  justify-items: center; /* Centra los elementos de cada columna */
+}
+
+.casilla {
+  position: relative;
+  width: 320px;
+  height: 320px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  border: 0.5pt solid #355f80;
+  margin: 40px 0px;
+  z-index: 1; /* Ajusta el z-index de la casilla para quede por detrás*/
+}
+
+.casilla:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 33%;
+  background-color: #355f80;
+  border-radius: 20px 20px 0 0;
+}
+
+.foto,
+.nombre,
+.puesto,
+.email {
+  position: relative;
+  z-index: 2; /* Ajusta el z-index para que queden por delante de la casilla */
+}
+
+.foto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  margin: 40px 0;
+}
+
+.foto img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 20px solid #ffffff;
+}
+
+.nombre,
+.puesto,
+.email {
+  text-align: center;
+}
+
+.nombre {
+  font-family: 'Roboto Medium', sans-serif;
+  color: #355f80;
+  font-size: 16pt;
+  margin: 5px 0px;
+}
+
+.puesto {
+  font-family: 'Roboto Medium', sans-serif;
+  color: #949494;
+  font-size: 16pt;
+  margin: 5px 0px;
+}
+
+.email {
+  font-family: 'Roboto Light', sans-serif;
+  color: #355f80;
+  font-size: 10pt;
+  margin: 20px 0px;
+}
+
+
+/* BLOQUE MI TRABAJO/CASO DE ÉXITO */
+/* BLOQUE COMPLETO */
+#miTrabajoSeccion{
+  display:flex;
+  flex-direction: row;
+}
+
+.contenedor-bloques {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Alinea los bloques en la parte superior */
+}
+
+/* BLOQUE IZQUIERDO */
+.bloque-izquierdo {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imagen-buscando img {
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+}
+
+/* BLOQUE DERECHO */
+.bloque-derecho {
+  width: 60%;
+}
+
+/* CASO DE ÉXITO */
+.caso-exito {
+  height: 80px;
+  background-color: #355f80;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.caso-exito h2 {
+  font-family: 'Roboto Medium', sans-serif;
+  font-size: 24pt;
+  color: #ffffff;
+}
+
+/* LOGO MI TRABAJO */
+.logo-mitrabajo {
+  display: flex;
+  justify-content: center;
+  margin-top: 4%;
+}
+
+.logo-mitrabajo img {
+  height: 80px;
+}
+
+/* DESCRIPCIÓN */
+.descripcion {
+  text-align: center;
+  margin-top: 4%;
+}
+
+.descripcion p {
+  margin: 0 10%;
+  font-family: 'Roboto Light', sans-serif;
+  font-size: 13pt;
+  color: #969696;
+}
+
+/* BOTÓN ENTRAR */
+.boton-entrar {
+  display: flex;
+  justify-content: center;
+  margin: 4% 0%;
+}
+
+.boton-entrar button {
+  width: 126px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: #355f80;
+  color: #ffffff;
+  font-family: 'Roboto Medium', sans-serif;
+  font-size: 10pt;
+  border: none;
+}
+
+
+/* CONVERSEMOS */
+.Conversemos-section {
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-form2 {
+  background-color: #d1dee0;
+  width: 400px;
+  height: 445px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.contact-form2 h4 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 28pt;
+  color: #272727;
+  margin-bottom: 30px;
+  margin-top: 5px;
+}
+
+.contact-form2 form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-form2 input[type="text"],
+.contact-form2 input[type="email"],
+.contact-form2 input[type="tel"] {
+  width: 250px;
+  height: 25px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 0 10px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 12pt;
+  color: #9b9b9b;
+}
+
+#mensaje {
+  height: 95px;
+  border-radius: 5px;
+  margin-left: 0px;
+  width: 250px;
+  margin-bottom: 10px;
+  padding: 0 10px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 12pt;
+  color: #9b9b9b;
+}
+
+#enviar {
+  background-color: #6cd24f;
+  border-radius: 4px;
+  width: 50px;
+  height: 30px;
+  font-weight: bolder;
+  border: 0;
+  margin-right: 80%;
+  margin-top: 8px;
+}
+
+.Conversemos-section {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+/* ESTE ES EL FOOTER */
+footer {
+  height: 200px;
+  background-color: #272727;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0 30px;
+}
+
+.logo img {
+  height: 60px; /* Ajustar el tamaño según corresponda */
+  margin-left: 40px;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+}
+
+.social-icons a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-right: 40px;
+  margin-left: 30px; /* Espacio entre los iconos */
+  overflow: hidden;
+}
+
+.social-icons a img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

@@ -1,0 +1,462 @@
+/* NO MODIFICAR LO DE ABAJO • NO MODIFICAR LO DE ABAJO • */
+/* CÓDIGO SECCIÓN DEL HEADER Y SU MENÚ */
+/* ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  */
+
+/* IMPORTAR TIPOGRAFIA */
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;500;800&display=swap');
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color: #ffffff;
+  height: 100px;
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5% !important;
+}
+
+header::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background-color: #e6e7e8;
+}
+
+.logo img {
+    height: 60px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li:first-child {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+nav ul li:not(:last-child) {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #012c3d;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+/* Cambiar nombre del ID para cambiar color en el menú del Header */
+/* jobs, purpose, contact, profile, closeSession  */
+
+#profile{
+  color: #f8444e;
+}
+
+
+
+/* CÓDIGO SECCIÓN DEL HEADER Y SU MENÚ */
+/* NO MODIFICAR LO DE ARRIBA • NO MODIFICAR LO DE ARRIBA • */
+/* ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ */
+
+/* NO MODIFICAR LO DE ABAJO • NO MODIFICAR LO DE ABAJO • */
+/* CÓDIGO SECCIÓN DEL MENÚ SECUNDARIO */
+/* ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  */
+
+/*Nav bar secundario (cuando se esta logueado)*/
+
+.secondaryNav {
+  position: sticky;
+  top: 100px; /* Altura del menú principal */
+  z-index: 998;
+  background-color: #012c3d;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  padding: 0 5% !important;
+}
+
+.secondaryNav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.secondaryNav ul li:not(:last-child) {
+  margin-right: 25px; 
+}
+
+.secondaryNav ul li a {
+  color: #ffffff;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+/* Cambiar nombre del ID para cambiar color en el menú SECUNDARIO */
+/* collaborators, jobPositions, invitations, searchCandidates, notifications  */
+
+#searchCandidates{
+  color: #09b49c;
+}
+
+/* CÓDIGO SECCIÓN DEL MENÚ SECUNDARIO */
+/* NO MODIFICAR LO DE ARRIBA • NO MODIFICAR LO DE ARRIBA • */
+/* ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ */
+
+/* <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> */
+/* <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> */
+
+
+
+/* MAIN CONTAINER and First Section */
+
+/* First Section */
+.FirstSection {
+  background-color: #012c3d;
+  display: flex;
+  justify-content: center;
+}
+
+.mainContainer {
+  min-width: calc(100vh - 30%);
+  position: relative;
+  /* width: 833px; */
+  height: 690.2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Buscar Candidatos Box */
+.BuscarCandidatosButton {
+  background-color: #012c3d;
+  margin-bottom: 29.75px;
+  width: 386.75px;
+  height: 60px;
+  border-radius: 7px;
+  font-family: 'Manrope', sans-serif;
+  font-size: 29.75px;
+  font-weight: medium;
+  color: #f7f8f4;
+}
+
+.PrimerosDropDownsDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 674.45px;
+  margin-bottom: 17.85px;
+}
+
+.PrimerosDropDowns {
+  height: 47.6px;
+  width: 208.25px;
+  border-radius: 7px;
+  color: gray;
+  font-size: 11.9px;
+}
+
+.AreaProfecionalDiv {
+  font-size: 14.875pt;
+  width: 674.45px;
+  margin-bottom: 17.85px;
+}
+
+.EstudiosyEstadoBoxes {
+  display: flex;
+  flex-direction: row;
+  width: 674.45px;
+  margin-bottom: 17.85px;
+}
+
+#ÁreaProfecional {
+  width: 674.45px;
+  height: 47.6px;
+  border-radius: 7px;
+  color: gray;
+  font-size: 11.9px;
+}
+
+.NiveldeEstudios {
+  font-size: 14.875pt;
+  font-family: 'Manrope', sans-serif;
+  margin-right: 23.8px;
+  margin-bottom: 23.8px;
+}
+
+#NiveldeEstudiosid {
+  height: 47.6px;
+  width: 252.875px;
+  border-radius: 7px;
+  margin-top: 5.95px;
+  color: gray;
+  font-size: 11.9px;
+}
+
+.EstadoEstudiosDiv {
+  font-size: 14.875pt;
+  font-family: 'Manrope', sans-serif;
+  margin-bottom: 23.8px;
+}
+
+#Estadoid {
+  height: 47.6px;
+  width: 136.85px;
+  border-radius: 7px;
+  color: gray;
+  font-size: 11.9px;
+}
+
+#textarea {
+  width: 674.45px;
+  height: 128.52px;
+  border-radius: 7px;
+}
+
+.buttonVerdeDiv {
+  /* background-color: red; */
+  margin-top: 23.8px;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+#Buscar {
+  height: 47px;
+  width: 125.95px;
+  border-radius: 7px;
+  background-color: #09b49c;
+  font-family: 'Manrope', sans-serif;
+  font-size: 14.875pt;
+  color: #f7f8f4;
+  border: none;
+}
+
+.boxcolors {
+  background-color: #f7f8f4;
+  border-color: gainsboro;
+  border-width: 1.785px;
+}
+
+.boxcolors::placeholder {
+  font-family: 'Manrope', sans-serif;
+  font-size: 11.9px;
+  padding: 6.36px;
+  color: gray;
+}
+
+/* Candidatos Section */
+.CandidatosBoxContainer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 29.75px;
+  height: 416.5px;
+}
+
+
+/* Candidatos Section */
+.CandidatosBoxContainer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 21.25px;
+  height: 297.5px;
+}
+
+/* Boxes de info de los colaboradores */
+.colaborador {
+  margin-top: 8.5px;
+  /* width: 684.25px; */
+  height: 89.25px;
+  display: flex;
+  flex-direction: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgcontainer {
+  margin-right: 8.5px;
+}
+
+.nombrecolab {
+  font-size: 14.875pt;
+  font-family: 'Manrope', sans-serif;
+}
+
+.emailcolab {
+  font-size: 10.2pt;
+  margin-top: 2.975px;
+  font-family: 'Manrope', sans-serif;
+}
+
+.numcolab {
+  font-size: 9.35pt;
+  margin-top: 2.975px;
+  font-family: 'Manrope', sans-serif;
+}
+
+.colabsbuttons {
+  width: 63.75px;
+  height: 34px;
+  font-size: 8.5pt;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.colaboradorInformationContainer {
+  /* background-color: #09b49c; */
+  min-width: 344.25pt;
+}
+
+.ButtonsContainer {
+  /* background-color: purple; */
+  margin-left: 57.375px;
+  margin-top: 8.5px;
+  width: 160px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#ButtonsVerdes {
+  background-color: #09b49c;
+  color: #f7f8f4;
+  border: none;
+}
+
+#ButtonsBlancos{
+  background: color #f7f8f4;
+  width:90px;
+  border-color: gainsboro;
+  border-width: 2px;
+}
+.pagination {
+  /* background-color: #012c3d; */
+  height: 76.5px;
+  width: 114.75px;
+  margin-top: 38.25px;
+  margin-left: 1550px;
+  font-size: 12.75pt;
+  font-family: 'Manrope light', sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+
+.Resultados{
+  /* background-color: #09b49c; */
+  width: 805px;
+  margin: auto;
+  font-family: 'Manrope light', sans-serif;
+  font-size: 13pt;
+  color: #012c3d;
+}
+
+hr {
+  color: black;
+  width: 800px;
+  margin-bottom: 25.5px;
+  border-color: #012c3d;
+}
+
+
+
+/* <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> */
+/* <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> */
+
+
+
+
+
+/*  NO MODIFICAR LO DE ABAJO • NO MODIFICAR LO DE ABAJO •
+    CÓDIGO SECCIÓN DEL FOOTER Y SU MENÚ
+↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  */
+
+footer {
+  height: 120px;
+  background-color: #4d4d4d;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0 5%;
+}
+
+.QuantumTechLogo img {
+  height: 25px;
+  margin-left: 5px;
+  line-height: 10px;
+}
+
+.QuantumTechLogo p {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  color: #ffffff;
+  align-items: center;
+  margin-left: 50px;
+}
+
+.menuFooter {
+  display: flex;
+  align-items: center;
+}
+
+.menuFooter ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.menuFooter ul li {
+  margin-left: 20px;
+}
+
+.menuFooter ul li:first-child {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.menuFooter ul li:not(:last-child) {
+  margin-right: 20px;
+}
+
+.menuFooter ul li a {
+  color: #ffffff;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+/*  CÓDIGO SECCIÓN DEL FOOTER Y SU MENÚ
+    NO MODIFICAR LO DE ARRIBA • NO MODIFICAR LO DE ARRIBA •
+↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ */

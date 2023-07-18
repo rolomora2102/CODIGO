@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formCompany</title>
+
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/FormCompany.css">
+    <!-- <link rel="stylesheet" href="./styles/FormCompanyOriginal.css"> -->
+    
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;500;800&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+    
+    <!-- NO MODIFICAR LO DE ABAJO • NO MODIFICAR LO DE ABAJO •
+    CÓDIGO SECCIÓN DEL HEADER Y SU MENÚ
+  ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ -->
+  <!-- HEADER -->
+  
+  <header>
+    <div class="logo">
+        <a href="./LandingPageMiTrabajo.html">
+          <img src="./images/logoMiTrabajo.png" alt="MiTrabajo Logo">
+      </div>
+      <nav class="menu">
+          <ul>
+            <li><a id = jobs href="./jobs.html">Bolsa de Trabajo</a></li>
+            <li><a id = purpose href="./purpose.html">Nuestro Propósito</a></li>
+            <li><a id = contact href="./contact.html">Contáctenos</a></li>
+            <!-- <li><a id = profile href="./profile">Mi Perfil</a></li>
+            <li><a id = closeSession href="./landingPageMiTrabajo.html">Cerrar Sesión</a></li> -->
+          </ul>
+      </nav>
+  </header>
+
+<!--  CÓDIGO SECCIÓN DEL HEADER Y SU MENÚ
+    NO MODIFICAR LO DE ARRIBA • NO MODIFICAR LO DE ARRIBA •
+↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ -->
+
+
+<!-- NO MODIFICAR LO DE ABAJO • NO MODIFICAR LO DE ABAJO •
+↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ -->
+<!-- MENÚ SECUNDARIO • MENÚ SECUNDARIO • MENÚ SECUNDARIO • MENÚ SECUNDARIO • MENÚ SECUNDARIO •  -->
+
+<!--Nav bar secundario (cuando se esta logueado)-->
+<!-- <nav class="secondaryNav">
+    <ul class=".secondaryNav__list">
+        <li><a id = collaborators href="./adminProfile.html" class="currentPage">Colaboradores</a></li>
+        <li><a id = jobPositions href="./jobPositionsAdmin.html">Puestos de Trabajo</a></li>
+        <li><a id = invitations href="./adminInvitations.html">Invitaciones</a></li>
+        <li><a id = searchCandidates href="./adminSearchCandidates.html">Búsqueda de Candidatos</a></li>
+        <li><a id = notifications href="./adminNotifications.html">Notificaciones</a></li>
+    </ul>
+</nav> -->
+
+
+
+<!-- AQUÍ COMIENZA EL CÓDIGO ESPECÍFICO DE ESTA PÁGINA -->
+<!-- ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ -->
+
+
+<body>
+    <main>
+      <section>
+      <div class="company_form_text"> 
+      <h2>Información de la empresa</h2>
+      </div>  
+        <form action="" id="form_info_company">
+            <label id="label_name_company" for="name">Nombre de la empresa*: </label>
+            <input class="input_form_info_company" id="input_name_company" type="text" required>
+            <label id="label_locate_company" for="locate">Ubicación*: </label>
+            <label id="label_phone_Company" for="phone">Teléfono*: </label>
+            <script type="module" src="./controlers/regions.js"></script>
+            <script type="module" src="./controlers/cantonDict.js"></script>
+            <script type="module" src="./controlers/provinceDict.js"></script>
+            <script type="module" src="./controlers/districtDict.js"></script>
+            <select  class="input_form_info_company" name="province" id="province-dropdown" required>
+              <option value="" disabled selected>Provincia</option>
+            </select>
+            <select  class="input_form_info_company" name="canton" id="canton-dropdown" required>
+              <option value="" disabled selected>Cantón</option>
+            </select>
+            <select  class="input_form_info_company" name="district" id="district-dropdown" required>
+              <option value="" disabled selected>Distrito</option>
+            </select>
+            <input class="input_form_info_company" id="input_phone_company" type="text" required>
+            <label id="label_email_Company" for="email">Correo empresarial: </label>
+            <label id="label_password_Company" for="password">Crear contraseña*: </label>
+            <label id="label_password_check_Company" for="password_check">Confirme contraseña*: </label>
+            <input class="input_form_info_company" id="input_email_company" type="email" required>
+            <input class="input_form_info_company" id="input_password_company" type="password" required placeholder="Mínimo 8 caracteres">
+            <input class="input_form_info_company" id="input_password_check_company" type="password" placeholder="Mínimo 8 caracteres" required>
+            <textarea class="input_form_info_company" id="input_description_company" type="text" placeholder="Descripción de la empresa"></textarea>
+            <input class="input_logo_company" id="custom_input_logo_company" type="file" accept=".png, .jpg">
+            <div id="custom_logo_back">
+            <div id="custom_logo_company">
+                <img id = iconoFolder src="./images/iconoFolder.png" for="custom_input_logo_company">
+              <label id="label_logo_company" for="custom_input_logo_company">Subir logo de la compañía (JPG o PNG Máximo 3MG)</label>
+            </div>
+            </div>
+        </form>
+    </section>
+    <section>
+        <form action="" id="form_info_admin">
+          <div class="admin_form_text"> 
+            <h2>Información personal del administrador</h2>
+          </div>
+          <input class="input_form_info_company" id="input_name_admin" type="text" placeholder="Nombre*" required>
+          <input class="input_form_info_company" id="input_lastname_admin" type="text" placeholder="Apellidos*" required>
+          <input class="input_form_info_company" id="input_id_admin" type="text" pattern="[0-7]{9}[0-9]" placeholder="Cédula*" required>
+          <input class="input_form_info_company" id="input_phone_admin" type="tel" pattern="[0-9]{8}" placeholder="Teléfono*" required>
+          <input class="input_form_info_company" id="input_email_admin" type="email" placeholder="Correo*" required>
+        </form>
+    </section>
+    <section>
+      <div>
+        <button class="btn_forms_admin_company" type="button">Guardar perfil</button>
+      </div>
+    </section>
+    </main>
+</body>
+</html>
+
+
+
+<!-- ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ -->
+<!-- AQUÍ TERMINA EL CÓDIGO ESPECÍFICO DE ESTA PÁGINA -->
+<!-- <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> -->
+
+
+
+  <!-- NO MODIFICAR LO DE ABAJO • NO MODIFICAR LO DE ABAJO •
+  CÓDIGO SECCIÓN DEL FOOTER Y SU MENÚ
+↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ -->
+<!-- ESTE ES EL FOOTER -->
+<footer>
+  <div class="footer-content">
+    <div class="QuantumTechLogo">
+      <p id="disclaimer">Página desarrollada por <a href="./LandingPageQuantumTech.html"><img src="./images/Logo Blanco Quantum.png" alt="Logo QuantumTech"></a></p>
+    </div>
+    <div class="menuFooter">
+      <ul>
+        <li><a href="./jobs.html">Bolsa de Trabajo</a></li>
+        <li><a href="./Purpose.html">Nuestro Propósito</a></li>
+        <li><a href="./Contact.html">Contáctenos</a></li>
+        <!-- <li><a href="./adminProfile.html">Mi Perfil</a></li>
+        <li><a href="./landingPageMiTrabajo.html">Cerrar Sesión</a></li> -->
+      </ul>
+    </div>
+  </div>
+<!--  CÓDIGO SECCIÓN DEL FOOTER Y SU MENÚ
+      NO MODIFICAR LO DE ARRIBA • NO MODIFICAR LO DE ARRIBA •
+↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ -->
+</footer>
+
+
+<!-- <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> -->
+<!-- AQUÍ VAN LOS SCRIPTS • AQUÍ VAN LOS SCRIPTS • AQUÍ VAN LOS SCRIPTS •  -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+<script src="./controlers/FormCompany.js"></script>
+<!-- AQUÍ VAN LOS SCRIPTS • AQUÍ VAN LOS SCRIPTS • AQUÍ VAN LOS SCRIPTS •  -->
+<!-- <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> -->
+
+</body>
+</html>

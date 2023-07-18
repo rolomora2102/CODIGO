@@ -1,0 +1,541 @@
+/* NO MODIFICAR LO DE ABAJO • NO MODIFICAR LO DE ABAJO • */
+/* CÓDIGO SECCIÓN DEL HEADER Y SU MENÚ */
+/* ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  */
+
+/* IMPORTAR TIPOGRAFIA */
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;500;800&display=swap');
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color: #ffffff;
+  height: 100px;
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5% !important;
+}
+
+header::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background-color: #e6e7e8;
+}
+
+.logo img {
+    height: 60px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li:first-child {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+nav ul li:not(:last-child) {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #012c3d;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+/* Cambiar nombre del ID para cambiar color en el menú del Header */
+/* jobs, purpose, contact, profile, closeSession  */
+
+#profile{
+  color: #f8444e;
+}
+
+
+
+/* CÓDIGO SECCIÓN DEL HEADER Y SU MENÚ */
+/* NO MODIFICAR LO DE ARRIBA • NO MODIFICAR LO DE ARRIBA • */
+/* ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ */
+
+/* NO MODIFICAR LO DE ABAJO • NO MODIFICAR LO DE ABAJO • */
+/* CÓDIGO SECCIÓN DEL MENÚ SECUNDARIO */
+/* ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  */
+
+/*Nav bar secundario (cuando se esta logueado)*/
+
+.secondaryNav {
+  position: sticky;
+  top: 100px; /* Altura del menú principal */
+  z-index: 998;
+  background-color: #012c3d;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  padding: 0 5% !important;
+}
+
+.secondaryNav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.secondaryNav ul li:not(:last-child) {
+  margin-right: 25px; 
+}
+
+.secondaryNav ul li a {
+  color: #ffffff;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+/* Cambiar nombre del ID para cambiar color en el menú SECUNDARIO */
+/* collaborators, jobPositions, invitations, searchCandidates, notifications  */
+
+#jobPositions{
+  color: #09b49c;
+}
+
+/* CÓDIGO SECCIÓN DEL MENÚ SECUNDARIO */
+/* NO MODIFICAR LO DE ARRIBA • NO MODIFICAR LO DE ARRIBA • */
+/* ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ */
+
+/* <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> */
+/* <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> */
+
+
+
+/*Información de los trabajos (ID/Nombre/Estado/Invitar)*/
+
+.jobInfo__container table {
+    width: 740px; 
+    margin: 50px auto; 
+    font-family: 'Manrope', sans-serif;
+}
+
+.jobInfo__container th {
+    font-size: 12pt; 
+    font-weight: bolder;
+    color: #012c3d;
+    border-bottom: 1px solid #012c3d; 
+    padding-bottom: 20px; 
+}
+
+/*Nombre de Oferta Titulo*/
+
+.offer__text {
+    text-align: start;
+}
+
+/*ID*/
+
+.jobId__container div {
+    display: flex;
+    width: 95px; 
+    height: 40px; 
+    justify-content: center;
+    align-items: center;
+    color: #012c3d;
+    font-size: 12px; 
+    font-weight: light;
+    background-color: #f6f6f6;
+    border: solid 0.5px #c9c9c9; 
+    border-radius: 2.5px;
+}
+
+/*Nombre*/
+
+.jobName__container div {
+    display: flex;
+    align-items: center;
+    padding-left: 10px; 
+    width: 380px; 
+    height: 40px; 
+    background-color: #f6f6f6;
+    border: solid 0.5px #c9c9c9; 
+    border-radius: 2.5px; 
+}
+
+.jobName__container a {
+    text-decoration: none;
+    color: #012c3d;
+}
+
+.jobName__container p {
+    font-size: 12px; 
+    font-weight: light;
+}
+
+/*Estado*/
+
+.jobStatus__container select {
+    padding-left: 10px;
+    width: 120px; 
+    height: 40px; 
+    background-color: #f6f6f6;
+    border: solid 0.5px #c9c9c9; 
+    border-radius: 2.5px; 
+}
+
+/*Invitar*/
+
+.jobInvite__container button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px; 
+    height: 40px; 
+    margin-top: 10px;
+    position: relative;
+    top: 16px;
+}
+
+.jobInvite__container button img {
+    width: 25px; 
+    height: 25px;
+    display: block;
+    margin: 0px auto;
+    position: absolute;
+}
+
+/*Fondos de Invitar*/
+
+.jobInvite__container .invite--green {
+    background-color: #09b49c;
+    border: none;
+    border-radius: 30px; 
+    cursor: pointer;
+}
+
+.jobInvite__container .invite--red {
+    background-color: #f8444e;
+    border: none;
+    border-radius: 30px; 
+    cursor: pointer;
+}
+
+.jobInvite__container .invite--inactive {
+    background-color: #9c9c9c;
+    border: none;
+    border-radius: 30px; 
+    cursor: pointer;
+}
+
+/*Número de tabla*/
+
+.pages {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 0 30%;
+}
+
+.pages ul li button {
+    color: #000000;
+    font-family: 'Manrope', sans-serif;
+    font-size: 17px; 
+    background-color: #ffff;
+    border: none;
+    text-decoration: none;
+}
+
+.pages ul li button:hover {
+    cursor: pointer;
+}
+
+.pages .currentPage {
+    background-color: #f6f6f6;
+}
+
+
+/*Formulario Crear Oferta Laboral*/
+
+.jobOffer__container {
+    display: flex;
+    flex-direction: column;
+    width: 740px; 
+    height: 835px; 
+    border: 2px solid #e6e7e8; 
+    margin: 100px auto; 
+    font-family: 'Manrope', sans-serif;
+}
+
+.jobOffer__container input, select {
+    font-size: 12px; 
+    font-weight: light;
+    padding: 5px; 
+    border: 0.5px solid #c9c9c9; 
+    border-radius: 2.5px;
+    background-color:  #f6f6f6;
+    color: #9c9c9c;
+}
+
+.jobOffer__container label {
+    display: block;
+    font-size: 13px;
+    font-weight: 500;
+    margin-left: 15px; 
+    margin-bottom: 5px; 
+    color: #012c3d;
+}
+
+/*Titulo de formulario Crear Oferta*/
+
+.jobOffer__title {
+    display: flex;
+    margin: 50px auto; 
+    background-color: #012c3d;
+    width: 325px;
+    height: 60px; 
+    color: #ffffff;
+    border-radius: 2.5px; 
+    font-size: 25px; 
+    align-items: center;
+    justify-content: center;
+}
+
+/*Puesto*/
+
+.position__text {
+    margin: 10px auto;
+}
+
+.position__text input {
+    width: 565px; 
+    height: 40px;
+}
+
+/*Provincia, Cantón y Distrito*/
+
+.location__container {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 25px; 
+    margin-bottom: 10px;
+}
+
+.location__container select {
+    width: 175px; 
+    height: 40px; 
+}
+
+/*Información de Salario, Jornada...*/
+
+.jobOfferInfo__container {
+    width: 81%; 
+    margin: 0 auto;
+    padding-left: 20px;
+    display: flex;
+    gap: 34px; 
+}
+
+/*Salario hasta Area Profesional*/
+
+.salaryArea__container select {
+    width: 280px; 
+    height: 40px; 
+    margin-bottom: 10px; 
+}
+
+.salary__margin {
+    margin-bottom: 25px; 
+}
+
+/*Jornada/Hasta/Desde*/
+
+.workday__text select {
+    width: 260px; 
+    height: 40px; 
+    margin-bottom: 10px; 
+}
+
+.workday__text {
+    margin-bottom: 7px; 
+}
+
+.fromUntil__labels {
+    display: block;
+    font-size: 13px;
+    font-weight: 500;
+    margin-left: 15px; 
+    margin-bottom: 5px;
+    color: #000000;
+}
+
+.from__container {
+    display: flex;
+    gap: 5px; 
+    margin-bottom: 10px;
+}
+
+.until__container {
+    display: flex;
+    gap: 5px; 
+}
+
+.day__select {
+    width: 65px; 
+    height: 40px;
+}
+
+.month__select {
+    width: 110px; 
+    height: 40px; 
+}
+
+.year__select {
+    width: 75px;
+    height: 40px;
+}
+
+/*Años de Experiencia*/
+
+.yearsExperience__text {
+    margin: 0 11%;
+}
+
+.yearsExperience__text select {
+    width: 65px; 
+    height: 40px; 
+    margin-bottom: 25px; 
+}
+
+/*Requisitos minimos y cualidades deseadas*/
+
+.requirements__text {
+    margin: 0 auto;
+    width: 565px; 
+    height: 80px; 
+    border: solid 0.5px #c9c9c9; 
+    border-radius: 2.5px; 
+    resize: none;
+    font-size: 12px; 
+    font-weight: light;
+    padding: 5px;
+}
+
+/*Clase de error*/
+
+.error {
+    border: 3px solid crimson !important;
+}
+
+/*Boton de crear oferta*/
+
+.create__button {
+    width: 105px; 
+    height: 25px; 
+    font-size: 12px; 
+    font-weight: 500;
+    margin: 30px 35px 50px 74.1%; 
+    border-radius: 2.5px; 
+    border: none;
+    background-color: #09b49c;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+
+/* <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> */
+/* <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> */
+
+
+
+
+
+/*  NO MODIFICAR LO DE ABAJO • NO MODIFICAR LO DE ABAJO •
+    CÓDIGO SECCIÓN DEL FOOTER Y SU MENÚ
+↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  */
+
+footer {
+    height: 120px;
+    background-color: #4d4d4d;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 5%;
+  }
+  
+  .QuantumTechLogo img {
+    height: 25px;
+    margin-left: 5px;
+    line-height: 10px;
+  }
+  
+  .QuantumTechLogo p {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    color: #ffffff;
+    align-items: center;
+    margin-left: 50px;
+  }
+  
+  .menuFooter {
+    display: flex;
+    align-items: center;
+  }
+  
+  .menuFooter ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menuFooter ul li {
+    margin-left: 20px;
+  }
+  
+  .menuFooter ul li:first-child {
+    margin-left: 0;
+    margin-right: auto;
+  }
+  
+  .menuFooter ul li:not(:last-child) {
+    margin-right: 20px;
+  }
+  
+  .menuFooter ul li a {
+    color: #ffffff;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  
+  /*  CÓDIGO SECCIÓN DEL FOOTER Y SU MENÚ
+      NO MODIFICAR LO DE ARRIBA • NO MODIFICAR LO DE ARRIBA •
+  ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ */

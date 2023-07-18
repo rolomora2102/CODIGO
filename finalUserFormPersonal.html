@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>finalUserFormPersonal</title>
+
+    <link rel="stylesheet" href="./styles/reset.css">
+	<link rel="stylesheet" href="./styles/finalUserFormPersonal.css">
+    
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;500;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/sweetalert2@10"></link>
+
+</head>
+
+
+<body>
+    <!-- NO MODIFICAR LO DE ABAJO • NO MODIFICAR LO DE ABAJO •
+    CÓDIGO SECCIÓN DEL HEADER Y SU MENÚ
+  ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ -->
+  <!-- HEADER -->
+  
+  <header>
+    <div class="logo">
+        <a href="./LandingPageMiTrabajo.html">
+          <img src="./images/logoMiTrabajo.png" alt="MiTrabajo Logo">
+      </div>
+      <nav class="menu">
+          <ul>
+            <li><a id = jobs href="./jobs.html">Bolsa de Trabajo</a></li>
+            <li><a id = purpose href="./purpose.html">Nuestro Propósito</a></li>
+            <li><a id = contact href="./contact.html">Contáctenos</a></li>
+            <!-- <li><a id = profile href="./profile">Mi Perfil</a></li>
+            <li><a id = closeSession href="./landingPageMiTrabajo.html">Cerrar Sesión</a></li> -->
+          </ul>
+      </nav>
+  </header>
+
+<!--  CÓDIGO SECCIÓN DEL HEADER Y SU MENÚ
+    NO MODIFICAR LO DE ARRIBA • NO MODIFICAR LO DE ARRIBA •
+↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ -->
+
+
+<!-- NO MODIFICAR LO DE ABAJO • NO MODIFICAR LO DE ABAJO •
+↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ -->
+<!-- MENÚ SECUNDARIO • MENÚ SECUNDARIO • MENÚ SECUNDARIO • MENÚ SECUNDARIO • MENÚ SECUNDARIO •  -->
+
+<!--Nav bar secundario (cuando se esta logueado)-->
+<!-- <nav class="secondaryNav">
+    <ul class=".secondaryNav__list">
+        <li><a id = positions href="./adminInvitations.html">Mis Puestos</a></li>
+        <li><a id = notifications href="./adminNotifications.html">Notificaciones</a></li>
+    </ul>
+</nav> -->
+
+
+
+<!-- AQUÍ COMIENZA EL CÓDIGO ESPECÍFICO DE ESTA PÁGINA -->
+<!-- ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ -->
+
+
+
+<main>
+<!-- Informacion personal -->
+  <section id="form1" class="finaluserform__personalinfo__main__section">
+      <div class="finaluserform__textbox__title">
+        Información personal
+      </div>
+      <form class="finaluserform__personalinfo__form">
+          <!-- Datos personales -->
+          <input type="text" class="finaluserform__personalinfo__input__name" placeholder="Nombre*" required>
+          <input type="text" class="finaluserform__personalinfo__input__lastname" placeholder="Apellidos*" required>
+          <input id="id"  type="text" class="finaluserform__personalinfo__input__id" placeholder="Cédula*" required>
+          <input id="phone" type="text" class="finaluserform__personalinfo__input__number" placeholder="Teléfono*" required>
+          <input id="email" type="text" class="finaluserform__personalinfo__input__l" placeholder="Correo*" required>
+          
+          <!-- Crear contrasena -->
+            <p class="finaluserform__txt">Crear contraseña*</p>
+            <p class="finaluserform__txt">Confirme contraseña*</p>
+          <input type="password" id="password" class="finaluserform__personalinfo__input__password" placeholder="Minimo 8 caracteres*" required>
+          <input type="password" id="password-check" class="finaluserform__personalinfo__input__password" placeholder="Minimo 8 caracteres*" required>
+          <script type="module" src="./controlers/regions.js"></script>
+          <script type="module" src="./controlers/cantonDict.js"></script>
+          <script type="module" src="./controlers/provinceDict.js"></script>
+          <script type="module" src="./controlers/districtDict.js"></script>
+          <select name="provincia" class="finaluserform__personalinfo__select__m" id="province-dropdown" required>
+            <option value="">Provincia</option>
+        </select>
+        <select name="canton" class="finaluserform__personalinfo__select__m" id="canton-dropdown" required disabled>
+            <option value="">Cantón</option>
+        </select>
+        <select name="distrito" class="finaluserform__personalinfo__select__m" id="district-dropdown" required disabled>
+            <option value="">Distrito</option>
+        </select>
+
+            <select class="finaluserform__personalinfo__country">
+                <option value="" disabled select>Nacionalidad</option>
+                <option value="">Costarricense</option>
+            </select>
+            <div class="finaluserform__personalinfo__gender">
+              <p class="finaluserform__personalinfo__gender__txt">Género*</p>
+              <input class="finaluserform__personalinfo__gender__input" type="radio" name="gender" required>
+              <label class="finaluserform__personalinfo__gender__options" for="masculino">Masculino</label>
+              <input class="finaluserform__personalinfo__gender__input" type="radio" name="gender" required>
+              <label class="finaluserform__personalinfo__gender__options" for="femenino">Femenino</label>
+              <input class="finaluserform__personalinfo__gender__input" type="radio" name="gender" required>
+              <label class="finaluserform__personalinfo__gender__options" for="nodice">Prefiero no decir</label>
+            </div>            
+            <textarea class="finaluserform__personalinfo__txtbox" placeholder="Cualidades personales"></textarea>
+            <div class="finaluserform__upload">
+                <div class="finaluserform__upload__border">
+                    <div class="finaluserform__upload__content">  
+                        <img class="finaluserform__upload__img" src="./images/iconoFolder.png">
+                    <div class="finaluserform__upload__txt">
+                        <p>Subir foto de perfil(JPG o PNG Maximo 3MB)</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+      
+      </form>
+      <div class="button-container">
+        <button type="button" id="nextBtn" class="finaluserform__nextbutton">SIGUIENTE</button>
+      </div> 
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+      <script src="./controlers/formNextButtonFunctions.js"></script>
+      <section id="PopUp"></section>
+  </section>
+<!-- Formacion Academica -->
+  <section id="form2" class="finaluserform__personalinfo__main__section">
+        <div class="finaluserform__textbox__title">
+			Formacion Academica
+		</div>
+		<form id="formContainer-Academic" class="finaluserform__personalinfo__form">
+			<!-- Centro educativo -->
+			<p class="finaluserform__txt">Centro Educativo</p>
+			<input id="input-academicForm"class="finaluserform__personalinfo__input__l" placeholder="Universidad Escuela Libre de Derecho">
+			<!-- Area profesional -->
+      <script type="module" src="./controlers/dropdownValues.js"></script>
+			<p class="finaluserform__txt">Área profesional</p>
+			<select	id="areas-dropdown" class="finaluserform__personalinfo__input__l">
+				<option value="" disabled selected>-</option>
+			</select>
+      
+			<p class="finaluserform__txt">Nivel de Estudios</p>
+			<p class="finaluserform__txt">Estado</p>
+			<select class="finaluserform__personalinfo__select__l">
+				            <option value="">------</option>
+                    <option value="bachillerato">Bachillerato</option>
+                    <option value="tecnico">Técnico</option>
+                    <option value="licenciatura">Licenciatura</option>
+                    <option value="maestria">Maestría</option>
+			</select>
+			<select class="finaluserform__personalinfo__select__xs"  disabled>
+        <option value="">------</option>
+				<option value="" >Concluido</option>
+        <option value="" >No concluido</option>
+			</select>
+			<div class="finaluserform__txt__position">
+      <!-- Desde Dropdown -->
+			<p class="finaluserform__txt">Desde</p>
+			</div>
+			<select class="finaluserform__personalinfo__select__l" id="monthFrom__select">
+				<option value="" disabled selected>-</option>
+			</select>
+			<select class="finaluserform__personalinfo__select__xs"  id="yearFrom__select">
+				<option value="" disabled selected>2018</option>
+			</select>
+      <!-- Hasta Dropdown -->
+			<div class="finaluserform__txt__position">
+			<p class="finaluserform__txt">Hasta</p>
+			</div>
+			<select class="finaluserform__personalinfo__select__l" id="monthTo__select">
+				<option value="" disabled selected>-</option>
+			</select>
+			<select class="finaluserform__personalinfo__select__xs"  id="yearTo__select">
+				<option value="" disabled selected>2022</option>
+			</select>
+			     
+		</form>
+    <div class="button-container">
+      <button id="saveBtn-Academic" type="button" class="finaluserform__nextbutton">GUARDAR</button>
+      <button id="saveBtn-Academic--add" type="button" class="finaluserform__save-button">GUARDAR Y AGREGAR OTRO</button>
+    </div> 
+    <script src="./controlers/formSaveButtonFunctions.js"></script>
+    <script src="./controlers/formSaveAddButton.js"></script>
+  </section>
+<!-- Experiencia Laboral -->
+  <section id="form3" class="finaluserform__personalinfo__main__section">
+	<div class="finaluserform__textbox__title">
+		Experiencia Laboral
+	</div>
+	<form class="finaluserform__personalinfo__form">
+		<!-- Nombre de la empresa -->
+		<p class="finaluserform__txt">Nombre de la empresa</p>
+		<input class="finaluserform__personalinfo__input__l" placeholder="Bufete KPMG" required>
+		<!-- Cargo -->
+		<p class="finaluserform__txt">Cargo</p>
+		<input	class="finaluserform__personalinfo__input__l" placeholder="Abogado Senior en Propiedad Intelectual"></input>
+		</select>
+		
+		<!-- Funciones y logros del cargo -->
+		<p class="finaluserform__txt">Funciones y logros del cargo</p>
+		<textarea class="finaluserform__personalinfo__txtbox" placeholder="Descripción del cargo"></textarea>
+		<div class="finaluserform__txt__position">
+		<p class="finaluserform__txt">Desde</p>
+		</div>
+		<select class="finaluserform__personalinfo__select__l"  id="job-monthFrom__select">
+			<option value="" disabled selected>-</option>
+		</select>
+		<select class="finaluserform__personalinfo__select__xs"  id="job-yearFrom__select">
+			<option value="" disabled selected>-</option>
+		</select>
+		<div class="finaluserform__txt__position">
+		<p class="finaluserform__txt">Hasta</p>
+		</div>
+		<select class="finaluserform__personalinfo__select__l"  id="job-monthTo__select">
+			<option value="" disabled selected>-</option>
+		</select>
+		<select class="finaluserform__personalinfo__select__xs"  id="job-yearTo__select">
+			<option value="" disabled selected>2022</option>
+		</select>
+	</form>
+  <div class="button-container">
+    <button id="saveBtn-Exp" type="button" class="finaluserform__nextbutton">GUARDAR</button>
+    <button class="finaluserform__save-button">GUARDAR Y AGREGAR OTRO</button>
+  </div>
+</section>
+<!-- Guardar Perfil -->
+<section>
+	<div id="save-profile" class="finaluserform__button-render">
+		<button class="finaluserform__save-profile-button">Guardar perfil</button>
+	</div>
+</section>
+
+</main>
+
+
+<!-- ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ -->
+<!-- AQUÍ TERMINA EL CÓDIGO ESPECÍFICO DE ESTA PÁGINA -->
+<!-- <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> -->
+
+
+
+  <!-- NO MODIFICAR LO DE ABAJO • NO MODIFICAR LO DE ABAJO •
+  CÓDIGO SECCIÓN DEL FOOTER Y SU MENÚ
+↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ -->
+<!-- ESTE ES EL FOOTER -->
+<footer>
+  <div class="footer-content">
+    <div class="QuantumTechLogo">
+      <p id="disclaimer">Página desarrollada por <a href="./LandingPageQuantumTech.html"><img src="./images/Logo Blanco Quantum.png" alt="Logo QuantumTech"></a></p>
+    </div>
+    <div class="menuFooter">
+      <ul>
+        <li><a href="./jobs.html">Bolsa de Trabajo</a></li>
+        <li><a href="./Purpose.html">Nuestro Propósito</a></li>
+        <li><a href="./Contact.html">Contáctenos</a></li>
+        <!-- <li><a href="./adminProfile.html">Mi Perfil</a></li>
+        <li><a href="./landingPageMiTrabajo.html">Cerrar Sesión</a></li> -->
+      </ul>
+    </div>
+  </div>
+<!--  CÓDIGO SECCIÓN DEL FOOTER Y SU MENÚ
+      NO MODIFICAR LO DE ARRIBA • NO MODIFICAR LO DE ARRIBA •
+↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ -->
+</footer>
+
+
+<!-- <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> -->
+<!-- AQUÍ VAN LOS SCRIPTS • AQUÍ VAN LOS SCRIPTS • AQUÍ VAN LOS SCRIPTS •  -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- AQUÍ VAN LOS SCRIPTS • AQUÍ VAN LOS SCRIPTS • AQUÍ VAN LOS SCRIPTS •  -->
+<!-- <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> -->
+
+</body>
+</html>

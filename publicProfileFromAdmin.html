@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>publicProfileAdmin</title>
+
+    <link rel="stylesheet" href="./styles/reset.css">
+	<link rel="stylesheet" href="./styles/publicProfileFromAdmin.css">
+    
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;500;800&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+    <!-- NO MODIFICAR LO DE ABAJO • NO MODIFICAR LO DE ABAJO •
+    CÓDIGO SECCIÓN DEL HEADER Y SU MENÚ
+  ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ -->
+  <!-- HEADER -->
+  
+  <header>
+    <div class="logo">
+        <a href="./LandingPageMiTrabajo.html">
+          <img src="./images/logoMiTrabajo.png" alt="MiTrabajo Logo">
+      </div>
+      <nav class="menu">
+          <ul>
+            <li><a id = jobs href="./jobs.html">Bolsa de Trabajo</a></li>
+            <li><a id = purpose href="./purpose.html">Nuestro Propósito</a></li>
+            <li><a id = contact href="./contact.html">Contáctenos</a></li>
+            <li><a id = profile href="./profile">Mi Perfil</a></li>
+            <li><a id = closeSession href="./landingPageMiTrabajo.html">Cerrar Sesión</a></li>
+          </ul>
+      </nav>
+  </header>
+
+<!--  CÓDIGO SECCIÓN DEL HEADER Y SU MENÚ
+    NO MODIFICAR LO DE ARRIBA • NO MODIFICAR LO DE ARRIBA •
+↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ -->
+
+
+<!-- NO MODIFICAR LO DE ABAJO • NO MODIFICAR LO DE ABAJO •
+↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ -->
+<!-- MENÚ SECUNDARIO • MENÚ SECUNDARIO • MENÚ SECUNDARIO • MENÚ SECUNDARIO • MENÚ SECUNDARIO •  -->
+
+<!--Nav bar secundario (cuando se esta logueado)-->
+<nav class="secondaryNav">
+    <ul class=".secondaryNav__list">
+        <li><a id = collaborators href="./adminProfile.html" class="currentPage">Colaboradores</a></li>
+        <li><a id = jobPositions href="./jobPositionsAdmin.html">Puestos de Trabajo</a></li>
+        <li><a id = invitations href="./adminInvitations.html">Invitaciones</a></li>
+        <li><a id = searchCandidates href="./adminSearchCandidates.html">Búsqueda de Candidatos</a></li>
+        <li><a id = notifications href="./adminNotifications.html">Notificaciones</a></li>
+    </ul>
+</nav>
+
+
+
+<!-- AQUÍ COMIENZA EL CÓDIGO ESPECÍFICO DE ESTA PÁGINA -->
+<!-- ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ -->
+
+
+
+
+<!-- Informacion personal -->
+<section class="main">
+    <div class="personal-information-title">Información personal</div>
+    <div class="public-profile-picture"><img class="id-img" src="./images/portrait5.png" height="200px">
+    <div class="public-profile-container">
+      <p class="public-profile-name">John Doe Smith</p>
+      <p class="public-profile-email">john.doe.smith@gmail.com</p>
+      <p class="public-profile-phone">(506) 8765-5432</p>
+      <p class="public-profile-address">San Jose, San Pedro, Los Yoses</p>
+      <p class="public-profile-address">Costa Rica</p>
+      <p class="public-profile-address">Masculino</p>
+    </div>
+  </div>
+  <div class="textbox">
+    <p>Soy un desarrollador de software apasionado, con sólida formación en informática y habilidad para resolver problemas complejos. <br><br>Mi enfoque meticuloso y atención al detalle resultan en soluciones de software de alta calidad. <br><br>Poseo una mentalidad analítica y creativa que impulsa la innovación en desafíos tecnológicos. <br><br>Colaboro eficazmente en equipos multidisciplinarios y me comprometo con el aprendizaje continuo, manteniéndome actualizado en las últimas tendencias del desarrollo de software. <br><br>Mi pasión por la programación y ética de trabajo diligente me hacen un candidato ideal para el puesto de Desarrollador de Software.</p>
+  </div>
+  <div>
+    <h1 class="public-profile-academic__title">Formación Académica</h1>
+    <div class="profile-final-user-line"></div>
+
+    <!-- Info de Titulos Academicos -->
+    <div>
+        <p class="public-profile-academic__degree">Universidad Fidélitas • Ingeniería en Sistemas</p>
+        <p class="public-profile-academic__type">Licenciatura • Concluido</p>
+        <div class="public-profile-academic__since__container">
+          <p class="public-profile-academic__since">Desde</p>
+          <p class="public-profile-academic__date">Enero 2018</p>
+          <div class="vertical-line"></div>
+          <p class="public-profile-academic__since">Hasta</p>
+          <p class="public-profile-academic__date">Diciembre 2022</p></p>
+      </div>
+    </div>
+
+    <!-- Info agregada por medio de javascript al utilizar una funcion -->
+    <div>
+      <p class="public-profile-academic__degree">AWS Cloud Certification • AWS Developer Associate</p>
+      <p class="public-profile-academic__type">Curso Libre • Concluido</p>
+      <div class="public-profile-academic__since__container">
+        <p class="public-profile-academic__since">Desde</p>
+        <p class="public-profile-academic__date">Febrero 2023</p>
+        <div class="vertical-line"></div>
+        <p class="public-profile-academic__since">Hasta</p>
+        <p class="public-profile-academic__date">Junio 2023</p></p>
+    </div>
+  </div>
+  </div>
+
+  <div>
+    <h1 class="public-profile-academic__title">Experiencia Laboral</h1>
+    <div class="profile-final-user-line"></div>
+
+    <!-- Info de Titulos Academicos -->
+    <div>
+        <p class="public-profile-experience__title">IBM</p>
+        <p class="public-profile-experience__type">Technical Account Manager</p>
+        <div class="public-profile-academic__since__container">
+          <p class="public-profile-academic__since">Desde</p>
+          <p class="public-profile-academic__date">Enero 2017</p>
+          <div class="vertical-line"></div>
+          <p class="public-profile-academic__since">Hasta</p>
+          <p class="public-profile-academic__date">Present -</p></p>
+    </div>
+        <h1 class="public-profile-academic__since">Funciones y logros del cargo</h1>
+        <div class="public-profile-experience__txt">
+            <p>
+              
+              Establecer relaciones sólidas con los clientes.<br><br>
+
+              Brindar asesoramiento técnico y soporte.<br><br>
+              
+              Resolver problemas relacionados con los productos y servicios de IBM.<br><br> 
+              
+              Coordinar proyectos de implementación y actualización.<br><br>
+              
+              Mantenerse actualizado en tecnologías y tendencias.<br><br>
+              
+              Actuar como consultor estratégico para los clientes.
+            </p>
+          </div>
+    </div>
+
+    <!-- Info agregada por medio de javascript al utilizar una funcion -->
+    <div>
+      <p class="public-profile-experience__title">AWS</p>
+      <p class="public-profile-experience__type">Technical Customer Service Specialist</p>
+      <div class="public-profile-academic__since__container">
+        <p class="public-profile-academic__since">Desde</p>
+        <p class="public-profile-academic__date">Febrero 2015</p>
+        <div class="vertical-line"></div>
+        <p class="public-profile-academic__since">Hasta</p>
+        <p class="public-profile-academic__date">Diciembre 2016</p></p>
+  </div>
+      <h1 class="public-profile-academic__since">Funciones y logros del cargo</h1>
+      <div class="public-profile-experience__txt">
+          <p>
+            
+            Proporcionar soporte técnico a los clientes de AWS.<br><br>
+
+            Resolver problemas y preguntas relacionadas con los servicios y soluciones de AWS.<br><br>
+            
+            Guiar a los clientes en la implementación, configuración y solución de problemas de sus aplicaciones en la nube.<br><br>
+            
+            Trabajar estrechamente con los equipos de ingeniería para identificar y resolver problemas técnicos complejos.<br><br>
+            
+            Proporcionar orientación y asesoramiento técnico a los clientes para optimizar el rendimiento y la seguridad de sus aplicaciones en AWS.<br><br>
+            
+            Mantener un alto nivel de satisfacción del cliente a través de una comunicación efectiva y una resolución rápida de problemas.<br><br>
+          </p>
+        </div>
+  </div>
+  </div>
+  <div class="btn-container">
+    <button class="finaluserform__invite-btn">INVITAR</button>
+  </div>
+</section>
+
+
+</main>
+
+
+<!-- ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ -->
+<!-- AQUÍ TERMINA EL CÓDIGO ESPECÍFICO DE ESTA PÁGINA -->
+<!-- <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> -->
+
+
+
+  <!-- NO MODIFICAR LO DE ABAJO • NO MODIFICAR LO DE ABAJO •
+  CÓDIGO SECCIÓN DEL FOOTER Y SU MENÚ
+↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ -->
+<!-- ESTE ES EL FOOTER -->
+<footer>
+  <div class="footer-content">
+    <div class="QuantumTechLogo">
+      <p id="disclaimer">Página desarrollada por <a href="./LandingPageQuantumTech.html"><img src="./images/Logo Blanco Quantum.png" alt="Logo QuantumTech"></a></p>
+    </div>
+    <div class="menuFooter">
+      <ul>
+        <li><a href="./jobs.html">Bolsa de Trabajo</a></li>
+        <li><a href="./Purpose.html">Nuestro Propósito</a></li>
+        <li><a href="./Contact.html">Contáctenos</a></li>
+        <li><a href="./adminProfile.html">Mi Perfil</a></li>
+        <li><a href="./landingPageMiTrabajo.html">Cerrar Sesión</a></li>
+      </ul>
+    </div>
+  </div>
+<!--  CÓDIGO SECCIÓN DEL FOOTER Y SU MENÚ
+      NO MODIFICAR LO DE ARRIBA • NO MODIFICAR LO DE ARRIBA •
+↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ -->
+</footer>
+
+
+<!-- <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> -->
+<!-- AQUÍ VAN LOS SCRIPTS • AQUÍ VAN LOS SCRIPTS • AQUÍ VAN LOS SCRIPTS •  -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="./controlers/forgotPassword.js"></script>
+<script src="./controlers/logIn.js"></script>
+<section id="PopUp"></section>
+<!-- AQUÍ VAN LOS SCRIPTS • AQUÍ VAN LOS SCRIPTS • AQUÍ VAN LOS SCRIPTS •  -->
+<!-- <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> -->
+
+</body>
+</html>

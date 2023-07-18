@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>popUpMessageSended</title>
+
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" type="text/css" href="./styles/PopUpMessageSended.css">
+
+</head>
+<body>
+    
+    <div class="popup">
+        <p class="message">¡Mensaje enviado exitosamente!</p>
+        <img src="./images/MensajeEnviado.png" alt="magnifyingGlassCheck" class="image">
+        <button class="button">OK</button>
+    </div>
+
+    <script>
+        document.querySelector('.button').addEventListener('click', function() {
+          $('#PopUp').empty();
+        });
+    </script>
+</body>
+</html>

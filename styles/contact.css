@@ -1,0 +1,315 @@
+/*  NO MODIFICAR LO DE ABAJO • NO MODIFICAR LO DE ABAJO •
+    CÓDIGO SECCIÓN DEL HEADER Y SU MENÚ
+↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  */
+
+/* IMPORTAR TIPOGRAFIA */
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;500;800&display=swap');
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color: #ffffff;
+  height: 100px;
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5% !important;
+}
+
+header::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background-color: #e6e7e8;
+}
+
+.logo img {
+    height: 60px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li:first-child {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+nav ul li:not(:last-child) {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #012c3d;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+/* Cambiar nombre del ID para cambiar color en el menú del Header */
+/* jobs, purpose, contact, profile, closeSession  */
+
+#contact{
+  color: #f8444e;
+}
+
+
+
+ /* CÓDIGO SECCIÓN DEL HEADER Y SU MENÚ
+    NO MODIFICAR LO DE ARRIBA • NO MODIFICAR LO DE ARRIBA •
+↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ */
+
+
+
+
+
+/* <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> */
+/* <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> */
+
+/* MAIN, LEFT AND RIGHT */
+.MainSectionContainer{
+  /* background-color: aqua; */
+  height: 740px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+} 
+
+/* LEFT SIDE OF THE PAGE */
+
+.LeftSidePage{
+  /* background-color: red; */
+  height: 450px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px;
+ 
+}
+.MTSSImg{
+  /* background-color: yellow; */
+  width: 110px;
+  margin-bottom: 30px;
+}
+.GuyOnThephoneImg{
+  width: 500px;
+}
+.IconosMailPhone{
+  /* background-color: burlywood; */
+  margin-top: 25px;
+  margin-bottom: 15px;
+  width: 424px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.containerImgAndText{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Manrope', sans-serif;
+  font-weight: lighter;
+  font-size: 15px;
+  color: #012c3d;
+}
+
+.IconosFaceInstaTwitter{
+  /* background-color: aliceblue; */
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 350px;
+  color: #012c3d;
+}
+
+/* RIGHT SIDE OF THE PAGE */
+
+.RightSidePage{
+  /* background-color: purple; */
+  margin-top: 56px;
+  width: 50%;
+  display: flex;
+  justify-content: center;  
+} 
+
+.formContainer{
+  /* background-color: aquamarine; */
+  margin-right: 40%;
+  margin-top: 20px;
+}
+
+.formContactenos{
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  width: 400px;
+  height: 420px;
+}
+
+#name{
+  border-radius: 5px;
+  border-color: #c9c9c9;
+  margin-top: 40px;
+  width: 300px;
+  height: 40px;
+  position: absolute;
+  background: #f7f8f4;
+  color: #4d4d4d;
+  border-radius: 5px;
+  font-family: 'Manrope', sans-serif;
+  font-size: 12pt;
+}
+
+#email{
+  border-radius: 5px;
+  border-color: #c9c9c9;
+  margin-top: 100px;
+  width: 300px;
+  height: 40px;
+  position: absolute;
+  background: #f7f8f4;
+  color: #4d4d4d;
+  border-radius: 5px;
+  font-family: 'Manrope', sans-serif;
+  font-size: 12pt;
+}
+
+#asunto{
+  border-radius: 5px;
+  border-color: #c9c9c9;
+  margin-top: 160px;
+  width: 300px;
+  height: 40px;
+  position: absolute;
+  background: #f7f8f4;
+  color: #4d4d4d;
+  border-radius: 5px;
+  font-family: 'Manrope', sans-serif;
+  font-size: 12pt;
+}
+
+#mensaje{
+  background-color: #a3a3a3;
+  width: 300px;
+  height: 100px;
+  border-radius: 7px;
+  margin-top: 220px;
+  background-color: #f6f6f6;
+  border-color: #c9c9c9;
+  border-width: 2px;
+  font-family: 'Manrope', sans-serif;
+  font-size: 12pt;
+  resize: none;
+}
+
+#enviar{
+width:100px;
+height: 40px;
+border-radius: 7px;
+border-style: none;
+font-size: 24px; 
+background-color: lightseagreen;
+color: white;
+margin-top: 30px;
+}
+
+/* <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> */
+/* <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> */
+
+
+
+
+
+/*  NO MODIFICAR LO DE ABAJO • NO MODIFICAR LO DE ABAJO •
+    CÓDIGO SECCIÓN DEL FOOTER Y SU MENÚ
+↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  */
+
+footer {
+  height: 120px;
+  background-color: #4d4d4d;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0 5%;
+}
+
+.QuantumTechLogo img {
+  height: 25px;
+  margin-left: 5px;
+  line-height: 10px;
+}
+
+.QuantumTechLogo p {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  color: #ffffff;
+  align-items: center;
+  margin-left: 50px;
+}
+
+.menuFooter {
+  display: flex;
+  align-items: center;
+}
+
+.menuFooter ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.menuFooter ul li {
+  margin-left: 20px;
+}
+
+.menuFooter ul li:first-child {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.menuFooter ul li:not(:last-child) {
+  margin-right: 20px;
+}
+
+.menuFooter ul li a {
+  color: #ffffff;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+/*  CÓDIGO SECCIÓN DEL FOOTER Y SU MENÚ
+    NO MODIFICAR LO DE ARRIBA • NO MODIFICAR LO DE ARRIBA •
+↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ */

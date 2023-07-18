@@ -1,0 +1,427 @@
+/* NO MODIFICAR LO DE ABAJO • NO MODIFICAR LO DE ABAJO • */
+/* CÓDIGO SECCIÓN DEL HEADER Y SU MENÚ */
+/* ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  */
+
+/* IMPORTAR TIPOGRAFIA */
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;500;800&display=swap');
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color: #ffffff;
+  height: 100px;
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5% !important;
+}
+
+header::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background-color: #e6e7e8;
+}
+
+.logo img {
+    height: 60px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li:first-child {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+nav ul li:not(:last-child) {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #012c3d;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+/* Cambiar nombre del ID para cambiar color en el menú del Header */
+/* jobs, purpose, contact, profile, closeSession  */
+
+#profile{
+  color: #f8444e;
+}
+
+
+
+/* CÓDIGO SECCIÓN DEL HEADER Y SU MENÚ */
+/* NO MODIFICAR LO DE ARRIBA • NO MODIFICAR LO DE ARRIBA • */
+/* ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ */
+
+/* NO MODIFICAR LO DE ABAJO • NO MODIFICAR LO DE ABAJO • */
+/* CÓDIGO SECCIÓN DEL MENÚ SECUNDARIO */
+/* ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  */
+
+/*Nav bar secundario (cuando se esta logueado)*/
+
+.secondaryNav {
+  position: sticky;
+  top: 100px; /* Altura del menú principal */
+  z-index: 998;
+  background-color: #012c3d;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  padding: 0 5% !important;
+}
+
+.secondaryNav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.secondaryNav ul li:not(:last-child) {
+  margin-right: 25px; 
+}
+
+.secondaryNav ul li a {
+  color: #ffffff;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+/* Cambiar nombre del ID para cambiar color en el menú SECUNDARIO */
+/* collaborators, jobPositions, invitations, searchCandidates, notifications  */
+
+/* #collaborators{
+  color: #09b49c;
+} */
+
+/* CÓDIGO SECCIÓN DEL MENÚ SECUNDARIO */
+/* NO MODIFICAR LO DE ARRIBA • NO MODIFICAR LO DE ARRIBA • */
+/* ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ */
+
+/* <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> */
+/* <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> */
+
+
+
+#nav_profile {
+  height: 50px;
+  background-color: #012c3d;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 35px;
+}
+
+.profile_opc {
+  color: #ffffff;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 500;
+  margin: 0 2.5px;
+}
+
+.admin_profile_textbox {
+  width: 145px;
+  height: 30px;
+  background-color: #f6f6f6;
+  color: #797979;
+  font-family: 'Manrope medium', sans-serif;
+  font-size: 12pt;
+  border-radius: 5px;
+  border-style: none;
+  border: #c9c9c9 solid 1px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  float: left;
+}
+
+.admin_profile_text {
+  margin-left: 15px;
+}
+
+#general_profile_admin {
+  width: 620px;
+  height: 650px;
+  margin: 0 auto;
+}
+
+#admin_name {
+  margin-top: 50px;
+  margin-bottom: 5px;
+  font-family: 'Manrope medium', sans-serif;
+  font-size: 23pt;
+  color: #012c3d;
+}
+
+#admin_position {
+  margin-bottom: 5px;
+  font-family: 'Manrope medium', sans-serif;
+  font-size: 23pt;
+  color: rgb(255, 59, 59);
+  margin-bottom: 45px;
+}
+
+#admin_email {
+  margin-bottom: 35px;
+  font-family: 'Manrope medium', sans-serif;
+  font-size: 8pt;
+  color: #4d4d4d;
+}
+
+#admin_photo {
+  float: left;
+  border: 2px #abaaaa solid;
+  border-radius: 3px;
+}
+
+#name_company {
+  font-family: 'Manrope medium', sans-serif;
+  font-size: 23pt;
+  float: right;
+  width: 475px;
+  margin-right: 18px;
+  margin-bottom: 20px;
+  color: #012c3d;
+}
+
+#location_admin {
+  font-family: 'Manrope medium', sans-serif;
+  font-size: 13pt;
+  float: right;
+  width: 375px;
+  margin-right: 116px;
+  margin-bottom: 4px;
+  color: #012c3d;
+}
+
+
+#province_admin {
+  margin-left: 25px;
+}
+
+#canton_admin {
+  margin-left: 25px;
+}
+
+#district_admin {
+  margin-left: 25px;
+}
+
+#email_admin {
+  width: 210px;
+  float: left;
+  font-size: 10pt;
+}
+
+#email_admin_text{
+  margin-left: 5px;
+}
+
+#incon_mail{
+  margin-left: 5px;
+}
+
+#phone_admin {
+  margin-left: 30px;
+  float: left;
+}
+
+#phone_admin_text{
+  margin-left: 20px;
+}
+
+#incon_phone{
+  margin-left: 5px;
+}
+
+#password_admin {
+  cursor: pointer;
+  height: 31.2px;
+  width: 200px;
+  float: left;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  color: #ffffff;
+  background-color: #09b49c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Manrope medium', sans-serif;
+}
+
+#password_admin_text{
+  margin-left: 5px;
+}
+
+#incon_password{
+  margin-left: 5px;
+}
+
+#incon_password2{
+  margin-left: 5px;
+  margin-top: 1.5px;
+}
+
+#description_admin {
+  float: inline-end;
+  width: 617.5px;
+  height: 150px;
+  color: #797979;
+  font-family: 'Manrope medium', sans-serif;
+  font-size: 10pt;
+  border: #c9c9c9 solid 1.5px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+
+.input_profile_photo_admin {
+  display: none;
+  cursor: pointer;
+}
+
+#label_profle_photo_admin {
+  cursor: pointer;
+}
+
+#custom_profile_photo_admin {
+  width: 600.5px;
+  height: 65px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: #c9c9c9 dashed;
+  border-width: 3px 3px;
+  font-family: 'Manrope medium', sans-serif;
+  font-size: 13px;
+  color: #c9c9c9;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  padding-bottom: 2.5px;
+}
+
+#custom_profile_photo_back {
+  width: 615.5px;
+  height: 80px;
+  background-color: #f6f6f6;
+  border-radius: 10px;
+  border-style: none;
+  border: #c9c9c9 solid 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#iconoFolder{
+  height: 30px;
+  margin-top: 2%;
+  margin-bottom: 1%;
+}
+
+/* <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> */
+/* <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> */
+
+
+
+
+
+/*  NO MODIFICAR LO DE ABAJO • NO MODIFICAR LO DE ABAJO •
+    CÓDIGO SECCIÓN DEL FOOTER Y SU MENÚ
+↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  */
+
+footer {
+  height: 120px;
+  background-color: #4d4d4d;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0 5%;
+}
+
+.QuantumTechLogo img {
+  height: 25px;
+  margin-left: 5px;
+  line-height: 10px;
+}
+
+.QuantumTechLogo p {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  color: #ffffff;
+  align-items: center;
+  margin-left: 50px;
+}
+
+.menuFooter {
+  display: flex;
+  align-items: center;
+}
+
+.menuFooter ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.menuFooter ul li {
+  margin-left: 20px;
+}
+
+.menuFooter ul li:first-child {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.menuFooter ul li:not(:last-child) {
+  margin-right: 20px;
+}
+
+.menuFooter ul li a {
+  color: #ffffff;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+/*  CÓDIGO SECCIÓN DEL FOOTER Y SU MENÚ
+    NO MODIFICAR LO DE ARRIBA • NO MODIFICAR LO DE ARRIBA •
+↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ */

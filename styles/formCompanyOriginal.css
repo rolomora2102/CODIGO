@@ -1,0 +1,409 @@
+/* IMPORTAR TIPOGRAFIA */
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;500;800&display=swap');
+
+
+/* SECCIÓN DEL HEADER Y SU MENÚ */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ffffff;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+
+header {
+  position: relative;
+}
+
+header::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background-color: #e6e7e8;
+}
+
+.logo img {
+    height: 60px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li:first-child {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+nav ul li:not(:last-child) {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #012c3d;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+
+/* <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> */
+
+/* AQUÍ VA TU CÓDIGO */
+
+.company_form_text{
+    position: relative;
+    color: #ffffff;
+    background-color: #012c3d;
+    width: 750px;
+    height: 120px;
+    margin: 0 auto;
+    margin-top: 50px;
+    font-size: 44pt;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Manrope medium', sans-serif;
+    border-radius:20px;
+}
+
+#form_info_company{
+    width: 1215px;
+    height: 1200px;
+    padding-top: 50px;
+    padding-left: 50px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+#label_name_company{
+    position: relative;
+    color: #012c3d; 
+    font-family: 'Manrope medium', sans-serif;
+    font-size: 28pt;
+    margin-right: 250px;
+    padding-left: 20px;
+}
+
+.input_form_info_company{
+    height: 80px;
+    background-color: #f6f6f6;
+    border-radius: 10px;
+    border-style: none;
+    border: #c9c9c9 solid 2px;
+    font-family: 'Manrope', sans-serif;
+    font-size: 26px;
+    color: #797979;
+    padding-left: 20px;
+}
+
+#input_name_company{
+    width: 1140px;
+    margin-top: 8px;
+    margin-bottom: 50px;
+}
+
+#label_locate_company{
+  position: relative;
+  color: #012c3d; 
+  font-family: 'Manrope medium', sans-serif;
+  font-size: 28pt;
+  margin-right: 665px;
+  padding-left: 20px;
+}
+
+#label_phone_Company{
+  position: relative;
+  color: #012c3d; 
+  font-family: 'Manrope medium', sans-serif;
+  font-size: 28pt;
+  margin-right: 10px;
+  padding-left: 25px;
+}
+
+#input_province{
+    width: 250px;
+    margin-top: 8px;
+    margin-bottom: 50px;
+    margin-right: 25px;
+}
+
+#input_canton{
+  width: 250px;
+  margin-top: 8px;
+  margin-bottom: 50px;
+  margin-right: 25px;
+}
+
+#input_district{
+  width: 250px;
+  margin-top: 8px;
+  margin-bottom: 50px;
+  margin-right: 78px;
+}
+
+#input_phone_company{
+  width: 250px;
+  margin-top: 8px;
+  margin-bottom: 50px;
+}
+
+#label_email_Company{
+  position: relative;
+  color: #012c3d; 
+  font-family: 'Manrope medium', sans-serif;
+  font-size: 24pt;
+  margin-right: 140px;
+  padding-left: 20px;
+}
+
+#label_password_Company{
+  position: relative;
+  color: #012c3d; 
+  font-family: 'Manrope medium', sans-serif;
+  font-size: 24pt;
+  margin-right: 65px;
+  padding-left: 20px
+}
+
+#label_password_check_Company{
+  position: relative;
+  color: #012c3d; 
+  font-family: 'Manrope medium', sans-serif;
+  font-size: 24pt;
+  padding-left: 20px
+}
+
+#input_email_company{
+  width: 385px;
+  margin-top: 8px;
+  margin-bottom: 50px;
+}
+
+#input_pasword_company{
+  width: 294px;
+  margin-top: 8px;
+  margin-bottom: 50px;
+  margin-left: 55px;
+}
+
+#input_pasword_check_company{
+  width: 294px;
+  margin-top: 8px;
+  margin-bottom: 50px;
+  margin-left: 50px;
+}
+
+#input_description_company{
+  width: 1140px;
+  height: 280px;
+  margin-top: 8px;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input_logo_company{
+  display: none;
+  cursor: pointer;
+}
+
+#label_logo_company{
+  cursor: pointer;
+}
+
+#custom_logo_company{
+  width: 1131px;
+  height: 130px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: #c9c9c9 dashed;
+  border-width: 3px 3px;
+  font-family: 'Manrope medium', sans-serif;
+  font-size: 26px;
+  color: #c9c9c9;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  padding-bottom: 5px;
+}
+
+#custom_logo_back{
+  width: 1161px;
+  height: 160px;
+  background-color: #f6f6f6;
+  border-radius: 10px;
+  border-style: none;
+  border: #c9c9c9 solid 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.admin_form_text{
+  position: relative;
+  color: #ffffff;
+  background-color: #012c3d;
+  width: 1100px;
+  height: 120px;
+  margin-top: 10px;
+  margin-left: 30px;
+  margin-bottom: 50px;
+  font-size: 44pt;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Manrope medium', sans-serif;
+  border-radius:20px;
+}
+
+#form_info_admin{
+  width: 1209px;
+  height: 610px;
+  padding-top: 30px;
+  padding-left: 50px;
+  margin: 0 auto;
+  margin-top: 40px;
+  border-radius: 10px;
+  border-style: none;
+  border: #c9c9c9 solid 3px;
+}
+
+#input_name_admin{
+  width: 450px;
+  margin-top: 8px;
+  margin-bottom: 50px;
+  margin-left: 68px;
+}
+
+#input_lastname_admin{
+  width: 450px;
+  margin-top: 8px;
+  margin-bottom: 50px;
+  margin-left: 68px;
+}
+
+#input_id_admin{
+  width: 450px;
+  margin-top: 8px;
+  margin-bottom: 50px;
+  margin-left: 68px;
+}
+
+#input_phone_admin{
+  width: 450px;
+  margin-top: 8px;
+  margin-bottom: 50px;
+  margin-left: 68px;
+}
+
+#input_email_admin{
+  width: 997px;
+  margin-top: 8px;
+  margin-left: 68px;
+}
+
+#btn_forms_admin_company{
+  position: relative;
+  color: #ffffff;
+  background-color: #09b49c;
+  width: 500px;
+  height: 90px;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 44pt;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Manrope medium', sans-serif;
+  border-radius:20px;
+}
+/* AQUÍ VA TU CÓDIGO */
+
+/* <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> */
+
+
+
+
+/* ESTE ES EL FOOTER */
+
+footer {
+  height: 120px;
+  background-color: #4d4d4d;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0 5%;
+}
+
+.QuantumTechLogo img {
+  height: 25px;
+  margin-left: 5px;
+  line-height: 10px;
+}
+
+.QuantumTechLogo p {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  color: #ffffff;
+  align-items: center;
+  margin-left: 50px;
+}
+
+.menuFooter {
+  display: flex;
+  align-items: center;
+}
+
+.menuFooter ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.menuFooter ul li {
+  margin-left: 20px;
+}
+
+.menuFooter ul li:first-child {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.menuFooter ul li:not(:last-child) {
+  margin-right: 20px;
+}
+
+.menuFooter ul li a {
+  color: #ffffff;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+}

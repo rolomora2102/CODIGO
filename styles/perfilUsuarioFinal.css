@@ -1,0 +1,432 @@
+/* Formulario Usuario Final */
+
+.second-header {
+    background-color: #012c3d;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; 
+    height: 100px;
+    padding-right: 50px;
+}
+
+.second-header nav ul {
+    display: flex;
+    justify-content: flex-end; 
+    margin: 0;
+    padding: 0;
+}
+
+.second-header nav ul li {
+    margin-left: 20px;
+}
+
+.second-header nav ul li a {
+    color: #ffffff;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+
+/* Start Page Job Description */
+
+.page {
+    width: 1400px;
+    height: 7500px;
+    margin: 0 auto;
+}
+
+
+.profile-final-user__main__section {
+    width: 1400px;
+    height: 300px;
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: flex;
+  }
+
+.profile-photo img {
+    border: 2px solid #c9c9c9;
+    width: 260px;
+    height: 260px;
+    margin-top: 35px;
+}
+  
+  .job-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+
+
+
+
+.profile-final-user-details-section {
+    width: 1100px;
+    height: 300px;
+    margin-top: 10px;
+}
+
+.profile-final-user-details-section-2 {
+    width: 1400px;
+    height: 300px;
+}
+
+.profile-final-user__email {
+    width: 400px;
+    height: 80px;
+    border: 2px solid #c9c9c9;
+    border-radius: 8px;
+    margin-right: 60px;
+    margin-bottom: 40px;
+    padding-left: 20px;
+}
+
+.profile-final-user__phone {
+    width: 250px;
+    height: 80px;
+    border: 2px solid #c9c9c9;
+    border-radius: 8px;
+    margin-right: 30px;
+    padding-left: 20px;
+}
+
+.profile-final-user__password {
+    width: 500px;
+    height: 80px;
+    border: 2px solid #c9c9c9;
+    border-radius: 8px;
+    margin-right: 30px;
+    padding-left: 20px;
+}
+
+.profile-final-user__id {
+    width: 420px;
+    height: 80px;
+    border: 2px solid #c9c9c9;
+    border-radius: 8px;
+    margin-right: 30px;
+    padding-left: 20px;
+
+}
+
+.profile-final-user__country {
+    width: 460px;
+    height: 80px;
+    border: 2px solid #c9c9c9;
+    border-radius: 8px;
+    margin-right: 30px;
+    padding-left: 20px;
+}
+
+.profile-final-user__gender {
+    width: 300px;
+    height: 80px;
+    border: 2px solid #c9c9c9;
+    border-radius: 8px;
+    margin-right: 30px;
+    padding-left: 20px;
+}
+
+/* File upload */
+
+.profile-final-user__upload {
+    border: 2px solid #c9c9c9;
+    background-color: #f6f6f6;
+    width: 1400px;
+    height: 160px;
+    border-radius: 8px;
+    margin-top: 60px;
+}
+
+.profile-final-user__upload__border {
+    border: 3px solid #c9c9c9;
+    border-style: dashed;
+    background-color: #ffffff;
+    width: 1350px;
+    height: 140px;
+    margin: 0 auto;
+    margin-top: 6px;
+}
+
+.profile-final-user__upload__txt {
+    font-family: 'Manrope', sans-serif;
+    font-size: 15pt;
+    margin-top: 30px;
+    align-items: center;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.profile-final-user__upload__content {
+    width: 440px;
+    height: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+    align-items: center;
+}
+
+img.profile-final-user__upload__img {
+    height: 60px;
+    width: 60px;
+}
+
+.profile-final-user__upload__img {
+    margin-top: 30px;
+    align-items: center;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+
+
+.profile-final-user-txt-l {
+    color: #4d4d4d; 
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    font-size: 30pt;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    margin-left: 60px;
+}
+
+
+.profile-final-user-txt-s {
+    color: #012c3d; 
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    font-size: 18pt;
+    margin-left: 60px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+div textarea {
+    margin-top: 60px;
+    border: 3px solid #c9c9c9;
+    border-radius: 8px;
+    width: 1395px;
+    height: 280px;
+}
+
+
+
+
+
+/* Filtrar Datos */
+
+
+
+.profile-final-user__textbox__title{
+    color: #ffffff;
+    background-color: #012c3d;
+    width: 650px;
+    height: 120px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border-radius: 22px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Manrope', sans-serif;
+    font-size: 35pt;
+}
+
+.profile-final-user__select__m{
+    border: 2px solid #c9c9c9;
+    background-color: #f6f6f6;
+    width: 300px;
+    height: 80px;
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    justify-content: center;
+    text-align: left;
+    font-family: 'Manrope', sans-serif;
+    font-size: 15pt;
+    display: inline;
+    font-size: 18px;
+}
+
+
+/* Line */
+
+.profile-final-user-line {
+    height: 0px;
+    width: 1000px;
+    border: 2px solid #012c3d;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+
+
+
+
+
+
+
+/* Import styles from finalUserFormPersonal */
+
+/* Formulario Usuario Final */
+
+main {
+    flex: 1;
+  }
+  
+  .finaluserform__personalinfo__main__section {
+      border: 2px solid #c9c9c9;
+      width: 1400px;
+      height: 2800px;
+      margin: 0 auto;
+      margin-top: 400px;
+  }
+
+  .finaluserform__personalinfo__main__section-secondary {
+    border: 2px solid #c9c9c9;
+    width: 1400px;
+    height: 3000px;
+    margin-top: 60px;
+  }
+  
+  
+  .finaluserform__textbox__title{
+      color: #ffffff;
+      background-color: #012c3d;
+      width: 650px;
+      height: 120px;
+      margin: 0 auto;
+      margin-top: 60px;
+      border-radius: 22px;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      font-family: 'Manrope', sans-serif;
+      font-size: 35pt;
+  }
+  
+  .finaluserform__personalinfo__form {
+      width: 1200px;
+      height: 1700px;
+      padding-top: 50px;
+      padding-left: 50px;
+      margin: 0 auto;
+      margin-top: 10px;
+  }
+  
+
+  .finaluserform__personalinfo__input__l {
+      border: 2px solid #c9c9c9;
+      background-color: #f6f6f6;
+      width: 1120px;
+      height: 80px;
+      border-radius: 8px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      justify-content: center;
+      text-align: left;
+      font-family: 'Manrope', sans-serif;
+      font-size: 15pt;
+      padding-left: 20px;
+  }
+  
+  .finaluserform__txt {
+      color: #012c3d; 
+      font-family: 'Manrope', sans-serif;
+      font-size: 23pt;
+      display: inline;
+      margin-right: 300px;
+      padding-left: 20px;
+      margin-top: 30px;
+  }
+  
+  
+
+
+
+  
+ 
+
+  
+  .finaluserform__personalinfo__txtbox {
+      border: 2px solid #c9c9c9;
+      background-color: #ffffff;
+      width: 1130px;
+      height: 240px;
+      border-radius: 8px;
+      margin-top: 60px;
+      font-family: 'Manrope', sans-serif;
+      font-size: 15pt;
+      padding: 10px;
+      resize: vertical;
+  }
+  
+  
+  .finaluserform__nextbutton {
+      background-color: #09b49c;
+      color: #ffffff;
+      border-radius: 8px;
+      border: 0px;
+      display: inline;
+      margin-top: 60px;
+      margin-right: 40px;
+      width: 210px;
+      height: 50px;
+      font-family: 'Manrope', sans-serif;
+      font-size: 15pt;
+  }
+  
+  
+  /* Formacion Academica */
+  
+  .finaluserform__personalinfo__select__l{
+      border: 2px solid #c9c9c9;
+      background-color: #f6f6f6;
+      width: 420px;
+      height: 80px;
+      border-radius: 8px;
+      margin-top: 30px;
+      margin-right: 46px;
+      justify-content: center;
+      text-align: left;
+      font-family: 'Manrope', sans-serif;
+      font-size: 15pt;
+      display: inline;
+      padding-left: 20px;
+      font-size: 18px;
+  }
+  
+  .finaluserform__personalinfo__select__xs {
+      border: 2px solid #c9c9c9;
+      background-color: #f6f6f6;
+      width: 224px;
+      height: 80px;
+      border-radius: 8px;
+      margin-top: 30px;
+      margin-right: 80px;
+      margin-left: 80px;
+      justify-content: center;
+      text-align: left;
+      font-family: 'Manrope', sans-serif;
+      font-size: 15pt;
+      display: inline;
+      padding-left: 20px;
+  }
+  
+  
+  .finaluserform__txt__position {
+      margin-top: 60px;
+  }
+
+  
+  

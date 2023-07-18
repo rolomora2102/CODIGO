@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>managerProfile</title>
+
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/managerProfile.css">
+    
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;500;800&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+   <!-- NO MODIFICAR LO DE ABAJO • NO MODIFICAR LO DE ABAJO •
+    CÓDIGO SECCIÓN DEL HEADER Y SU MENÚ
+  ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ -->
+  <!-- HEADER -->
+  
+  <header>
+    <div class="logo">
+        <a href="./LandingPageMiTrabajo.html">
+          <img src="./images/logoMiTrabajo.png" alt="MiTrabajo Logo">
+      </div>
+      <nav class="menu">
+          <ul>
+            <li><a id = jobs href="./jobs.html">Bolsa de Trabajo</a></li>
+            <li><a id = purpose href="./purpose.html">Nuestro Propósito</a></li>
+            <li><a id = contact href="./contact.html">Contáctenos</a></li>
+            <li><a id = profile href="./managerProfile.html">Mi Perfil</a></li>
+            <li><a id = closeSession href="./landingPageMiTrabajo.html">Cerrar Sesión</a></li>
+          </ul>
+      </nav>
+  </header>
+
+<!--  CÓDIGO SECCIÓN DEL HEADER Y SU MENÚ
+    NO MODIFICAR LO DE ARRIBA • NO MODIFICAR LO DE ARRIBA •
+↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ -->
+
+
+<!-- NO MODIFICAR LO DE ABAJO • NO MODIFICAR LO DE ABAJO •
+↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ -->
+<!-- MENÚ SECUNDARIO • MENÚ SECUNDARIO • MENÚ SECUNDARIO • MENÚ SECUNDARIO • MENÚ SECUNDARIO •  -->
+
+<!--Nav bar secundario (cuando se esta logueado)-->
+<nav class="secondaryNav">
+    <ul class=".secondaryNav__list">
+        <li><a id = jobPositions href="./jobPositionsManager.html">Puestos de Trabajo</a></li>
+        <li><a id = invitations href="./managerInvitations.html">Invitaciones</a></li>
+        <li><a id = searchCandidates href="./managerSearchCandidates.html">Búsqueda de Candidatos</a></li>
+        <li><a id = notifications href="./managerNotifications.html">Notificaciones</a></li>
+    </ul>
+</nav>
+
+
+
+<!-- AQUÍ COMIENZA EL CÓDIGO ESPECÍFICO DE ESTA PÁGINA -->
+<!-- ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ -->
+
+
+    <!--perfil general de administrador-->
+    <section id="general_profile_admin">
+      <div id="admin_name">Marlon Jones Murillo</div>
+      <div id="admin_position">Manager</div>
+      <img id="admin_photo" src="./images/portrait4.png" alt="" width="100" height="100">
+      <div id="name_company">Dos Pinos</div>
+      <div id="location_admin">Ubicación</div>
+      <div id="province_admin" class="admin_profile_textbox"><h3 class="admin_profile_text" id="province_admin_text">Guanacaste</h3></div>
+      <div id="canton_admin" class="admin_profile_textbox"><h3 class="admin_profile_text" id="canton_admin_text">Cañas</h3></div>
+      <div id="district_admin" class="admin_profile_textbox"><h3 class="admin_profile_text" id="district_admin_text">Bebedero</h3></div>
+      <div id="email_admin" class="admin_profile_textbox"><img id="incon_mail" src="./images/iconoMail.png" height="12" width="15"><h3 class="admin_profile_text" id="email_admin_text">mjonesm@mdospinos.com</h3><img id="incon_mail" src="./images/iconoEditar.png" height="15" width="15"></div>
+      <div id="phone_admin" class="admin_profile_textbox"><img id="incon_phone" src="./images/iconoPhone.png" height="15" width="15"><h3 class="admin_profile_text" id="phone_admin_text">8333-4444</h3><img id="incon_phone" src="./images/iconoEditar.png" height="15" width="15"></div>
+      <button id="password_admin" class="admin_profile_textbox"><h3 class="admin_profile_text" id="password_admin_text">Cambiar contraseña</h3></button>  
+      <div id="description_admin">Descripción del administrador</div>
+      <input class="input_profile_photo_admin" id="custom_input_profile_photo" type="file" accept=".png, .jpg">
+      <div id="custom_profile_photo_back">
+        <div id="custom_profile_photo_admin">
+            <img id="iconoFolder" src="./images/iconoFolder.png" for="custom_input_profile_photo">
+          <label id="label_profle_photo_admin" for="custom_input_profile_photo">Actualizar foto de perfil  (JPG o PNG Máximo 3MG)</label>
+        </div>
+        </div>
+    </section>
+    </main>
+
+
+
+
+<!-- ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ -->
+<!-- AQUÍ TERMINA EL CÓDIGO ESPECÍFICO DE ESTA PÁGINA -->
+<!-- <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> -->
+
+
+
+  <!-- NO MODIFICAR LO DE ABAJO • NO MODIFICAR LO DE ABAJO •
+  CÓDIGO SECCIÓN DEL FOOTER Y SU MENÚ
+↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ -->
+<!-- ESTE ES EL FOOTER -->
+<footer>
+  <div class="footer-content">
+    <div class="QuantumTechLogo">
+      <p id="disclaimer">Página desarrollada por <a href="./LandingPageQuantumTech.html"><img src="./images/Logo Blanco Quantum.png" alt="Logo QuantumTech"></a></p>
+    </div>
+    <div class="menuFooter">
+      <ul>
+        <li><a href="./jobs.html">Bolsa de Trabajo</a></li>
+        <li><a href="./Purpose.html">Nuestro Propósito</a></li>
+        <li><a href="./Contact.html">Contáctenos</a></li>
+        <li><a href="./adminProfile.html">Mi Perfil</a></li>
+        <li><a href="./landingPageMiTrabajo.html">Cerrar Sesión</a></li>
+      </ul>
+    </div>
+  </div>
+<!--  CÓDIGO SECCIÓN DEL FOOTER Y SU MENÚ
+      NO MODIFICAR LO DE ARRIBA • NO MODIFICAR LO DE ARRIBA •
+↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ -->
+</footer>
+
+
+<!-- <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> -->
+<!-- AQUÍ VAN LOS SCRIPTS • AQUÍ VAN LOS SCRIPTS • AQUÍ VAN LOS SCRIPTS •  -->
+<section id="PopUp"></section>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="./drivers/adminProfile.js"></script>
+<!-- AQUÍ VAN LOS SCRIPTS • AQUÍ VAN LOS SCRIPTS • AQUÍ VAN LOS SCRIPTS •  -->
+<!-- <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> -->
+
+</body>
+</html>

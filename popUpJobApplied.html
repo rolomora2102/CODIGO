@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>popUpJobApplied</title>
+
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" type="text/css" href="./styles/PopUpJobApplied.css">
+
+</head>
+<body>
+    
+    <div class="popup">
+        <p class="message">¡Felicidades! Haz aplicado al puesto de trabajo</p>
+        <img src="./images/LupaCheck.png" alt="magnifyingGlassCheck" class="image">
+        <button class="button">OK</button>
+    </div>
+
+    <script>
+        document.querySelector('.button').addEventListener('click', function() {
+          $('#PopUp').empty();
+        });
+    </script>
+</body>
+</html>
