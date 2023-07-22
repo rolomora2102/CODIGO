@@ -56,10 +56,10 @@ const jobMonthDropdownTo = document.getElementById('job-monthTo__select');
 
 
 for (let i = 0; i < monthsDict.length; i++) {
-  const option = document.createElement('option');
-  option.text = monthsDict[i];
-  option.value = monthsDict[i];
-  monthDropdownFrom.add(option);
+    const option = document.createElement('option');
+    option.text = monthsDict[i];
+    option.value = monthsDict[i];
+    monthDropdownFrom.add(option);
 }
 
 for (let i = 0; i < monthsDict.length; i++) {
