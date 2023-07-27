@@ -188,6 +188,7 @@
           <th>Año</th>
           <th>Hasta</th>
           <th>Año</th>
+          <th>   </th>
         </tr>
       </thead>
       <!-- Aquí se cargarán dinámicamente las filas con JavaScript -->
@@ -207,15 +208,15 @@
 	<form class="finaluserform__personalinfo__form">
 		<!-- Nombre de la empresa -->
 		<p class="finaluserform__txt">Nombre de la empresa</p>
-		<input class="finaluserform__personalinfo__input__l" placeholder="Bufete KPMG" required>
+		<input id="businessName" class="finaluserform__personalinfo__input__l" placeholder="Bufete KPMG">
 		<!-- Cargo -->
 		<p class="finaluserform__txt">Cargo</p>
-		<input	class="finaluserform__personalinfo__input__l" placeholder="Abogado Senior en Propiedad Intelectual"></input>
+		<input	id="jobPosition" class="finaluserform__personalinfo__input__l" placeholder="Abogado Senior en Propiedad Intelectual"></input>
 		</select>
 		
 		<!-- Funciones y logros del cargo -->
 		<p class="finaluserform__txt">Funciones y logros del cargo</p>
-		<textarea class="finaluserform__personalinfo__txtbox" placeholder="Descripción del cargo"></textarea>
+		<textarea id="jobDetails" class="finaluserform__personalinfo__txtbox" placeholder="Descripción del cargo"></textarea>
 		<div class="finaluserform__txt__position">
 		<p class="finaluserform__txt">Desde</p>
 		</div>
@@ -235,9 +236,27 @@
 			<option value="" disabled selected>2022</option>
 		</select>
 	</form>
+  <label id="finaluserform__tbl__label">Datos Guardados</label>
+  <div class="table__container">
+  <table class="table" id="table-experience">
+    <thead>
+      <tr class="table__header">
+        <th>Nombre de la empresa</th>
+        <th>Cargo</th>
+        <th>Funciones y logros del cargo</th>
+        <th>Desde</th>
+        <th>Año</th>
+        <th>Hasta</th>
+        <th>Año</th>
+        <th>   </th>
+      </tr>
+    </thead>
+    <!-- Aquí se cargarán dinámicamente las filas con JavaScript -->
+  </table>
+  </div>
   <div class="button-container">
     <button id="saveBtn-Exp" type="button" class="finaluserform__nextbutton">CONTINUAR</button>
-    <button class="finaluserform__save-button">GUARDAR Y AGREGAR OTRO</button>
+    <button id="saveBtn-Exp--add" class="finaluserform__save-button">GUARDAR Y AGREGAR OTRO</button>
   </div>
 </section>
 <!-- Guardar Perfil -->
@@ -285,7 +304,8 @@
 <!-- AQUÍ VAN LOS SCRIPTS • AQUÍ VAN LOS SCRIPTS • AQUÍ VAN LOS SCRIPTS •  -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="./controllers/formSaveButtonFunctions.js"></script>
-<script src="./controllers/formSaveAddButton.js"></script>
+<script src="./controllers/formSaveAddButtonAcademic.js"></script>
+<script src="./controllers/formSaveAddButtonExp.js"></script>
 <script type="module" src="./controllers/regions.js"></script>
 <script type="module" src="./controllers/cantonDict.js"></script>
 <script type="module" src="./controllers/provinceDict.js"></script>
