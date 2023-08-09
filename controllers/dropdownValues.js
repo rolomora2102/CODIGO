@@ -51,8 +51,8 @@ for (let i=0; i < areas.length; i++) {
 
 const monthDropdownFrom = document.getElementById('monthFrom__select');
 const monthDropdownTo = document.getElementById('monthTo__select');
-const jobMonthDropdownFrom = document.getElementById('job-monthFrom__select');
-const jobMonthDropdownTo = document.getElementById('job-monthTo__select');
+const jobMonthDropdownFrom = document.getElementById('monthFrom__select-job');
+const jobMonthDropdownTo = document.getElementById('monthTo__select-job');
 
 
 for (let i = 0; i < monthsDict.length; i++) {
@@ -87,8 +87,8 @@ for (let i = 0; i < monthsDict.length; i++) {
 
 const yearDropdownFrom = document.getElementById('yearFrom__select');
 const yearDropdownTo = document.getElementById('yearTo__select');
-const jobYearDropdownFrom = document.getElementById('job-yearFrom__select');
-const jobYearDropdownTo = document.getElementById('job-yearTo__select');
+const jobYearDropdownFrom = document.getElementById('yearFrom__select-job');
+const jobYearDropdownTo = document.getElementById('yearTo__select-job');
 
 for (let i = 0; i < yearsDict.length; i++) {
   const option = document.createElement('option');
