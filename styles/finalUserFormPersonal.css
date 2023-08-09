@@ -163,7 +163,7 @@ nav ul li a {
     border-radius: 8px;
 }
 
-#table-experience {
+#table-jobExperience {
     width: 86%;
     margin-left: 60px;
     margin-top: 10px;
@@ -223,13 +223,13 @@ main {
   flex: 1;
 }
 
-#form2 {
+/* #form2 {
     display: none;     
 }
 
 #form3 {
     display: none;
-}
+} */
 
 #save-profile {
     display: none;
@@ -300,6 +300,8 @@ main {
     font-family: 'Manrope', sans-serif;
     font-size: 10pt;
     padding-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 30px;
 }
 
 .finaluserform__personalinfo__input__id {
@@ -308,13 +310,14 @@ main {
     width: 250px;
     height: 40px;
     border-radius: 10px;
-    margin-top: 30px;
     justify-content: center;
     text-align: left;
     font-family: 'Manrope', sans-serif;
     font-size: 10pt;
     padding-left: 10px;
-    margin-right: 15px
+    margin-right: 15px;
+    margin-bottom: 30px;
+    margin-top: 10px;
 }
 
 .finaluserform__personalinfo__input__number {
@@ -336,8 +339,8 @@ main {
     width: 565px;
     height: 40px;
     border-radius: 10px;
-    margin-top: 30px;
     margin-bottom: 30px;
+    margin-top: 10px;
     justify-content: center;
     text-align: left;
     font-family: 'Manrope', sans-serif;
@@ -354,6 +357,75 @@ main {
     padding-left: 10px;
 }
 
+.finaluserform__txt-name{
+    color: #012c3d; 
+    font-family: 'Manrope', sans-serif;
+    font-size: 12pt;
+    display: inline;
+    margin-right: 210px;
+    padding-left: 10px;
+}
+.finaluserform__txt-last-name{
+    color: #012c3d; 
+    font-family: 'Manrope', sans-serif;
+    font-size: 12pt;
+    display: inline;
+    padding-left: 10px;
+}
+
+.finaluserform__txt-id{
+    color: #012c3d; 
+    font-family: 'Manrope', sans-serif;
+    font-size: 12pt;
+    display: inline;
+    margin-right: 210px;
+    padding-left: 10px;
+}
+
+.finaluserform__txt-phone{
+    color: #012c3d; 
+    font-family: 'Manrope', sans-serif;
+    font-size: 12pt;
+    display: inline;
+    padding-left: 10px;
+}
+
+.finaluserform__txt-province{
+    color: #012c3d; 
+    font-family: 'Manrope', sans-serif;
+    font-size: 12pt;
+    display: inline;
+    padding-left: 10px;
+    margin-right: 100px;
+    
+}
+
+.finaluserform__txt-canton{
+    color: #012c3d; 
+    font-family: 'Manrope', sans-serif;
+    font-size: 12pt;
+    display: inline;
+    padding-left: 30px;
+    margin-right: 100px;
+}
+
+.finaluserform__txt-district{
+    color: #012c3d; 
+    font-family: 'Manrope', sans-serif;
+    font-size: 12pt;
+    display: inline;
+    padding-left: 40px;
+}
+
+.finaluserform__txt-country{
+    color: #012c3d; 
+    font-family: 'Manrope', sans-serif;
+    font-size: 12pt;
+    display: inline;
+    padding-left: 10px;
+    margin-right: 100%;
+}
+
 .finaluserform__personalinfo__input__password {
     border: 2px solid #c9c9c9;
     background-color: #f6f6f6;
@@ -362,6 +434,7 @@ main {
     border-radius: 10px;
     margin-top: 10px;
     margin-right: 45px;
+    margin-bottom: 30px;
     justify-content: center;
     text-align: left;
     font-family: 'Manrope', sans-serif;
@@ -375,8 +448,9 @@ main {
     width: 174px;
     height: 40px;
     border-radius: 10px;
-    margin-top: 30px;
+    margin-top: 10px;
     margin-right: 23px;
+    margin-bottom: 30px;
     justify-content: center;
     text-align: left;
     font-family: 'Manrope', sans-serif;
@@ -392,7 +466,7 @@ main {
     background-color: #f6f6f6;
     width: 174px;
     height: 40px;
-    margin-top: 30px;
+    margin-top: 10px;
     margin-right: 5px;
     border-radius: 10px;
     justify-content: center;
@@ -408,7 +482,7 @@ main {
     width: 355px;
     height: 40px;
     border-radius: 10px;
-    margin-top: 30px;
+    margin-top: 10px;
     margin-right: 20px;
     padding-right: 30px;
     float: right;
@@ -604,6 +678,10 @@ img.finaluserform__upload__img {
     padding-bottom: 30px;
 }
 
+
+#monthTo__select-job {
+    margin-bottom: 30px;
+}
 
 
 /* <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> */

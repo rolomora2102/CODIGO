@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    var saveAddBtn = document.getElementById('saveBtn-Exp--add');
+    var saveAddBtn = document.getElementById('saveBtn-Job--add');
   
     saveAddBtn.addEventListener('click', function(event) {
       event.preventDefault(); // Evita la acción por defecto del botón
@@ -25,32 +25,32 @@ document.addEventListener('DOMContentLoaded', function() {
             confirmButtonText: 'Aceptar'
           }); // Agrega el formulario clonado al contenedor
       } else {
-        let businessName = document.getElementById('businessName').value;
-        let jobPosition = document.getElementById('jobPosition').value;
-        let jobDetails = document.getElementById('jobDetails').value;
-        let monthFrom = document.getElementById('job-monthFrom__select').value;
-        let yearFrom = document.getElementById('job-yearFrom__select').value;
-        let monthTo = document.getElementById('job-monthTo__select').value;
-        let yearTo = document.getElementById('job-yearTo__select').value;
+        let enterprise = document.getElementById('input-enterpriseName').value;
+        let job = document.getElementById('input-jobType').value;
+        let jobDescription = document.getElementById('input-jobDescription').value;
+        let monthFrom = document.getElementById('monthFrom__select-job').value;
+        let yearFrom = document.getElementById('yearFrom__select-job').value;
+        let monthTo = document.getElementById('monthTo__select-job').value;
+        let yearTo = document.getElementById('yearTo__select-job').value;
 
 
-        if (businessName && jobPosition && jobDetails && monthFrom && yearFrom && monthTo && yearTo) {
-            const table = document.getElementById('table-experience');
+        if (enterprise && job && jobDescription && monthFrom && yearFrom && monthTo && yearTo) {
+            const table = document.getElementById('table-jobExperience');
             // Declaracion de todos los nuevos elementos
             const tableRow = document.createElement('tr');
             const tbodyElement = document.createElement('tbody');
-            const newElementBussinessName = document.createElement('td')
-            const newElementJobPosition = document.createElement('td');
-            const newElementJobDetails = document.createElement('td');
+            const newElementEnterprise = document.createElement('td')
+            const newElementJob = document.createElement('td');
+            const newElementJobDescription = document.createElement('td');
             const newElementMonthFrom = document.createElement('td');
             const newElementYearFrom = document.createElement('td');
             const newElementMonthTo = document.createElement('td');
-            const newElementYearTo = document.createElement('td'); 
+            const newElementYearTo = document.createElement('td');  
             const deleteBtn = document.createElement('button');
 
-            newElementBussinessName.innerHTML = businessName;
-            newElementJobPosition.innerHTML = jobPosition;
-            newElementJobDetails.innerHTML = jobDetails;
+            newElementEnterprise.innerHTML = enterprise;
+            newElementJob.innerHTML = job;
+            newElementJobDescription.innerHTML = jobDescription;
             newElementMonthFrom.innerHTML = monthFrom;
             newElementYearFrom.innerHTML = yearFrom;
             newElementMonthTo.innerHTML = monthTo;
@@ -58,9 +58,9 @@ document.addEventListener('DOMContentLoaded', function() {
             deleteBtn.innerHTML = 'BORRAR';
 
             // Agrega los nuevos valores a la tabla
-            tableRow.appendChild(newElementBussinessName);
-            tableRow.appendChild(newElementJobPosition);
-            tableRow.appendChild(newElementJobDetails);
+            tableRow.appendChild(newElementEnterprise);
+            tableRow.appendChild(newElementJob);
+            tableRow.appendChild(newElementJobDescription);
             tableRow.appendChild(newElementMonthFrom);
             tableRow.appendChild(newElementYearFrom);
             tableRow.appendChild(newElementMonthTo);
