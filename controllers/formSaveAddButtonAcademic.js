@@ -47,7 +47,8 @@ document.addEventListener('DOMContentLoaded', function() {
             const newElementMonthFrom = document.createElement('td');
             const newElementYearFrom = document.createElement('td');
             const newElementMonthTo = document.createElement('td');
-            const newElementYearTo = document.createElement('td');  
+            const newElementYearTo = document.createElement('td'); 
+            const deleteBtn = document.createElement('button');
 
             newElementSchool.innerHTML = school;
             newElementArea.innerHTML = area;
@@ -57,6 +58,7 @@ document.addEventListener('DOMContentLoaded', function() {
             newElementYearFrom.innerHTML = yearFrom;
             newElementMonthTo.innerHTML = monthTo;
             newElementYearTo.innerHTML = yearTo;
+            deleteBtn.innerHTML = 'BORRAR';
 
             // Agrega los nuevos valores a la tabla
             tableRow.appendChild(newElementSchool);
@@ -67,6 +69,11 @@ document.addEventListener('DOMContentLoaded', function() {
             tableRow.appendChild(newElementYearFrom);
             tableRow.appendChild(newElementMonthTo);
             tableRow.appendChild(newElementYearTo);
+            tableRow.appendChild(deleteBtn);
+            deleteBtn.classList.add('delete-table-btn');
+            deleteBtn.addEventListener('click', function () {
+              tableRow.remove();
+            });
             tableRow.classList.add('table__content');
             
 

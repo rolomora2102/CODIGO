@@ -163,6 +163,14 @@ nav ul li a {
     border-radius: 8px;
 }
 
+#table-experience {
+    width: 86%;
+    margin-left: 60px;
+    margin-top: 10px;
+    border: 2px solid #c9c9c9;
+    border-radius: 8px;
+}
+
 .table__header {
     justify-content: space-around;
     align-items: center;
@@ -193,6 +201,19 @@ td {
     font-family: 'Manrope', sans-serif;
     font-size: 9pt;
     width: 86%;
+}
+
+.delete-table-btn {
+    background-color: #f8444e;
+    color: #ffffff;
+    border-radius: 5px;
+    border: 0px;
+    margin: 5px;
+    width: 60px;
+    height: 20px;
+    font-family: 'Manrope', sans-serif;
+    justify-content: center;
+    font-size: 9pt;
 }
 
 /* End Table */
