@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jobs</title>
+
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/jobs.css">
+    
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;500;800&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+  <!-- NO MODIFICAR LO DE ABAJO • NO MODIFICAR LO DE ABAJO •
+  CÓDIGO SECCIÓN DEL HEADER Y SU MENÚ
+↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ -->
+<!-- HEADER -->
+
+    <header>
+        <div class="logo">
+            <a href="./LandingPageMiTrabajo.html">
+              <img src="./images/logoMiTrabajo.png" alt="MiTrabajo Logo">
+          </div>
+        <nav class="menu">
+            <ul>
+              <li><a id = jobs href="./jobs.html">Bolsa de Trabajo</a></li>
+              <li><a id = purpose href="./purpose.html">Nuestro Propósito</a></li>
+              <li><a id = contact href="./contact.html">Contáctenos</a></li>
+              <!-- <li><a id = profile href="./profile">Mi Perfil</a></li>
+              <li><a id = closeSession href="./landingPageMiTrabajo.html">Cerrar Sesión</a></li> -->
+            </ul>
+        </nav>
+    </header>
+
+  <!--  CÓDIGO SECCIÓN DEL HEADER Y SU MENÚ
+        NO MODIFICAR LO DE ARRIBA • NO MODIFICAR LO DE ARRIBA •
+  ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ -->
+  
+
+    <!-- NO MODIFICAR LO DE ABAJO • NO MODIFICAR LO DE ABAJO •
+  ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ -->
+  <!-- MENÚ SECUNDARIO • MENÚ SECUNDARIO • MENÚ SECUNDARIO • MENÚ SECUNDARIO • MENÚ SECUNDARIO •  -->
+  
+    <!--Nav bar secundario (cuando se esta logueado)-->
+    <!-- <nav class="secondaryNav">
+      <ul class=".secondaryNav__list">
+          <li><a id = collaborators href="./adminProfile.html" class="currentPage">Colaboradores</a></li>
+          <li><a id = jobPositions href="./jobPositionsAdmin.html">Puestos de Trabajo</a></li>
+          <li><a id = invitations href="./adminInvitations.html">Invitaciones</a></li>
+          <li><a id = searchCandidates href="./adminSearchCandidates.html">Búsqueda de Candidatos</a></li>
+          <li><a id = notifications href="./adminNotifications.html">Notificaciones</a></li>
+      </ul>
+  </nav> -->
+
+
+  
+<!-- AQUÍ COMIENZA EL CÓDIGO ESPECÍFICO DE ESTA PÁGINA -->
+<!-- ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ -->
+
+<!--Título de Sección-->
+<h1 class="jobs__title">Bolsa de Trabajo</h1>
+    <section class="filters">
+        <div class="leftfilters__container">
+            <input type="text" name="codigo" id="code__input" placeholder="Código">
+            <select name="empresa" id="company-dropdown">
+                <option value="">Empresa</option>
+                <option value="coca-cola">Coca-Cola</option>
+                <option value="dos_pinos">Dos Pinos</option>
+                <option value="fifco">Fifco</option>
+                <option value="intel">Intel</option>
+            </select>
+            <select name="jornada" id="workday-dropdown">
+                <option value="">Jornada</option>
+                <option value="completo">Tiempo Completo</option>
+                <option value="medio">Medio Tiempo</option>
+                <option value="reducida">Jornada Reducida</option>
+                <option value="extendida">Jornada Extendida</option>
+                <option value="nocturno">Trabajo Nocturno</option>
+            </select>
+            <select name="provincia" id="province-dropdown">
+                <option value="">Provincia</option>
+            </select>
+        </div>
+        <div class="rightfilters__container">
+            <input type="text" name="nombreOferta" id="offername__input" placeholder="Nombre del trabajo">
+            <section class="positiontodistrict__container">
+                <div>
+                    <select name="puesto" id="jobposition-dropdown">
+                        <option value="">Puesto</option>
+                    </select>
+                    <select name="salario" id="salary-dropdown">
+                        <option value="">Salario</option>
+                        <option value="-1000000">Menos de ₡1,000,000</option>
+                        <option value="1000000">₡1,000,000 - ₡1,500,000</option>
+                        <option value="1500000">₡1,500,000 - ₡2,000,000</option>
+                        <option value="2000000">₡2,000,000 - ₡2,500,000</option>
+                        <option value="2500000">₡2,500,000 - ₡3,000,000</option>
+                        <option value="3000000">₡3,000,000 - ₡3,500,000</option>
+                        <option value="35000000">₡3,500,000 - ₡4,000,000</option>
+                        <option value="+4000000">Más de ₡4,000,000</option>
+                    </select>
+                    <select name="cantón" id="canton-dropdown" disabled>
+                        <option value="">Cantón</option>
+                    </select></div>
+                <div>
+                    <select name="nivel académico" id="studies-dropdown">
+                        <option value="">Nivel Académico</option>
+                        <option value="bachillerato">Bachillerato</option>
+                        <option value="tecnico">Técnico</option>
+                        <option value="licenciatura">Licenciatura</option>
+                        <option value="maestria">Maestría</option>
+                    </select>
+                    <select name="años experiencia" id="years-dropdown">
+                        <option value="">Años Experiencia</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                    <select name="distrito" id="district-dropdown" disabled>
+                        <option value="">Distrito</option>
+                    </select></div>
+            </section>
+
+
+        </div>
+        <!--Botones de Limpiar y Buscar para los filtros-->
+        <button class="cleanButton">LIMPIAR</button>
+        <button class="searchButton">BUSCAR</button>
+    </section>
+    <div class="line__container">
+        <div class="line__line"></div>
+    </div>
+
+    <section class="consultedposition__section">
+        <div class="consultedposition__container">
+            <div class="consultedposition__image"><img src="./images/LogoIntel.png" alt="" class="consultedposition__companyimage"></div>
+            <div class="consultedposition__info">
+                <div class="position__info">
+                    <h2>Intel</h2>
+                    <h1>Software Developer Engineer</h1>
+                    <h3>Heredia, Barreal, Flores</h3>
+                    <h3>Rango Salarial</h3>
+                    <p>1,000.000 - 1,500.000</p>
+                    <h3>Jornada Laboral</h3>
+                    <p>Tiempo Completo</p>
+                    <h3>Vigencia de la Oferta</h3>
+                    <p>02/02/2023 - 10/10/2023</p>
+                </div>
+                <div class="requirements__info">
+                    <h1>Requisitos Académicos</h1>
+                    <h3>Nivel de Estudios</h3>
+                    <p>Bachillerato</p>
+                    <h3>Área profesional</h3>
+                    <p>Ciencias Computacionales</p>
+                    <h3>Años de experiencia laboral</h3>
+                    <p>2 - 3</p>
+                </div>
+            </div>
+            <div class="consultedposition__status"><button class="consultedposition__button"><h1>APLICAR</h1></button></div>
+            <div class="consultedposition__requirements"><textarea name="" class="requirements__text" placeholder="Requisitos mínimos y cualidades deseadas" disabled>Intel busca Ingeniero de Desarrollo de Software (SDE) talentoso para diseñar, desarrollar y mantener software en Python
+                
+Requiere 2+ años de experiencia en desarrollo y enfoque sólido en Python.
+            </textarea></div>
+        </div>
+    </section>
+    <section class="consultedposition__section">
+        <div class="consultedposition__container">
+            <div class="consultedposition__image"><img src="./images/LogoIntel.png" alt="" class="consultedposition__companyimage"></div>
+            <div class="consultedposition__info">
+                <div class="position__info">
+                    <h2>Intel</h2>
+                    <h1>Programador de Sistemas</h1>
+                    <h3>San José, Montes de Oca, San Pedro</h3>
+                    <h3>Rango Salarial</h3>
+                    <p>1,000.000 - 1,500.000</p>
+                    <h3>Jornada Laboral</h3>
+                    <p>Tiempo Completo</p>
+                    <h3>Vigencia de la Oferta</h3>
+                    <p>10/07/2023 - 10/08/2023</p>
+                </div>
+                <div class="requirements__info">
+                    <h1>Requisitos Académicos</h1>
+                    <h3>Nivel de Estudios</h3>
+                    <p>Bachillerato</p>
+                    <h3>Área profesional</h3>
+                    <p>Informática</p>
+                    <h3>Años de experiencia laboral</h3>
+                    <p>4</p>
+                </div>
+            </div>
+            <div class="consultedposition__status"><button class="consultedposition__button"><h1>APLICAR</h1></button></div>
+            <div class="consultedposition__requirements"><textarea name="" class="requirements__text" placeholder="Requisitos mínimos y cualidades deseadas" disabled></textarea></div>
+        </div>
+    </section>
+    <section class="consultedposition__section">
+        <div class="consultedposition__container">
+            <div class="consultedposition__image"><img src="./images/LogoDosPinos.png" alt="" class="consultedposition__companyimage"></div>
+            <div class="consultedposition__info">
+                <div class="position__info">
+                    <h2>Dos Pinos</h2>
+                    <h1>Programador de Sistemas</h1>
+                    <h3>San José, Montes de Oca, San Pedro</h3>
+                    <h3>Rango Salarial</h3>
+                    <p>1,000.000 - 1,500.000</p>
+                    <h3>Jornada Laboral</h3>
+                    <p>Tiempo Completo</p>
+                    <h3>Vigencia de la Oferta</h3>
+                    <p>10/07/2023 - 10/08/2023</p>
+                </div>
+                <div class="requirements__info">
+                    <h1>Requisitos Académicos</h1>
+                    <h3>Nivel de Estudios</h3>
+                    <p>Bachillerato</p>
+                    <h3>Área profesional</h3>
+                    <p>Informática</p>
+                    <h3>Años de experiencia laboral</h3>
+                    <p>2</p>
+                </div>
+            </div>
+            <div class="consultedposition__status"><button class="consultedposition__button"><h1>APLICAR</h1></button></div>
+            <div class="consultedposition__requirements"><textarea name="" class="requirements__text" placeholder="Requisitos mínimos y cualidades deseadas" disabled></textarea></div>
+        </div>
+    </section>
+
+    <nav class="pages">
+        <ul>
+            <li><button></button></li>
+            <li><button class="currentPage">1</button></li>
+            <li><button>2</button></li>
+            <li><button>3</button></li>
+            <li><button>4</button></li>
+            <li><button>...10</button></li>
+            <li><button>></button></li>
+        </ul>
+    </nav>
+
+    <section id="PopUp"></section>
+
+
+    <!-- ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ -->
+<!-- AQUÍ TERMINA EL CÓDIGO ESPECÍFICO DE ESTA PÁGINA -->
+<!-- <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> -->
+
+
+
+  <!-- NO MODIFICAR LO DE ABAJO • NO MODIFICAR LO DE ABAJO •
+  CÓDIGO SECCIÓN DEL FOOTER Y SU MENÚ
+↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ -->
+<!-- ESTE ES EL FOOTER -->
+<footer>
+    <div class="footer-content">
+      <div class="QuantumTechLogo">
+        <p id="disclaimer">Página desarrollada por <a href="./LandingPageQuantumTech.html"><img src="./images/Logo Blanco Quantum.png" alt="Logo QuantumTech"></a></p>
+      </div>
+      <div class="menuFooter">
+        <ul>
+          <li><a href="./jobs.html">Bolsa de Trabajo</a></li>
+          <li><a href="./Purpose.html">Nuestro Propósito</a></li>
+          <li><a href="./Contact.html">Contáctenos</a></li>
+          <li><a href="./adminProfile.html">Mi Perfil</a></li>
+          <li><a href="./landingPageMiTrabajo.html">Cerrar Sesión</a></li>
+        </ul>
+      </div>
+    </div>
+  <!--  CÓDIGO SECCIÓN DEL FOOTER Y SU MENÚ
+        NO MODIFICAR LO DE ARRIBA • NO MODIFICAR LO DE ARRIBA •
+  ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ -->
+  </footer>
+  
+  
+  <!-- <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> -->
+  <!-- AQUÍ VAN LOS SCRIPTS • AQUÍ VAN LOS SCRIPTS • AQUÍ VAN LOS SCRIPTS •  -->
+
+  <script src="./controllers/applyToPosition.js"></script>
+  
+  <!-- AQUÍ VAN LOS SCRIPTS • AQUÍ VAN LOS SCRIPTS • AQUÍ VAN LOS SCRIPTS •  -->
+  <!-- <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> -->
+  
+  </body>
+  </html>

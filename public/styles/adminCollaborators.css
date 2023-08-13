@@ -1,0 +1,462 @@
+/* NO MODIFICAR LO DE ABAJO • NO MODIFICAR LO DE ABAJO • */
+/* CÓDIGO SECCIÓN DEL HEADER Y SU MENÚ */
+/* ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  */
+
+/* IMPORTAR TIPOGRAFIA */
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;500;800&display=swap');
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color: #ffffff;
+  height: 100px;
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5% !important;
+}
+
+header::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background-color: #e6e7e8;
+}
+
+.logo img {
+    height: 60px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li:first-child {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+nav ul li:not(:last-child) {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #012c3d;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+/* Cambiar nombre del ID para cambiar color en el menú del Header */
+/* jobs, purpose, contact, profile, closeSession  */
+
+#profile{
+  color: #f8444e;
+}
+
+
+
+/* CÓDIGO SECCIÓN DEL HEADER Y SU MENÚ */
+/* NO MODIFICAR LO DE ARRIBA • NO MODIFICAR LO DE ARRIBA • */
+/* ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ */
+
+/* NO MODIFICAR LO DE ABAJO • NO MODIFICAR LO DE ABAJO • */
+/* CÓDIGO SECCIÓN DEL MENÚ SECUNDARIO */
+/* ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  */
+
+/*Nav bar secundario (cuando se esta logueado)*/
+
+.secondaryNav {
+  position: sticky;
+  top: 100px; /* Altura del menú principal */
+  z-index: 998;
+  background-color: #012c3d;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  padding: 0 5% !important;
+}
+
+.secondaryNav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.secondaryNav ul li:not(:last-child) {
+  margin-right: 25px; 
+}
+
+.secondaryNav ul li a {
+  color: #ffffff;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+/* Cambiar nombre del ID para cambiar color en el menú SECUNDARIO */
+/* collaborators, jobPositions, invitations, searchCandidates, notifications  */
+
+#collaborators{
+  color: #09b49c;
+}
+
+/* CÓDIGO SECCIÓN DEL MENÚ SECUNDARIO */
+/* NO MODIFICAR LO DE ARRIBA • NO MODIFICAR LO DE ARRIBA • */
+/* ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ */
+
+/* <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> */
+/* <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> */
+
+
+
+/*Colaboradores titulo*/
+
+.companycollaborators__title {
+  width: 805px;
+  color: #012c3d;
+  border-bottom: 1px solid #012c3d;
+  margin: 50px auto;
+  font-family: 'Manrope', sans-serif;
+  font-size: 21px;
+  font-weight: 500;
+}
+
+/*Colaboradores*/
+
+.companycollaborators__section {
+  display: grid;
+  row-gap: 25px;
+  width: 805px;
+  margin: 50px auto;
+  font-family: 'Manrope', sans-serif;
+}
+  
+.companycollaborators__container {
+  border: 1px solid #e6e7e8;
+  display: grid;
+  grid-template-columns: 100px auto 280px;
+}
+
+/*Imagen de colaborador*/
+
+.companycollaborators__image {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+  
+.companycollaborators__personimage {
+  width: 75px;
+  height: 75px;
+}
+
+/*Información de colaborador*/
+
+.companycollaborators__info {
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*Nombre*/
+
+.companycollaborators__name {
+  width: 58%;
+  color: #012c3d;
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+/*Rol*/
+
+.companycollaborators__role {
+  width: 42%;
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 20px;
+  display: list-item;
+}
+  
+.rolemanager--green {
+  color: #09b49c;
+}
+  
+.rolerecruiter--red {
+  color: #012c3d;
+}
+
+/*Correo*/
+
+.companycollaborators__email {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 0;
+}
+  
+.companycollaborators__number {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+/*Botones*/
+
+.companycollaborators__options {
+  padding: 5px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.companycollaborators__button--edit {
+  width: 75px;
+  height: 40px;
+  text-align: center;
+  color: #012c3d;
+  background-color: #f6f6f6;
+  border-radius: 2.5px;
+  border: 0.5px solid #9c9c9c;
+  font-weight: bold;
+  font-size: 12.5px;
+  cursor: pointer;
+}
+  
+.companycollaborators__button--inactive {
+  width: 97.5px;
+  height: 40px;
+  text-align: center;
+  color: #012c3d;
+  background-color: #f6f6f6;
+  border-radius: 2.5px;
+  border: 0.5px solid #9c9c9c;
+  font-weight: bold;
+  font-size: 12.5px;
+  cursor: pointer;
+}
+  
+.companycollaborators__button--delete {
+  width: 75px;
+  height: 40px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #f8444e;
+  border-radius: 2.5px;
+  border: none;
+  font-weight: bold;
+  font-size: 12.5px;
+  cursor: pointer;
+}
+
+/*Linea que separa colaboradores de invitaciones*/
+
+.line__container {
+  width: 805px;
+  margin: 50px auto;
+}
+  
+.line__line {
+  border-bottom: 1px solid #012c3d;
+}
+
+/*Invitaciones*/
+
+.invitations__section {
+  display: flex;
+  flex-direction: row;
+  width: 805px;
+  margin: 50px auto;
+  justify-content: space-evenly;
+}
+  
+.invitations__container {
+  width: 295px;
+  height: 297.5px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+  
+.message {
+  font-family: 'Manrope', sans-serif;
+  font-weight: light;
+  font-size: 13.5px;
+  color: #012c3d;
+  margin: 2.5% 2.5%;
+  text-align: center;
+}
+  
+.image {
+  height: 75px;
+  margin: 2.5% 2.5%;
+}
+  
+.input-container {
+  width: 232.5px;
+  height: 40px;
+  margin-top: 2.5px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-container input {
+  width: 182.5px;
+  height: 40px;
+  font-size: 13.5px;
+  border-radius: 2.5px;
+  padding-left: 45px;
+  background-color: #f6f6f6;
+  border: solid 0.5px #c9c9c9; 
+}
+  
+.input-container .fa {
+  position: absolute;
+  font-size: 25px;
+  left: 12.5px;
+  top: 7.5px;
+  color: gray;
+}
+
+.error {
+  border: 3px solid crimson !important;
+}
+
+.button--green {
+  width: 232.5px;
+  height: 40px;
+  background-color: #09b49c;
+  border: none;
+  border-radius: 5px;
+  margin: 2.5% 2.5% 0;
+  color: #ffffff;
+  font-family: 'Manrope', sans-serif;
+  font-weight: bold;
+  font-size: 12.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+  
+.button--red {
+  width: 232.5px;
+  height: 40px;
+  background-color: #012c3d;
+  border: none;
+  border-radius: 5px;
+  margin: 2.5% 2.5% 0;
+  color: #ffffff;
+  font-family: 'Manrope', sans-serif;
+  font-weight: bold;
+  font-size: 12.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> */
+/* <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> */
+
+
+
+
+
+/*  NO MODIFICAR LO DE ABAJO • NO MODIFICAR LO DE ABAJO •
+    CÓDIGO SECCIÓN DEL FOOTER Y SU MENÚ
+↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  */
+
+footer {
+  height: 120px;
+  background-color: #4d4d4d;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0 5%;
+}
+
+.QuantumTechLogo img {
+  height: 25px;
+  margin-left: 5px;
+  line-height: 10px;
+}
+
+.QuantumTechLogo p {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  color: #ffffff;
+  align-items: center;
+  margin-left: 50px;
+}
+
+.menuFooter {
+  display: flex;
+  align-items: center;
+}
+
+.menuFooter ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.menuFooter ul li {
+  margin-left: 20px;
+}
+
+.menuFooter ul li:first-child {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.menuFooter ul li:not(:last-child) {
+  margin-right: 20px;
+}
+
+.menuFooter ul li a {
+  color: #ffffff;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+/*  CÓDIGO SECCIÓN DEL FOOTER Y SU MENÚ
+    NO MODIFICAR LO DE ARRIBA • NO MODIFICAR LO DE ARRIBA •
+↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ */
