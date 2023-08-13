@@ -130,7 +130,16 @@ nav ul li a {
 /* <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> */
 /* <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> */
 
-
+/*Título de Sección*/
+.jobPosition__title {
+    width: 740px;
+    color: #012c3d;
+    border-bottom: 1px solid #012c3d;
+    margin: 50px auto;
+    font-family: 'Manrope', sans-serif;
+    font-size: 21px;
+    font-weight: 500;
+  }
 
 /*Información de los trabajos (ID/Nombre/Estado/Invitar)*/
 

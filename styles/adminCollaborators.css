@@ -157,7 +157,7 @@ nav ul li a {
 .companycollaborators__container {
   border: 1px solid #e6e7e8;
   display: grid;
-  grid-template-columns: 100px auto 250px;
+  grid-template-columns: 100px auto 280px;
 }
 
 /*Imagen de colaborador*/
@@ -185,7 +185,7 @@ nav ul li a {
 /*Nombre*/
 
 .companycollaborators__name {
-  width: 52%;
+  width: 58%;
   color: #012c3d;
   font-size: 20px;
   font-weight: 500;
@@ -195,7 +195,7 @@ nav ul li a {
 /*Rol*/
 
 .companycollaborators__role {
-  width: 48%;
+  width: 42%;
   font-size: 20px;
   font-weight: 500;
   margin-top: 20px;
@@ -207,7 +207,7 @@ nav ul li a {
 }
   
 .rolerecruiter--red {
-  color: #f8444e;
+  color: #012c3d;
 }
 
 /*Correo*/
@@ -233,6 +233,19 @@ nav ul li a {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+}
+
+.companycollaborators__button--edit {
+  width: 75px;
+  height: 40px;
+  text-align: center;
+  color: #012c3d;
+  background-color: #f6f6f6;
+  border-radius: 2.5px;
+  border: 0.5px solid #9c9c9c;
+  font-weight: bold;
+  font-size: 12.5px;
+  cursor: pointer;
 }
   
 .companycollaborators__button--inactive {

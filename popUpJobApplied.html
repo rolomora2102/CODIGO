@@ -10,7 +10,8 @@
 
 </head>
 <body>
-    
+    <!--Div agregado para utilizar como background y poder cerrar el popup al darle click-->
+    <div class="popupbackground"></div>
     <div class="popup">
         <button class="close-btn">&times;</button>
         <p class="message"><br>¡Felicidades!<br>Haz aplicado al puesto de trabajo<br/></p>
@@ -18,10 +19,5 @@
         <button class="button">OK</button>
     </div>
 
-    <script>
-        document.querySelector('.button').addEventListener('click', function() {
-          $('#PopUp').empty();
-        });
-    </script>
 </body>
 </html>

@@ -86,6 +86,17 @@ nav ul li a {
 /* <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> */
 /* <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> */
 
+/*Título de Sección*/
+.jobs__title {
+  width: 730px;
+  color: #012c3d;
+  border-bottom: 1px solid #012c3d;
+  margin: 50px auto;
+  font-family: 'Manrope', sans-serif;
+  font-size: 21px;
+  font-weight: 500;
+}
+
 .filters {
     width: 730px;
     margin: 100px auto; 
@@ -128,6 +139,32 @@ nav ul li a {
 #offername__input {
     width: 470px;
     height: 40px;
+}
+
+/*Botones para limpiar y buscar los filtros*/
+
+.cleanButton {
+  background-color: #012c3d;
+  width: 210px;
+  height: 40px;
+  color: #ffffff;
+  border-radius: 2.5px; 
+  border: none;
+  font-size: 17.5px; 
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.searchButton {
+  background-color: #09b49c;
+  width: 470px;
+  height: 40px;
+  color: #ffffff;
+  border-radius: 2.5px; 
+  border: none;
+  font-size: 17.5px; 
+  font-weight: bold;
+  cursor: pointer;
 }
 
 .line__container {
