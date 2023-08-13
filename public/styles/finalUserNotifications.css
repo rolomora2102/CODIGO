@@ -1,0 +1,338 @@
+/* NO MODIFICAR LO DE ABAJO • NO MODIFICAR LO DE ABAJO • */
+/* CÓDIGO SECCIÓN DEL HEADER Y SU MENÚ */
+/* ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  */
+
+/* IMPORTAR TIPOGRAFIA */
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;500;800&display=swap');
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color: #ffffff;
+  height: 100px;
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5% !important;
+}
+
+header::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background-color: #e6e7e8;
+}
+
+.logo img {
+    height: 60px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li:first-child {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+nav ul li:not(:last-child) {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #012c3d;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+/* Cambiar nombre del ID para cambiar color en el menú del Header */
+/* jobs, purpose, contact, profile, closeSession  */
+
+#profile{
+  color: #f8444e;
+}
+
+
+
+/* CÓDIGO SECCIÓN DEL HEADER Y SU MENÚ */
+/* NO MODIFICAR LO DE ARRIBA • NO MODIFICAR LO DE ARRIBA • */
+/* ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ */
+
+/* NO MODIFICAR LO DE ABAJO • NO MODIFICAR LO DE ABAJO • */
+/* CÓDIGO SECCIÓN DEL MENÚ SECUNDARIO */
+/* ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  */
+
+/*Nav bar secundario (cuando se esta logueado)*/
+
+.secondaryNav {
+  position: sticky;
+  top: 100px; /* Altura del menú principal */
+  z-index: 998;
+  background-color: #012c3d;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  padding: 0 5% !important;
+}
+
+.secondaryNav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.secondaryNav ul li:not(:last-child) {
+  margin-right: 25px; 
+}
+
+.secondaryNav ul li a {
+  color: #ffffff;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+/* Cambiar nombre del ID para cambiar color en el menú SECUNDARIO */
+/* positions, notifications  */
+
+#notifications{
+  color: #09b49c;
+}
+
+/* CÓDIGO SECCIÓN DEL MENÚ SECUNDARIO */
+/* NO MODIFICAR LO DE ARRIBA • NO MODIFICAR LO DE ARRIBA • */
+/* ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ */
+
+/* <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> */
+/* <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> */
+
+
+/*Información de las notificaciones (N notificación/Fecha/Asunto/Opción)*/
+
+.jobnotification__container table {
+    width: 805px;
+    margin: 100px auto;
+    font-family: 'Manrope', sans-serif;
+    }
+    
+.jobnotification__container th {
+    font-size: 16px;
+    font-weight: bold;
+    color: #012c3d;
+    border-bottom: 1px solid #012c3d;
+    padding-bottom: 20px;
+}
+
+/*Nombre de Asunto Titulo*/
+
+.subject__text {
+    text-align: start;
+}
+
+/*Notificación*/
+
+.jobnumbernotification__container div {
+    margin-top: 25px;
+    display: flex;
+    width: 97.5px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    color: #012c3d;
+    font-size: 12.5px;
+    font-weight: light;
+    background-color: #f6f6f6;
+    border: solid 0.5px #c9c9c9;
+    border-radius: 2.5px;
+}
+
+/*Fecha*/
+
+.jobdate__container div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 97.5px;
+    height: 40px;
+    color: #012c3d;
+    background-color: #f6f6f6;
+    border: solid 0.5px #c9c9c9;
+    border-radius: 2.5px;
+    font-size: 12.5px;
+    font-weight: light;
+}
+
+/*Asunto*/
+
+.jobsubject__container div {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    width: 410px;
+    height: 40px;
+    color: #012c3d;
+    background-color: #f6f6f6;
+    border: solid 0.5px #c9c9c9;
+    border-radius: 2.5px;
+    font-size: 12.5px;
+    font-weight: light;
+}
+
+/*Opción*/
+
+.joboption__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 97.5px;
+    height: 40px;
+    background-color: #f6f6f6;
+    border: solid 0.5px #c9c9c9;
+    border-radius: 2.5px;
+    }
+    
+.joboption__container span {
+    color: #012c3d;
+    font-size: 12px;
+    font-weight: light;
+}
+
+.joboption__container a {
+    text-decoration: none;
+}
+
+.option--blue {
+    background-color: #012c3d;
+}
+
+.option--blue span {
+    color: #ffffff;
+}
+
+/*Número de tabla*/
+
+.pages {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 85px 30%;
+}
+
+.pages ul li button {
+    color: #000000;
+    font-family: 'Manrope', sans-serif;
+    font-size: 17px; 
+    background-color: #ffff;
+    border: none;
+    text-decoration: none;
+}
+
+.pages ul li button:hover {
+    cursor: pointer;
+}
+
+.pages .currentPage {
+    background-color: #f6f6f6;
+}
+
+
+
+/* <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> */
+/* <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> */
+
+
+
+
+
+/*  NO MODIFICAR LO DE ABAJO • NO MODIFICAR LO DE ABAJO •
+    CÓDIGO SECCIÓN DEL FOOTER Y SU MENÚ
+↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  ↧  */
+
+footer {
+    height: 120px;
+    background-color: #4d4d4d;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 5%;
+  }
+  
+  .QuantumTechLogo img {
+    height: 25px;
+    margin-left: 5px;
+    line-height: 10px;
+  }
+  
+  .QuantumTechLogo p {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    color: #ffffff;
+    align-items: center;
+    margin-left: 50px;
+  }
+  
+  .menuFooter {
+    display: flex;
+    align-items: center;
+  }
+  
+  .menuFooter ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menuFooter ul li {
+    margin-left: 20px;
+  }
+  
+  .menuFooter ul li:first-child {
+    margin-left: 0;
+    margin-right: auto;
+  }
+  
+  .menuFooter ul li:not(:last-child) {
+    margin-right: 20px;
+  }
+  
+  .menuFooter ul li a {
+    color: #ffffff;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  
+  /*  CÓDIGO SECCIÓN DEL FOOTER Y SU MENÚ
+      NO MODIFICAR LO DE ARRIBA • NO MODIFICAR LO DE ARRIBA •
+  ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥ */
