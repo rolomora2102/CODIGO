@@ -1,7 +1,7 @@
 let emailRecruiter = document.getElementById('emailRecruiter')
-let recruiterButton = document.querySelector('.button--red')
+let recruiterButton = document.querySelector('.button--blue')
 
-function emailValidationFunction() {
+function emailValidationRecruiter() {
     let error = false;
     let text = emailRecruiter.value;
     let regex = /^[a-zA-Z0-9.]+@[a-zA-Z0-9]+\.[a-z]/ 
@@ -15,7 +15,7 @@ function emailValidationFunction() {
 }
 
 function sendData() {
-    errorEmail = emailValidationFunction();
+    errorEmail = emailValidationRecruiter();
     if (errorEmail){
         Swal.fire({
             icon:"warning",
@@ -23,8 +23,20 @@ function sendData() {
             text:"El campo de correo debe estar en formato correo@correo.com"
         })
     }else{ 
-        $('#PopUp').load('PopUpInvitationSended.html', function() {
-        $('#PopUp').show();
+        fetch('popUpInvitationSended.html').then((response) => {
+            return response.text();
+        }).then((text) => {
+          let sec = document.querySelector("#PopUp")
+          sec.innerHTML = text;
+          document.querySelector('.button').addEventListener('click', ()=> {
+          sec.innerHTML=""
+        });
+          document.querySelector('.popupbackground').addEventListener('click', ()=> {
+          sec.innerHTML=""
+        });
+        document.querySelector('.close-btn').addEventListener('click', ()=> {
+          sec.innerHTML=""
+        });
         });
     }
     emailRecruiter.value=""
