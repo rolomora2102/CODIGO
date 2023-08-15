@@ -40,8 +40,20 @@ function sendData() {
             text:"Favor completar campos señalados"
         })
     }else{ 
-        $('#PopUp').load('PopUpJobCreated.html', function() {
-        $('#PopUp').show();
+        fetch('popUpJobCreated.html').then((response) => {
+            return response.text();
+        }).then((text) => {
+          let sec = document.querySelector("#PopUp")
+          sec.innerHTML = text;
+          document.querySelector('.button').addEventListener('click', ()=> {
+          sec.innerHTML=""
+        });
+          document.querySelector('.popupbackground').addEventListener('click', ()=> {
+          sec.innerHTML=""
+        });
+        document.querySelector('.close-btn').addEventListener('click', ()=> {
+          sec.innerHTML=""
+        });
         });
         clearData();
     }

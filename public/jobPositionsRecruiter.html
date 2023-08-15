@@ -138,10 +138,6 @@
         <input type="text" required placeholder="Escriba el título del puesto de trabajo" id="position__input"></section>
         <!--Contenedor que incluye Provincia/Cantón/Distrito-->
         <section class="location__container">
-            <script type="module" src="./controlers/regions.js"></script>
-            <script type="module" src="./controlers/cantonDict.js"></script>
-            <script type="module" src="./controlers/provinceDict.js"></script>
-            <script type="module" src="./controlers/districtDict.js"></script>
         <select name="provincia" id="province-dropdown" required>
             <option value="">Provincia</option>
         </select>
@@ -204,7 +200,6 @@
             <section>
                 <label for="vigenciaOferta" class="fromUntil__labels">Desde</label>
                 <div class="from__container">
-                    <script type="module" src="./controlers/monthDaysFrom.js"></script>
                 <select name="vigenciaOferta" class="day__select" id="dayFrom__select" required disabled>
                     <option value="">------</option>
                 </select>
@@ -224,7 +219,6 @@
             <section>
                 <label for="vigenciaOferta" class="fromUntil__labels">Hasta</label>
                 <div class="until__container">
-                    <script type="module" src="./controlers/monthDaysUntil.js"></script>
                 <select name="vigenciaOferta" class="day__select" id="dayUntil__select" required disabled>
                     <option value="">------</option>
                 </select>
@@ -260,9 +254,6 @@
         <textarea type="text" class="requirements__text" placeholder="Requisitos mínimos y cualidades deseadas" id="requirements-text"></textarea>
         <button type="button" class="create__button">CREAR</button>
     </form>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="./controlers/createJobPosition.js"></script>
 
     <section id="PopUp"></section>
 
@@ -302,7 +293,13 @@
   
   <!-- <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> -->
   <!-- AQUÍ VAN LOS SCRIPTS • AQUÍ VAN LOS SCRIPTS • AQUÍ VAN LOS SCRIPTS •  -->
+  <script type="module" src="./controllers/regions.js"></script>
+  <script type="module" src="./controllers/cantonDict.js"></script>
+  <script type="module" src="./controllers/provinceDict.js"></script>
+  <script type="module" src="./controllers/districtDict.js"></script>
+  <script type="module" src="./controllers/monthDaysFrom.js"></script>
+  <script type="module" src="./controllers/monthDaysUntil.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="./controlers/inviteToPosition.js"></script>
+  <script src="./controllers/createJobPosition.js"></script>
   <!-- AQUÍ VAN LOS SCRIPTS • AQUÍ VAN LOS SCRIPTS • AQUÍ VAN LOS SCRIPTS •  -->
   <!-- <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> -->

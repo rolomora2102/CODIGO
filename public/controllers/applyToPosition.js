@@ -1,4 +1,4 @@
-let button = document.querySelector(".consultedposition__button")
+let buttons = document.querySelectorAll(".positions__section button")
 
 function popup() {
   fetch('popUpJobApplied.html').then((response) => {
@@ -18,4 +18,6 @@ function popup() {
   });
 }
 
-button.addEventListener("click",popup)
+for (let i=0;i<buttons.length;i++){
+  buttons[i].addEventListener("click",popup)
+}

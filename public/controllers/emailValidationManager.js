@@ -1,7 +1,7 @@
 let emailManager = document.getElementById('emailManager')
 let managerButton = document.querySelector('.button--green')
 
-function emailValidationFunction() {
+function emailValidationManager() {
     let error = false;
     let text = emailManager.value;
     let regex = /^[a-zA-Z0-9.]+@[a-zA-Z0-9]+\.[a-z]/ 
@@ -15,7 +15,7 @@ function emailValidationFunction() {
 }
 
 function sendData() {
-    errorEmail = emailValidationFunction();
+    errorEmail = emailValidationManager();
     if (errorEmail){
         Swal.fire({
             icon:"warning",
@@ -23,8 +23,20 @@ function sendData() {
             text:"El campo de correo debe estar en formato correo@correo.com"
         })
     }else{ 
-        $('#PopUp').load('PopUpInvitationSended.html', function() {
-        $('#PopUp').show();
+        fetch('popUpInvitationSended.html').then((response) => {
+            return response.text();
+        }).then((text) => {
+          let sec = document.querySelector("#PopUp")
+          sec.innerHTML = text;
+          document.querySelector('.button').addEventListener('click', ()=> {
+          sec.innerHTML=""
+        });
+          document.querySelector('.popupbackground').addEventListener('click', ()=> {
+          sec.innerHTML=""
+        });
+        document.querySelector('.close-btn').addEventListener('click', ()=> {
+          sec.innerHTML=""
+        });
         });
     }
     emailManager.value=""
