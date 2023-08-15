@@ -69,23 +69,23 @@
       <div class="finaluserform__textbox__title">
         Información personal
       </div>
-      <form class="finaluserform__personalinfo__form">
+      <form class="finaluserform__personalinfo__form" action="">
           <!-- Datos personales -->
           <p class="finaluserform__txt-name">Nombre</p>
           <p class="finaluserform__txt-last-name">Apellidos</p>
-          <input type="text" class="finaluserform__personalinfo__input__name" placeholder="Nombre*" required>
-          <input type="text" class="finaluserform__personalinfo__input__lastname" placeholder="Apellidos*" required>
+          <input type="text" name="name" class="finaluserform__personalinfo__input__name" placeholder="Nombre*" required>
+          <input type="text" name="lastname" class="finaluserform__personalinfo__input__lastname" placeholder="Apellidos*" required>
           <p class="finaluserform__txt-id">Cédula</p>
           <p class="finaluserform__txt-phone">Teléfono</p>
-          <input id="id"  type="text" class="finaluserform__personalinfo__input__id" placeholder="Cédula*" required>
-          <input id="phone" type="text" class="finaluserform__personalinfo__input__number" placeholder="Teléfono*" required>
+          <input id="id" name="id" type="text" class="finaluserform__personalinfo__input__id" placeholder="Cédula*" required>
+          <input id="phone" name="phone" type="text" class="finaluserform__personalinfo__input__number" placeholder="Teléfono*" required>
           <p class="finaluserform__txt">Correo</p>
-          <input id="email" type="text" class="finaluserform__personalinfo__input__l" placeholder="Correo*" required>
+          <input id="email" name="email" type="text" class="finaluserform__personalinfo__input__l" placeholder="Correo*" required>
           
           <!-- Crear contrasena -->
           <p class="finaluserform__txt">Crear contraseña*</p>
           <p class="finaluserform__txt">Confirme contraseña*</p>
-          <input type="password" id="password" class="finaluserform__personalinfo__input__password" placeholder="Minimo 8 caracteres*" required>
+          <input type="password" name="password" id="password" class="finaluserform__personalinfo__input__password" placeholder="Minimo 8 caracteres*" required>
           <input type="password" id="password-check" class="finaluserform__personalinfo__input__password" placeholder="Minimo 8 caracteres*" required>
           <p class="finaluserform__txt-province">Provincia</p>
           <p class="finaluserform__txt-canton">Cantón</p>
@@ -100,20 +100,19 @@
             <option value="">Distrito</option>
         </select>
         <p class="finaluserform__txt-country">Nacionalidad</p>
-            <select class="finaluserform__personalinfo__country">
-                <option value="" disabled select>Nacionalidad</option>
-                <option value="">Costarricense</option>
+            <select name="country" class="finaluserform__personalinfo__country">
+                <option value="Costarricense">Costarricense</option>
             </select>
             <div class="finaluserform__personalinfo__gender">
               <p class="finaluserform__personalinfo__gender__txt">Género*</p>
-              <input class="finaluserform__personalinfo__gender__input" type="radio" name="gender" required>
+              <input class="finaluserform__personalinfo__gender__input" type="radio" name="gender" value="Masculino" required>
               <label class="finaluserform__personalinfo__gender__options" for="masculino">Masculino</label>
-              <input class="finaluserform__personalinfo__gender__input" type="radio" name="gender" required>
+              <input class="finaluserform__personalinfo__gender__input" type="radio" name="gender" value="Femenino" required>
               <label class="finaluserform__personalinfo__gender__options" for="femenino">Femenino</label>
-              <input class="finaluserform__personalinfo__gender__input" type="radio" name="gender" required>
+              <input class="finaluserform__personalinfo__gender__input" type="radio" name="gender" value="Prefiero no decir" required>
               <label class="finaluserform__personalinfo__gender__options" for="nodice">Prefiero no decir</label>
             </div>            
-            <textarea class="finaluserform__personalinfo__txtbox" placeholder="Cualidades personales"></textarea>
+            <textarea name="personalDetails" class="finaluserform__personalinfo__txtbox" placeholder="Cualidades personales"></textarea>
             <div class="finaluserform__upload">
                 <div class="finaluserform__upload__border">
                     <div class="finaluserform__upload__content">  
@@ -314,6 +313,13 @@
 <script src="./controllers/formSaveButtonFunctions.js"></script>
 <script src="./controllers/formSaveAddButtonAcademic.js"></script>
 <script src="./controllers/formSaveAddButtonJob.js"></script>
+
+<!-- POST API PERSONAL FORM -->
+<script type="module" src="./controllers/userRegistration.js"></script>
+ <!--Axios-->
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+
 <script type="module" src="./controllers/regions.js"></script>
 <script type="module" src="./controllers/cantonDict.js"></script>
 <script type="module" src="./controllers/provinceDict.js"></script>
