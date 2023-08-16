@@ -1,8 +1,19 @@
-let buttonCreate = document.querySelector('.create__button')
+let buttonCreate = document.querySelector('.create__button');
+const position = document.getElementById('position__input');
+const provinceDropdown = document.getElementById('province-dropdown');
 const cantonDropdown = document.getElementById('canton-dropdown');
 const districtDropdown = document.getElementById('district-dropdown');
+const salaryDropdown = document.getElementById('salary-dropdown');
+const studiesDropdown = document.getElementById('studies-dropdown');
+const areaDropdown = document.getElementById('area-dropdown');
+const workdayDropdown = document.getElementById('workday-dropdown');
 const dayDropdownFrom = document.getElementById('dayFrom__select');
+const monthDropdownFrom = document.getElementById('monthFrom__select');
+const yearDropdownFrom = document.getElementById('yearFrom__select');
 const dayDropdownUntil = document.getElementById('dayUntil__select');
+const monthDropdownUntil = document.getElementById('monthUntil__select');
+const yearDropdownUntil = document.getElementById('yearUntil__select');
+const yearDropdown = document.getElementById('year-dropdown');
 const textArea = document.getElementById('requirements-text');
 
 function emptySpaces(){
@@ -40,13 +51,16 @@ function sendData() {
             text:"Favor completar campos señalados"
         })
     }else{ 
+        const from = dayDropdownFrom.value+"/"+monthDropdownFrom.value+"/"+yearDropdownFrom.value;
+        const until = dayDropdownUntil.value+"/"+monthDropdownUntil.value+"/"+yearDropdownUntil.value;
+        createPosition(position.value,provinceDropdown.value,cantonDropdown.value,districtDropdown.value,salaryDropdown.value,studiesDropdown.value,areaDropdown.value,workdayDropdown.value,from,until,yearDropdown.value,textArea.value,"Intel","images/LogoIntel.png")
         fetch('popUpJobCreated.html').then((response) => {
             return response.text();
         }).then((text) => {
           let sec = document.querySelector("#PopUp")
           sec.innerHTML = text;
           document.querySelector('.button').addEventListener('click', ()=> {
-          sec.innerHTML=""
+          window.location.href = "jobPositionsAdmin.html"
         });
           document.querySelector('.popupbackground').addEventListener('click', ()=> {
           sec.innerHTML=""

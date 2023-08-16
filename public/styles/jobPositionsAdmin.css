@@ -182,7 +182,7 @@ nav ul li a {
 /*Nombre*/
 
 .jobName__container div {
-    display: flex;
+    display: grid;
     align-items: center;
     padding-left: 10px; 
     width: 380px; 
@@ -190,6 +190,10 @@ nav ul li a {
     background-color: #f6f6f6;
     border: solid 0.5px #c9c9c9; 
     border-radius: 2.5px; 
+    font-size: 12px; 
+    font-weight: light;
+    color: #012c3d;
+    grid-template-columns: auto 10.5%;
 }
 
 .jobName__container a {
@@ -197,9 +201,24 @@ nav ul li a {
     color: #012c3d;
 }
 
-.jobName__container p {
-    font-size: 12px; 
-    font-weight: light;
+.jobName__container button {
+    cursor: pointer;
+    display: flex;
+    background-color: #f6f6f6;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    width: 40px; 
+    height: 40px; 
+    position: relative;
+}
+
+.jobName__container img {
+    width: 25px; 
+    height: 25px;
+    display: block;
+    margin: 0px auto;
+    position: absolute;
 }
 
 /*Estado*/
