@@ -14,16 +14,9 @@ saveProfileBtn.addEventListener('click', async (event) => {
     const canton = formData.get('canton');
     const district = formData.get('distrito');
     const country = formData.get('country');
-    const gender = formData.get('gender');
+    const gender = formData.get('gender')
     const personalDetails = formData.get('personalDetails');
-
-    const jobEnterpriseName = formData.get('jobEnterpriseName');
-    const jobType = formData.get('jobType');
-    const jobDescription = formData.get('jobDescription');
-    const jobMonthFrom = formData.get('jobMonthFrom');
-    const jobYearFrom = formData.get('jobYearFrom');
-    const jobMonthTo = formData.get('jobMonthTo');
-    const jobYearTo = formData.get('jobYearTo');
+    const status = true;
 
     // Capturar datos de la tabla
     const academicTableRows = document.querySelectorAll('#table-academic tbody tr');
@@ -49,15 +42,15 @@ saveProfileBtn.addEventListener('click', async (event) => {
 
     jobTableRows.forEach(row => {
         const cells = row.querySelectorAll('td');
-        const rowData = Array.from(cells).map(cell => cell.textContent);
+        const jobRowData = Array.from(cells).map(cell => cell.textContent);
         jobData.push({
-            jobEnterpriseName: rowData[0],
-            jobType: rowData[1],
-            jobDescription: rowData[2],
-            jobMonthFrom: rowData[3],
-            jobYearFrom: rowData[4],
-            jobMonthTo: rowData[5],
-            jobYearTo: rowData[6]
+            jobEnterpriseName: jobRowData[0],
+            jobType: jobRowData[1],
+            jobDescription: jobRowData[2],
+            jobMonthFrom: jobRowData[3],
+            jobYearFrom: jobRowData[4],
+            jobMonthTo: jobRowData[5],
+            jobYearTo: jobRowData[6]
         });
     });
 
@@ -76,14 +69,15 @@ saveProfileBtn.addEventListener('click', async (event) => {
         gender,
         personalDetails,
         academicTable: academicData,
-        jobTableRows: jobData
+        jobTable: jobData,
+        status: status
         });
 
         if (response.data.result) {
-        Swal.fire({
-            title: 'Se ha registrado exitosamente',
-            icon: 'success'
-        });
+            Swal.fire({
+                title: 'Se ha registrado exitosamente',
+                icon: 'success'
+            });
         } else {
         // Manejar error en el registro
         switch (response.data.error.code) {
