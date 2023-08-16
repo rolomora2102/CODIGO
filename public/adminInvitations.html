@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>adminInvitations</title>
+    <title>Invitaciones</title>
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/adminInvitations.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -60,17 +60,84 @@
   <!-- ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ ↧ -->
 
 
-
+    <section>
+      <div class="div__inv">
+        <label class="label_inv_num" for="inv_num">Nº Invitación</label>
+        <label class="label_inv_name" for="inv_name">Nombre de la persona</label>
+        <div class="div_espacio"></div>
+        <input class="input_inv_num" type="text" required>
+        <input class="input_form_inv_name" type="text" required>
+        <label class="label_ofer_name" for="ofer_name">Nombre de la oferta de trabajo</label>
+        <label class="label_ofer_estado" for="ofer_estado">Estado</label>
+        <input class="input_ofer_name" type="text" required>
+        <select name="ofer_estado" class="select_ofer_estado" required><option value="">--Elegir--</option><option value="enviada">Enviada</option><option value="aceptada">Aceptada</option><option value="denegada">Denegada</option></select>
+            
+      </div>
+    </section>
 
 
 
 
     <!--ID/Nombre de la oferta de trabajo/Estado/Invitar-->
-    <section class = "invitation">
-        
-      <h1 id = advertenciaMsg >NO ESTÁ DISEÑADA</h1>
-
-    </section>
+    <section class="jobnotification__container">
+      <table>
+          <thead>
+              <tr>
+                  <th>Nº Notificación</th>
+                  <th class="date__text">Fecha</th>
+                  <th class="subject__text">Nombre de la persona invitada</th>
+                  <th class="subject__text">Nombre de la oferta de trabajo</th>
+                  <th>Estado</th>
+                  <th>Acción</th>
+              </tr>
+          </thead>
+          <tbody class="jobnotification__tbody">
+              <tr>
+                  <td class="jobnumbernotification__container"><div>123901491</div></td>
+                  <td class="jobdate__container"><div>DD/MM/YYYY</div></td>
+                  <td class="jobsubject__container"><div>Alejandro Leiva Murillo</div></td>
+                  <td class="jobsubofer__container"><div>Desarrollador</div></td>
+                  <td class="joboption__container option--blue"><div><a href="#"><span>Enviada</span></a></div></td>
+                  <td class=""><div><select name="provincia" class="select" id="select__dropdown" required><option value="">--Elegir--</option><option value="revisar">Revisar</option><option value="eliminar">Eliminar</option><option value="cancelar">Cancelar</option></select></div></td>
+              </tr>
+              <tr>
+                  <td class="jobnumbernotification__container"><div>645745</div></td>
+                  <td class="jobdate__container"><div>DD/MM/YYYY</div></td>
+                  <td class="jobsubject__container"><div>Se ha cerrado la oferta de trabajo Nº 98345842347</div></td>
+                  <td class="jobsubofer__container"><div>Desarrollador</div></td>
+                  <td class="joboption__container option--green"><div><a href="#" ><div><span>Aceptada</span></div></a></div></td>
+                  <td class=""><div><select name="provincia" class="select" id="select__dropdown" required><option value="">--Elegir--</option><option value="revisar">Revisar</option><option value="eliminar">Eliminar</option><option value="cancelar">Cancelar</option></select></div></td>
+              </tr>
+              <tr>
+                  <td class="jobnumbernotification__container"><div>53253253</div></td>
+                  <td class="jobdate__container"><div>DD/MM/YYYY</div></td>
+                  <td class="jobsubject__container"><div>Cambio de contraseña exitoso</div></td>
+                  <td class="jobsubofer__container"><div>Desarrollador</div></td>
+                  <td class="joboption__container option--red"><div><a href="#"><div><span>Denegada</span></div></a></div></td>
+                  <td class=""><div><select name="provincia" class="select" id="select__dropdown" required><option value="">--Elegir--</option><option value="revisar">Revisar</option><option value="eliminar">Eliminar</option><option value="cancelar">Cancelar</option></select></div></td>
+              </tr>
+              <tr>
+                  <td class="jobnumbernotification__container"><div>457457453</div></td>
+                  <td class="jobdate__container"><div>DD/MM/YYYY</div></td>
+                  <td class="jobsubject__container"><div>La oferta de trabajo Nº 345232 fue modificada</div></td>
+                  <td class="jobsubofer__container"><div>Desarrollador</div></td>
+                  <td class="joboption__container option--blue"><div><a href="#"><div><span>Enviada</span></div></a></div></td>
+                  <td class=""><div><select name="provincia" class="select" id="select__dropdown" required><option value="">--Elegir--</option><option value="revisar">Revisar</option><option value="eliminar">Eliminar</option><option value="cancelar">Cancelar</option></select></div></td>
+              </tr>
+          </tbody>
+      </table>
+      <nav class="pages">
+          <ul>
+              <li><button><</button></li>
+              <li><button class="currentPage">1</button></li>
+              <li><button>2</button></li>
+              <li><button>3</button></li>
+              <li><button>4</button></li>
+              <li><button>...10</button></li>
+              <li><button>></button></li>
+          </ul>
+      </nav>
+  </section>
     
 
 
