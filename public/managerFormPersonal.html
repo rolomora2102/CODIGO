@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registrar Usuario</title>
+    <title>Registrar Manager</title>
 
     <link rel="stylesheet" href="./styles/reset.css">
 	<link rel="stylesheet" href="./styles/finalUserFormPersonal.css">
@@ -131,141 +131,7 @@
 
       <section id="PopUp"></section>
   </section>
-<!-- Formación Académica -->
-  <section id="form2" class="finaluserform__personalinfo__main__section">
-        <div class="finaluserform__textbox__title">
-        Formación Académica
-		</div>
-		<form id="formContainer-Academic" class="finaluserform__personalinfo__form" action="">
-			<!-- Centro educativo -->
-			<p class="finaluserform__txt">Centro Educativo</p>
-			<input id="input-academicForm" name="academicSchool" class="finaluserform__personalinfo__input__l" placeholder="Universidad Escuela Libre de Derecho">
-			<!-- Area profesional -->
-			<p class="finaluserform__txt">Área profesional</p>
-			<select	id="areas-dropdown" name="academicArea" class="finaluserform__personalinfo__input__l">
-				<option value="" disabled selected>-</option>
-			</select>
-      
-			<p class="finaluserform__txt">Nivel de Estudios</p>
-			<p class="finaluserform__txt">Estado</p>
-			<select id="academic-level" name="academicLevel" class="finaluserform__personalinfo__select__l">
-				            <option value="">------</option>
-                    <option value="Bachillerato">Bachillerato</option>
-                    <option value="Técnico">Técnico</option>
-                    <option value="Licenciatura">Licenciatura</option>
-                    <option value="Maestría">Maestría</option>
-			</select>
-			<select id="academic-status" name="academicStatus" class="finaluserform__personalinfo__select__xs">
-        <option value="">------</option>
-				<option value="Completo" >Completo</option>
-        <option value="Incompleto" >Incompleto</option>
-        <option value="Cursando" >Cursando</option>
-			</select>
-			<div class="finaluserform__txt__position">
-      <!-- Desde Dropdown -->
-			<p class="finaluserform__txt">Desde</p>
-			</div>
-			<select name="academicMonthFrom" class="finaluserform__personalinfo__select__l" id="monthFrom__select">
-				<option value="" disabled selected>-</option>
-			</select>
-			<select name="academicYearFrom" class="finaluserform__personalinfo__select__xs"  id="yearFrom__select">
-				<option value="" disabled selected>-</option>
-			</select>
-      <!-- Hasta Dropdown -->
-			<div class="finaluserform__txt__position">
-			<p class="finaluserform__txt">Hasta</p>
-			</div>
-			<select name="academicMonthTo" class="finaluserform__personalinfo__select__l" id="monthTo__select">
-				<option value="" disabled selected>-</option>
-			</select>
-			<select name="academicYearTo" class="finaluserform__personalinfo__select__xs"  id="yearTo__select">
-				<option value="" disabled selected>-</option>
-			</select>
-		</form>
-    <label id="finaluserform__tbl__label">Datos Guardados</label>
-    <div class="table__container">
-    <table class="table" id="table-academic">
-      <thead>
-        <tr class="table__header">
-          <th>Centro Educativo</th>
-          <th>Área Profesional</th>
-          <th>Nivel de Estudios</th>
-          <th>Estado</th>
-          <th>Desde</th>
-          <th>Año</th>
-          <th>Hasta</th>
-          <th>Año</th>
-          <th>   </th>
-        </tr>
-      </thead>
-      <!-- Aquí se cargarán dinámicamente las filas con JavaScript -->
-    </table>
-    </div>
-    <div class="button-container">
-      <button id="saveBtn-Academic" type="button" class="finaluserform__nextbutton">CONTINUAR</button>
-      <button id="saveBtn-Academic--add" type="button" class="finaluserform__save-button">GUARDAR Y AGREGAR OTRO</button>
-    </div> 
-    
-  </section>
-<!-- Experiencia Laboral -->
-  <section id="form3" class="finaluserform__personalinfo__main__section">
-	<div class="finaluserform__textbox__title">
-		Experiencia Laboral
-	</div>
-	<form class="finaluserform__personalinfo__form">
-		<!-- Nombre de la empresa -->
-		<p class="finaluserform__txt">Nombre de la empresa</p>
-		<input name="jobEnterpriseName" id="input-enterpriseName" class="finaluserform__personalinfo__input__l" placeholder="Bufete KPMG">
-		<!-- Cargo -->
-		<p  class="finaluserform__txt">Cargo</p>
-		<input	name="jobType" id="input-jobType" class="finaluserform__personalinfo__input__l" placeholder="Abogado Senior en Propiedad Intelectual"></input>
-		</select>
-		
-		<!-- Funciones y logros del cargo -->
-		<p class="finaluserform__txt">Funciones y logros del cargo</p>
-		<textarea name="jobDescription" id="input-jobDescription" class="finaluserform__personalinfo__txtbox" placeholder="Descripción del cargo"></textarea>
-		<div class="finaluserform__txt__position">
-		<p class="finaluserform__txt">Desde</p>
-		</div>
-		<select name="jobMonthFrom" class="finaluserform__personalinfo__select__l"  id="monthFrom__select-job">
-			<option value="" disabled selected>-</option>
-		</select>
-		<select name="jobYearFrom" class="finaluserform__personalinfo__select__xs"  id="yearFrom__select-job">
-			<option value="" disabled selected>-</option>
-		</select>
-		<div class="finaluserform__txt__position">
-		<p class="finaluserform__txt">Hasta</p>
-		</div>
-		<select name="jobMonthTo" class="finaluserform__personalinfo__select__l"  id="monthTo__select-job">
-			<option value="" disabled selected>-</option>
-		</select>
-		<select name="jobYearTo" class="finaluserform__personalinfo__select__xs"  id="yearTo__select-job">
-			<option value="" disabled selected>-</option>
-		</select>
-	</form>
-  <label id="finaluserform__tbl__label">Datos Guardados</label>
-    <div class="table__container">
-    <table class="table" id="table-jobExperience">
-      <thead>
-        <tr class="table__header">
-          <th>Nombre de la empresa</th>
-          <th>Cargo</th>
-          <th>Funciones y logros del cargo</th>
-          <th>Desde</th>
-          <th>Año</th>
-          <th>Hasta</th>
-          <th>Año</th>
-          <th>   </th>
-        </tr>
-      </thead>
-      <!-- Aquí se cargarán dinámicamente las filas con JavaScript -->
-    </table>
-    </div>
-  <div class="button-container">
-    <button id="saveBtn-Exp" type="button" class="finaluserform__nextbutton">CONTINUAR</button>
-    <button id="saveBtn-Job--add" class="finaluserform__save-button">GUARDAR Y AGREGAR OTRO</button>
-  </div>
-</section>
+
 <!-- Guardar Perfil -->
 <section>
 	<div id="save-profile" class="finaluserform__button-render">
