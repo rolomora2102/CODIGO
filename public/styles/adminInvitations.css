@@ -69,9 +69,301 @@ nav ul li a {
 /* Cambiar nombre del ID para cambiar color en el menú del Header */
 /* jobs, purpose, contact, profile, closeSession  */
 
-#profile{
-  color: #f8444e;
+.div__inv{
+  height: 300px;
+  width: 1105px;
+  margin: 50px auto;
+  margin-top: 100px;
+  border-bottom: #012c3d 3px solid;
 }
+
+.label_inv_num{
+  color: #012c3d; 
+  font-family: 'Manrope', sans-serif;
+  font-size: 20pt;
+  display: inline;
+  padding-left: 10px;
+  margin-left: 50px;
+}
+
+.label_inv_name{
+  color: #012c3d; 
+  font-family: 'Manrope', sans-serif;
+  font-size: 20pt;
+  display: inline;
+  padding-left: 10px;
+  margin-left: 190px;
+}
+
+.label_ofer_name{
+  color: #012c3d; 
+  font-family: 'Manrope', sans-serif;
+  font-size: 20pt;
+  display: inline;
+  padding-left: 10px;
+  margin-left: 50px;
+}
+
+.label_ofer_estado{
+  color: #012c3d; 
+  font-family: 'Manrope', sans-serif;
+  font-size: 20pt;
+  display: inline;
+  padding-left: 10px;
+  margin-left: 340px;
+}
+
+.input_inv_num{
+  border: 2px solid #c9c9c9;
+  background-color: #f6f6f6;
+  width: 220px;
+  height: 40px;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-right: 45px;
+  margin-bottom: 30px;
+  justify-content: center;
+  text-align: left;
+  font-family: 'Manrope', sans-serif;
+  font-size: 10pt;
+  padding-left: 10px;
+  margin-left: 50px;
+}
+
+.input_form_inv_name{
+  border: 2px solid #c9c9c9;
+  background-color: #f6f6f6;
+  width: 620px;
+  height: 40px;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-right: 45px;
+  margin-bottom: 30px;
+  margin-left: 80px;
+  justify-content: center;
+  text-align: left;
+  font-family: 'Manrope', sans-serif;
+  font-size: 10pt;
+  padding-left: 10px;
+}
+
+.input_ofer_name{
+  border: 2px solid #c9c9c9;
+  background-color: #f6f6f6;
+  width: 620px;
+  height: 40px;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-right: 45px;
+  margin-bottom: 30px;
+  margin-left: 50px;
+  justify-content: center;
+  text-align: left;
+  font-family: 'Manrope', sans-serif;
+  font-size: 10pt;
+  padding-left: 10px;
+}
+
+.select_ofer_estado{
+  border: 2px solid #c9c9c9;
+  background-color: #f6f6f6;
+  width: 260px;
+  height: 46px;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-right: 45px;
+  margin-bottom: 30px;
+  justify-content: center;
+  text-align: left;
+  font-family: 'Manrope', sans-serif;
+  font-size: 10pt;
+  padding-left: 10px;
+  margin-left: 50px;
+}
+
+.jobnotification__container table {
+  width: 1105px;
+  margin: 90px auto;
+  font-family: 'Manrope', sans-serif;
+  }
+  
+.jobnotification__container th {
+  font-size: 15px;
+  font-weight: bold;
+  color: #012c3d;
+  border-bottom: 1px solid #012c3d;
+  padding-bottom: 20px;
+  align-items: center;
+  padding-left: 0%;
+}
+
+/*Nombre de Asunto Titulo*/
+.date__text{
+  align-items: flex-start;
+}
+
+.subject__text {
+  text-align: start;
+  margin-left: 50px;
+}
+
+/*Notificación*/
+
+.jobnumbernotification__container div {
+  margin-top: 25px;
+  display: flex;
+  width: 77.5px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  color: #012c3d;
+  font-size: 12.5px;
+  font-weight: light;
+  background-color: #f6f6f6;
+  border: solid 0.5px #c9c9c9;
+  border-radius: 2.5px;
+  margin-left: 10px;
+}
+
+/*Fecha*/
+
+.jobdate__container div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 87.5px;
+  height: 40px;
+  color: #012c3d;
+  background-color: #f6f6f6;
+  border: solid 0.5px #c9c9c9;
+  border-radius: 2.5px;
+  font-size: 12.5px;
+  font-weight: light;
+  
+}
+
+/*Asunto*/
+
+.jobsubject__container div {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  width: 340px;
+  height: 40px;
+  color: #012c3d;
+  background-color: #f6f6f6;
+  border: solid 0.5px #c9c9c9;
+  border-radius: 2.5px;
+  font-size: 12.5px;
+  font-weight: light;
+  margin-left: 5px;
+}
+
+.jobsubofer__container div {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  width: 340px;
+  height: 40px;
+  color: #012c3d;
+  background-color: #f6f6f6;
+  border: solid 0.5px #c9c9c9;
+  border-radius: 2.5px;
+  font-size: 12.5px;
+  font-weight: light;
+  margin-left: 5px;
+}
+
+/*Opción*/
+
+.joboption__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 40px;
+  background-color: #f6f6f6;
+  border: solid 0.5px #c9c9c9;
+  border-radius: 2.5px;
+  margin-right: 20px;
+  margin-left: 20px;
+  }
+  
+.joboption__container span {
+  color: #012c3d;
+  font-size: 12px;
+  font-weight: light;
+}
+
+.select{
+  border: 0.5px solid #c9c9c9;
+  background-color: #f6f6f6;
+  width: 90px;
+  height: 40px;
+  border-radius: 2.5px;
+  margin-top: 10px;
+  margin-right: 23px;
+  justify-content: center;
+  text-align: left;
+  font-family: 'Manrope', sans-serif;
+  font-size: 10pt;
+  display: inline;
+  padding-left: 10px;
+}
+
+.joboption__container a {
+  text-decoration: none;
+}
+
+.option--blue {
+  background-color: #012c3d;
+}
+
+.option--blue span {
+  color: #ffffff;
+}
+
+.option--red span {
+  color: #ffffff;
+}
+
+.option--green span {
+  color: #ffffff;
+}
+
+.option--red {
+  background-color: #f8444e;
+}
+
+.option--green {
+  background-color: #09b49c;
+}
+
+.pages {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  padding: 85px 30%;
+}
+
+.pages ul li button {
+  color: #000000;
+  font-family: 'Manrope', sans-serif;
+  font-size: 17px; 
+  background-color: #ffff;
+  border: none;
+  text-decoration: none;
+}
+
+.pages ul li button:hover {
+  cursor: pointer;
+}
+
+.pages .currentPage {
+  background-color: #f6f6f6;
+}
+
 
 
 
