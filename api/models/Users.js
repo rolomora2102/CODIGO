@@ -41,7 +41,7 @@ const schema_users = new mongoose.Schema({
         jobYearTo: {type: String, required: false}
         }
     ],
-    type: {type: String, default: 'User'},
+    role: {type: String, required: true},
     status: {type: Boolean, default: false}
 })
 
