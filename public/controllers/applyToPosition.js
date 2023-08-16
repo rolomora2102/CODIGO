@@ -1,5 +1,3 @@
-let buttons = document.querySelectorAll(".positions__section button")
-
 function popup() {
   fetch('popUpJobApplied.html').then((response) => {
       return response.text();
@@ -16,8 +14,4 @@ function popup() {
     sec.innerHTML=""
   });
   });
-}
-
-for (let i=0;i<buttons.length;i++){
-  buttons[i].addEventListener("click",popup)
 }

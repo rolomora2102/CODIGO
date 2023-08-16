@@ -69,18 +69,18 @@
             <input type="text" name="codigo" id="code__input" placeholder="Código">
             <select name="empresa" id="company-dropdown">
                 <option value="">Empresa</option>
-                <option value="coca-cola">Coca-Cola</option>
-                <option value="dos_pinos">Dos Pinos</option>
-                <option value="fifco">Fifco</option>
-                <option value="intel">Intel</option>
+                <option value="Coca-Cola">Coca-Cola</option>
+                <option value="Dos Pinos">Dos Pinos</option>
+                <option value="Fifco">Fifco</option>
+                <option value="Intel">Intel</option>
             </select>
             <select name="jornada" id="workday-dropdown">
                 <option value="">Jornada</option>
-                <option value="completo">Tiempo Completo</option>
-                <option value="medio">Medio Tiempo</option>
-                <option value="reducida">Jornada Reducida</option>
-                <option value="extendida">Jornada Extendida</option>
-                <option value="nocturno">Trabajo Nocturno</option>
+                <option value="Tiempo Completo">Tiempo Completo</option>
+                <option value="Medio Tiempo">Medio Tiempo</option>
+                <option value="Jornada Reducida">Jornada Reducida</option>
+                <option value="Jornada Extendida">Jornada Extendida</option>
+                <option value="Trabajo Nocturno">Trabajo Nocturno</option>
             </select>
             <select name="provincia" id="province-dropdown">
                 <option value="">Provincia</option>
@@ -95,14 +95,14 @@
                     </select>
                     <select name="salario" id="salary-dropdown">
                         <option value="">Salario</option>
-                        <option value="-1000000">Menos de ₡1,000,000</option>
-                        <option value="1000000">₡1,000,000 - ₡1,500,000</option>
-                        <option value="1500000">₡1,500,000 - ₡2,000,000</option>
-                        <option value="2000000">₡2,000,000 - ₡2,500,000</option>
-                        <option value="2500000">₡2,500,000 - ₡3,000,000</option>
-                        <option value="3000000">₡3,000,000 - ₡3,500,000</option>
-                        <option value="35000000">₡3,500,000 - ₡4,000,000</option>
-                        <option value="+4000000">Más de ₡4,000,000</option>
+                        <option value="Menos de ₡1,000,000">Menos de ₡1,000,000</option>
+                        <option value="₡1,000,000 - ₡1,500,000">₡1,000,000 - ₡1,500,000</option>
+                        <option value="₡1,500,000 - ₡2,000,000">₡1,500,000 - ₡2,000,000</option>
+                        <option value="₡2,000,000 - ₡2,500,000">₡2,000,000 - ₡2,500,000</option>
+                        <option value="₡2,500,000 - ₡3,000,000">₡2,500,000 - ₡3,000,000</option>
+                        <option value="₡3,000,000 - ₡3,500,000">₡3,000,000 - ₡3,500,000</option>
+                        <option value="₡3,500,000 - ₡4,000,000">₡3,500,000 - ₡4,000,000</option>
+                        <option value="Más de ₡4,000,000">Más de ₡4,000,000</option>
                     </select>
                     <select name="cantón" id="canton-dropdown" disabled>
                         <option value="">Cantón</option>
@@ -110,10 +110,10 @@
                 <div>
                     <select name="nivel académico" id="studies-dropdown">
                         <option value="">Nivel Académico</option>
-                        <option value="bachillerato">Bachillerato</option>
-                        <option value="tecnico">Técnico</option>
-                        <option value="licenciatura">Licenciatura</option>
-                        <option value="maestria">Maestría</option>
+                        <option value="Bachillerato">Bachillerato</option>
+                        <option value="Técnico">Técnico</option>
+                        <option value="Licenciatura">Licenciatura</option>
+                        <option value="Maestría">Maestría</option>
                     </select>
                     <select name="años experiencia" id="years-dropdown">
                         <option value="">Años Experiencia</option>
@@ -195,13 +195,15 @@
   <!-- <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> -->
   <!-- AQUÍ VAN LOS SCRIPTS • AQUÍ VAN LOS SCRIPTS • AQUÍ VAN LOS SCRIPTS •  -->
 
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="./controllers/positions-service.js"></script>
   <script type="module" src="./controllers/regions.js"></script>
   <script type="module" src="./controllers/cantonDict.js"></script>
   <script type="module" src="./controllers/provinceDict.js"></script>
   <script type="module" src="./controllers/districtDict.js"></script>
+  <script src="./controllers/applyToPosition.js"></script>
   <script src="./controllers/jobContainers.js"></script>
   <script src="./controllers/jobFilters.js"></script>
-  <script src="./controllers/applyToPosition.js"></script>
   
   <!-- AQUÍ VAN LOS SCRIPTS • AQUÍ VAN LOS SCRIPTS • AQUÍ VAN LOS SCRIPTS •  -->
   <!-- <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> -->

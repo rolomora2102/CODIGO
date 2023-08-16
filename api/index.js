@@ -5,6 +5,7 @@ const bodyParser = require('body-parser');
 
 //vincular la carpeta de routes
 const users = require('./routes/users.routes')
+const positions = require('./routes/positions.routes')
 //importar dotenv
 require('dotenv').config()
 
@@ -28,6 +29,7 @@ mongoose.connect(process.env.MONGO_URI).
 
 //localhost:3000/api
 app.use('/api', users);
+app.use('/api', positions);
 
 
 
