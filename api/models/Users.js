@@ -30,7 +30,8 @@ const schema_users = new mongoose.Schema({
         academicYearTo: {type: String, required: false}
         }
     ],
-    jobTable: [{
+    jobTable: [
+        {
         jobEnterpriseName: {type: String, required: false},
         jobType: {type: String, required: false},
         jobDescription: {type: String, required: false},
@@ -38,7 +39,10 @@ const schema_users = new mongoose.Schema({
         jobYearFrom: {type: String, required: false},
         jobMonthTo: {type: String, required: false},
         jobYearTo: {type: String, required: false}
-    }]
+        }
+    ],
+    type: {type: String, default: 'User'},
+    status: {type: Boolean, default: false}
 })
 
 
