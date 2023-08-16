@@ -22,7 +22,7 @@ router.post('/users.routes', async (req, res) => {
         savedUser
       });
     } catch (error) {
-      res.status(501).json({
+      res.status(500).json({
         result: false,
         response: 'Error al registrar usuario. Detalles: ',
         error: error.message // Usar 'error.message' para obtener el mensaje de error específico

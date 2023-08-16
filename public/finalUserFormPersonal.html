@@ -136,26 +136,26 @@
         <div class="finaluserform__textbox__title">
         Formación Académica
 		</div>
-		<form id="formContainer-Academic" class="finaluserform__personalinfo__form">
+		<form id="formContainer-Academic" class="finaluserform__personalinfo__form" action="">
 			<!-- Centro educativo -->
 			<p class="finaluserform__txt">Centro Educativo</p>
-			<input id="input-academicForm"class="finaluserform__personalinfo__input__l" placeholder="Universidad Escuela Libre de Derecho">
+			<input id="input-academicForm" name="academicSchool" class="finaluserform__personalinfo__input__l" placeholder="Universidad Escuela Libre de Derecho">
 			<!-- Area profesional -->
 			<p class="finaluserform__txt">Área profesional</p>
-			<select	id="areas-dropdown" class="finaluserform__personalinfo__input__l">
+			<select	id="areas-dropdown" name="academicArea" class="finaluserform__personalinfo__input__l">
 				<option value="" disabled selected>-</option>
 			</select>
       
 			<p class="finaluserform__txt">Nivel de Estudios</p>
 			<p class="finaluserform__txt">Estado</p>
-			<select id="academic-level" class="finaluserform__personalinfo__select__l">
+			<select id="academic-level" name="academicLevel" class="finaluserform__personalinfo__select__l">
 				            <option value="">------</option>
                     <option value="Bachillerato">Bachillerato</option>
                     <option value="Técnico">Técnico</option>
                     <option value="Licenciatura">Licenciatura</option>
                     <option value="Maestría">Maestría</option>
 			</select>
-			<select id="academic-status" class="finaluserform__personalinfo__select__xs">
+			<select id="academic-status" name="academicStatus" class="finaluserform__personalinfo__select__xs">
         <option value="">------</option>
 				<option value="Completo" >Completo</option>
         <option value="Incompleto" >Incompleto</option>
@@ -165,20 +165,20 @@
       <!-- Desde Dropdown -->
 			<p class="finaluserform__txt">Desde</p>
 			</div>
-			<select class="finaluserform__personalinfo__select__l" id="monthFrom__select">
+			<select name="academicMonthFrom" class="finaluserform__personalinfo__select__l" id="monthFrom__select">
 				<option value="" disabled selected>-</option>
 			</select>
-			<select class="finaluserform__personalinfo__select__xs"  id="yearFrom__select">
+			<select name="academicYearFrom" class="finaluserform__personalinfo__select__xs"  id="yearFrom__select">
 				<option value="" disabled selected>-</option>
 			</select>
       <!-- Hasta Dropdown -->
 			<div class="finaluserform__txt__position">
 			<p class="finaluserform__txt">Hasta</p>
 			</div>
-			<select class="finaluserform__personalinfo__select__l" id="monthTo__select">
+			<select name="academicMonthTo" class="finaluserform__personalinfo__select__l" id="monthTo__select">
 				<option value="" disabled selected>-</option>
 			</select>
-			<select class="finaluserform__personalinfo__select__xs"  id="yearTo__select">
+			<select name="academicYearTo" class="finaluserform__personalinfo__select__xs"  id="yearTo__select">
 				<option value="" disabled selected>-</option>
 			</select>
 		</form>
@@ -215,31 +215,31 @@
 	<form class="finaluserform__personalinfo__form">
 		<!-- Nombre de la empresa -->
 		<p class="finaluserform__txt">Nombre de la empresa</p>
-		<input id="input-enterpriseName" class="finaluserform__personalinfo__input__l" placeholder="Bufete KPMG">
+		<input name="jobEnterpriseName" id="input-enterpriseName" class="finaluserform__personalinfo__input__l" placeholder="Bufete KPMG">
 		<!-- Cargo -->
 		<p  class="finaluserform__txt">Cargo</p>
-		<input	id="input-jobType" class="finaluserform__personalinfo__input__l" placeholder="Abogado Senior en Propiedad Intelectual"></input>
+		<input	name="jobType" id="input-jobType" class="finaluserform__personalinfo__input__l" placeholder="Abogado Senior en Propiedad Intelectual"></input>
 		</select>
 		
 		<!-- Funciones y logros del cargo -->
 		<p class="finaluserform__txt">Funciones y logros del cargo</p>
-		<textarea id="input-jobDescription" class="finaluserform__personalinfo__txtbox" placeholder="Descripción del cargo"></textarea>
+		<textarea name="jobDescription" id="input-jobDescription" class="finaluserform__personalinfo__txtbox" placeholder="Descripción del cargo"></textarea>
 		<div class="finaluserform__txt__position">
 		<p class="finaluserform__txt">Desde</p>
 		</div>
-		<select class="finaluserform__personalinfo__select__l"  id="monthFrom__select-job">
+		<select name="jobMonthFrom" class="finaluserform__personalinfo__select__l"  id="monthFrom__select-job">
 			<option value="" disabled selected>-</option>
 		</select>
-		<select class="finaluserform__personalinfo__select__xs"  id="yearFrom__select-job">
+		<select name="jobYearFrom" class="finaluserform__personalinfo__select__xs"  id="yearFrom__select-job">
 			<option value="" disabled selected>-</option>
 		</select>
 		<div class="finaluserform__txt__position">
 		<p class="finaluserform__txt">Hasta</p>
 		</div>
-		<select class="finaluserform__personalinfo__select__l"  id="monthTo__select-job">
+		<select name="jobMonthTo" class="finaluserform__personalinfo__select__l"  id="monthTo__select-job">
 			<option value="" disabled selected>-</option>
 		</select>
-		<select class="finaluserform__personalinfo__select__xs"  id="yearTo__select-job">
+		<select name="jobYearTo" class="finaluserform__personalinfo__select__xs"  id="yearTo__select-job">
 			<option value="" disabled selected>-</option>
 		</select>
 	</form>
@@ -269,7 +269,7 @@
 <!-- Guardar Perfil -->
 <section>
 	<div id="save-profile" class="finaluserform__button-render">
-		<button class="finaluserform__save-profile-button">Guardar perfil</button>
+		<button id="saveProfileBtn" class="finaluserform__save-profile-button">Guardar perfil</button>
 	</div>
 </section>
 
@@ -309,15 +309,9 @@
 
 <!-- <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> -->
 <!-- AQUÍ VAN LOS SCRIPTS • AQUÍ VAN LOS SCRIPTS • AQUÍ VAN LOS SCRIPTS •  -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="./controllers/formSaveButtonFunctions.js"></script>
 <script src="./controllers/formSaveAddButtonAcademic.js"></script>
 <script src="./controllers/formSaveAddButtonJob.js"></script>
-
-<!-- POST API PERSONAL FORM -->
-<script type="module" src="./controllers/userRegistration.js"></script>
- <!--Axios-->
-<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
 
 <script type="module" src="./controllers/regions.js"></script>
@@ -327,6 +321,11 @@
 <script type="module" src="./controllers/dropdownValues.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
 <script src="./controllers/formNextButtonFunctions.js"></script>
+
+<!-- POST API PERSONAL FORM -->
+<script type="module" src="./controllers/userRegistration.js"></script>
+ <!--Axios-->
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <!-- AQUÍ VAN LOS SCRIPTS • AQUÍ VAN LOS SCRIPTS • AQUÍ VAN LOS SCRIPTS •  -->
 <!-- <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> -->
 
