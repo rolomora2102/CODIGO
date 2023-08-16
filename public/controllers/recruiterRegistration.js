@@ -16,47 +16,13 @@ saveProfileBtn.addEventListener('click', async (event) => {
     const country = formData.get('country');
     const gender = formData.get('gender')
     const personalDetails = formData.get('personalDetails');
-    const role = 'User';
+    const role = 'Recruiter';
     const status = true;
 
-    // Capturar datos de la tabla
-    const academicTableRows = document.querySelectorAll('#table-academic tbody tr');
-    const jobTableRows = document.querySelectorAll('#table-jobExperience tbody tr');
-    const academicData = [];
-    const jobData = [];
-    
-
-    academicTableRows.forEach(row => {
-        const cells = row.querySelectorAll('td');
-        const rowData = Array.from(cells).map(cell => cell.textContent);
-        academicData.push({
-        academicSchool: rowData[0],
-        academicArea: rowData[1],
-        academicLevel: rowData[2],
-        academicStatus: rowData[3],
-        academicMonthFrom: rowData[4],
-        academicYearFrom: rowData[5],
-        academicMonthTo: rowData[6],
-        academicYearTo: rowData[7]
-        });
-    });
-
-    jobTableRows.forEach(row => {
-        const cells = row.querySelectorAll('td');
-        const jobRowData = Array.from(cells).map(cell => cell.textContent);
-        jobData.push({
-            jobEnterpriseName: jobRowData[0],
-            jobType: jobRowData[1],
-            jobDescription: jobRowData[2],
-            jobMonthFrom: jobRowData[3],
-            jobYearFrom: jobRowData[4],
-            jobMonthTo: jobRowData[5],
-            jobYearTo: jobRowData[6]
-        });
-    });
+   
 
     try {
-        const response = await axios.post('http://localhost:3000/api/users.routes', {
+        const response = await axios.post('http://localhost:3000/api/recruiters.routes', {
         name,
         last,
         id,
@@ -69,8 +35,6 @@ saveProfileBtn.addEventListener('click', async (event) => {
         country,
         gender,
         personalDetails,
-        academicTable: academicData,
-        jobTable: jobData,
         role: role,
         status: status
         });
