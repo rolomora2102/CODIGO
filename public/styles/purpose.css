@@ -96,6 +96,17 @@ nav ul li a {
 }
 
 
+.purpose_title {
+  width: 1275px;
+  color: #012c3d;
+  border-bottom: 1px solid #012c3d;
+  margin: 50px auto;
+  font-family: 'Manrope', sans-serif;
+  font-size: 21px;
+  font-weight: 500;
+}
+
+
 #text-box1 {
   position: absolute;
   width: 80%;
