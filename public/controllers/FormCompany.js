@@ -3,14 +3,17 @@ let locateProvince = document.getElementById("province-dropdown")
 let locateCanton = document.getElementById("canton-dropdown")
 let locateDistrict = document.getElementById("district-dropdown")
 let phone = document.getElementById("input_phone_company")
+let mail = document.getElementById("input_email_company")
 let password = document.getElementById("input_password_company")
 let pass_check = document.getElementById("input_password_check_company")
+let desc = document.getElementById("input_description_company")
 let nameadmin = document.getElementById("input_name_admin")
 let lastnameadmin = document.getElementById("input_lastname_admin")
 let id = document.getElementById("input_id_admin")
 let phoneadmin = document.getElementById("input_phone_admin")
 let mailadmin = document.getElementById("input_email_admin")
 var button = document.querySelector('.btn_forms_admin_company')
+
 
 function validationNameCompany(){
     let errorName = false;
@@ -146,6 +149,21 @@ function validationMailAdmin(){
     return errorMailAdmin;
 }
 
+const companyRegistration = async() => {
+    let companyInfo =[nameCompany.value,locateProvince.value,locateCanton.value,locateDistrict.value,phone.value,mail.value,password.value,desc.value,""]
+    let adminInfo = [nameadmin.value,lastnameadmin.value,id.value,phoneadmin.value,mailadmin.value]
+    let i=0;
+    do{
+        let code = 0;
+        code = getRandomNumber();
+        adminList = await getAdmin();
+            if (adminList.length==0 || adminList[i]["code"]!=code) {
+                registerCompany(code,companyInfo[0],companyInfo[1],companyInfo[2],companyInfo[3],companyInfo[4],companyInfo[5],companyInfo[6],companyInfo[7],companyInfo[8],true,adminInfo)
+                break
+            }
+    }while (i<adminList.length)
+}
+
 function sendData(){
     if (validationNameCompany()){
         Swal.fire({
@@ -220,6 +238,8 @@ function sendData(){
             title:"Información omitida",
             text:"Alguno de los campos esta vació"
         })
+    }else {
+        companyRegistration();
     }
 }
 

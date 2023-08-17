@@ -42,6 +42,34 @@ function clearData() {
     textArea.value=""
 }
 
+
+const createJobPosition = async() => {
+    let info=[]
+    info=[position.value,provinceDropdown.value,cantonDropdown.value,districtDropdown.value,salaryDropdown.value,studiesDropdown.value,areaDropdown.value,workdayDropdown.value,yearDropdown.value,textArea.value]
+    const from = dayDropdownFrom.value+"/"+monthDropdownFrom.value+"/"+yearDropdownFrom.value;
+    const until = dayDropdownUntil.value+"/"+monthDropdownUntil.value+"/"+yearDropdownUntil.value;
+    positionList = await getPositions();
+    let i=0;
+    do{
+        let id = 0;
+        id = getRandomNumber();
+        if (positionList.length==0 || positionList[i]["id"]!=id) {
+            session = sessionStorage.getItem("mongo_id")
+            adminList = await getAdmin();
+            for (let j=0;j<adminList.length;j++){
+                if (adminList[j]["_id"]==session) {
+                    companyName = adminList[j]["companyName"];
+                    companyPhoto = adminList[j]["photo"];
+                    createPosition(id,info[0],info[1],info[2],info[3],info[4],info[5],info[6],info[7],from,until,info[8],info[9],companyName,companyPhoto)
+                    break;
+                }
+            }
+            break
+        }
+        i++;
+    } while(i<positionList.length)
+}
+
 function sendData() {
     errors = emptySpaces();
     if (errors){
@@ -51,16 +79,14 @@ function sendData() {
             text:"Favor completar campos señalados"
         })
     }else{ 
-        const from = dayDropdownFrom.value+"/"+monthDropdownFrom.value+"/"+yearDropdownFrom.value;
-        const until = dayDropdownUntil.value+"/"+monthDropdownUntil.value+"/"+yearDropdownUntil.value;
-        createPosition(position.value,provinceDropdown.value,cantonDropdown.value,districtDropdown.value,salaryDropdown.value,studiesDropdown.value,areaDropdown.value,workdayDropdown.value,from,until,yearDropdown.value,textArea.value,"Intel","images/LogoIntel.png")
+        createJobPosition();
         fetch('popUpJobCreated.html').then((response) => {
             return response.text();
         }).then((text) => {
           let sec = document.querySelector("#PopUp")
           sec.innerHTML = text;
           document.querySelector('.button').addEventListener('click', ()=> {
-          window.location.href = "jobPositionsAdmin.html"
+          window.location.href = ""
         });
           document.querySelector('.popupbackground').addEventListener('click', ()=> {
           sec.innerHTML=""
