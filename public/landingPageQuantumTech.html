@@ -52,7 +52,7 @@
       
         <div class="contact-form">
           <h3>¡Conversemos!</h3>
-          <form>
+          <form id="contactForm">
             <input type="text" id="name" placeholder="Nombre">
             <input type="text" id="apellidos" placeholder="Apellidos">
             <input type="email" id="email" placeholder="Correo electrónico">
@@ -61,6 +61,11 @@
           </form>
         </div>
       </section>
+
+      <div id="successNotification" class="notification hidden">
+        ¡La información se ha enviado con éxito!
+      </div>
+      
       
 
 <!-- MISIÓN Y VISIÓN -->
@@ -116,11 +121,12 @@
 <!-- EL BLOQUE DE NUESTRO EQUIPO -->
 
 
-<block id="nuestroEquipo">
+<div id="nuestroEquipo">
     <div class="tituloNuestroEquipo">
         <h2>Nuestro Equipo</h2>
     </div>
     <div class="grid-container">
+      <div class="equipo-container"></div>
         <!-- Andy -->
         <div class="casilla">
           <div class="contenido-casilla">
@@ -176,19 +182,7 @@
             <div class="email" id="email1">jcorderom@ucenfotec.ac.cr</div>
           </div>
         </div>
-        <!-- Natalia -->
-        <div class="casilla">
-          <div class="contenido-casilla">
-            <div class="foto">
-              <img src="./images/Natalia.png" alt="Miembro 6">
-            </div>
-            <div class="nombre" id="Member6">Natalia Guevara Troyo</div>
-            <div class="puesto">Calidad 2</div>
-            <div class="email" id="email1">nataliaguevaraart@gmail.com</div>
-          </div>
-        </div>
-      </div>
-</block>
+</div>
 
 
 <!-- BLOQUE CASO DE EXITO -->
@@ -208,7 +202,7 @@
       <h2>CASO DE ÉXITO</h2>
   </div>
   <div class="logo-mitrabajo">
-      <img src="./images/Logo_MiTrabajo.png" alt="Logo Mi Trabajo">
+      <img src="./images/logoMiTrabajo.png" alt="Logo Mi Trabajo">
   </div>
   <div class="descripcion">
       <p>Plataforma de búsqueda de trabajo, amigable y de fácil acceso para fomentar el desarrollo económico del país brindando las mejores opciones a la fuerza de trabajo.</p>
@@ -222,21 +216,18 @@
 
 
   <!-- SECCIÓN CONVERSEMOS -->
-  <section class = "Conversemos-section" style="background-image: url(./images/Fondo_Formulario.jpg);">
-
+  <section class="Conversemos-section" style="background-image: url(./images/Fondo_Formulario.jpg);">
     <div class="contact-form2">
       <h4>¡Conversemos!</h4>
-      <form>
+      <form id="contactForm2">
         <input type="text" id="name2" placeholder="Nombre">
         <input type="text" id="apellidos2" placeholder="Apellidos">
         <input type="email" id="email2" placeholder="Correo electrónico">
         <input type="tel" id="phoneNumber2" placeholder="Teléfono">
         <textarea id="mensaje" placeholder="Mensaje"></textarea>
         <input type="submit" id="enviar" value="Enviar">
-  
       </form>
     </div>
-  
   </section>
 
 
@@ -259,7 +250,8 @@
 
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="./controlers/LandingPageQuantumTech.js"></script>
+<script src="./public/servicios/contactForm2ServiceQuantum.js" type="module"></script>
+<script src="./public/controlers/landingPageQuantumTech.js" type="module"></script>
 
 
 </body>

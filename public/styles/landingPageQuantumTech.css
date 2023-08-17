@@ -1,5 +1,5 @@
 /* SECCIÓN DEL HEADER Y SU MENÚ */
-/* SECCIÓN DEL HEADER Y SU MENÚ */
+
 body {
   margin: 0;
   padding: 0;
@@ -209,6 +209,28 @@ nav ul li a {
 }
 
 
+.notification {
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px;
+  border-radius: 5px;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+
+
+
 /* SECCIÓN DE MISIÓN Y VISIÓN */
 .section-wrapper {
   display: flex;
@@ -320,6 +342,15 @@ nav ul li a {
 
 /* SECCIÓN DE NUESTRO EQUIPO */
 /* TÍTULO NUESTRO EQUIPO */
+
+.equipo-container {
+  display: flex;
+  flex-direction: column; /* Cambio a disposición de columnas */
+  align-items: center;
+  justify-content: center;
+}
+
+
 #nuestroEquipo {
   background-color: #969696;
   height: 110px;
@@ -353,14 +384,17 @@ nav ul li a {
 .grid-container {
   /* border: solid 2px #c40000; */
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Cambiaa 3 columnas */
+  grid-template-columns: repeat(3, 1fr); /* Cambia a 3 columnas */
   grid-template-rows: repeat(2, 1fr); /* Cambia a 2 filas */
   justify-items: center; /* Centra los elementos de cada columna */
 }
 
+
 .casilla {
   position: relative;
-  width: 320px;
+  width: 80%;
+  max-width: 320px;
+  margin: 20px auto;
   height: 320px;
   background-color: #ffffff;
   border-radius: 20px;
@@ -368,6 +402,11 @@ nav ul li a {
   margin: 40px 0px;
   z-index: 1; /* Ajusta el z-index de la casilla para quede por detrás*/
 }
+
+.casilla:not(:last-child) {
+  margin-bottom: 20px;
+}
+
 
 .casilla:before {
   content: "";
@@ -433,9 +472,11 @@ nav ul li a {
 
 /* BLOQUE MI TRABAJO/CASO DE ÉXITO */
 /* BLOQUE COMPLETO */
-#miTrabajoSeccion{
-  display:flex;
-  flex-direction: row;
+#miTrabajoSeccion {
+  display: flex;
+  flex-direction: row; /* Cambio a disposición en fila */
+  justify-content: space-between; /* Espacio entre bloques */
+  align-items: flex-start; /* Alinea los bloques en la parte superior */
 }
 
 .contenedor-bloques {
