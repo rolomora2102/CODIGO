@@ -54,16 +54,9 @@ const createJobPosition = async() => {
         let id = 0;
         id = getRandomNumber();
         if (positionList.length==0 || positionList[i]["id"]!=id) {
-            session = sessionStorage.getItem("mongo_id")
-            adminList = await getAdmin();
-            for (let j=0;j<adminList.length;j++){
-                if (adminList[j]["_id"]==session) {
-                    companyName = adminList[j]["companyName"];
-                    companyPhoto = adminList[j]["photo"];
-                    createPosition(id,info[0],info[1],info[2],info[3],info[4],info[5],info[6],info[7],from,until,info[8],info[9],companyName,companyPhoto)
-                    break;
-                }
-            }
+            companyName = sessionStorage.getItem("companyName");
+            companyPhoto = sessionStorage.getItem("companyPhoto");
+            createPosition(id,info[0],info[1],info[2],info[3],info[4],info[5],info[6],info[7],from,until,info[8],info[9],companyName,companyPhoto)
             break
         }
         i++;

@@ -280,6 +280,11 @@ border-bottom: 2px solid #012c3d;
   cursor: pointer;
 }
 
+.consultedposition__button--inactive {
+  background-color: #e6e7e8;
+  cursor: default;
+}
+
 
 /*Requerimientos y cualidades deseadas*/
 

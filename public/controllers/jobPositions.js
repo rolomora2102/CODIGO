@@ -65,16 +65,11 @@ function jobPositionTable(i) {
 const loadPositions = async()=> {
     tbody.innerHTML="";
     positionList = await getPositions();
-    adminList = await getAdmin();
     for (let i=0;i<positionList.length;i++) {
-        session = sessionStorage.getItem("mongo_id")
-        if (adminList[i]["_id"]==session) {
-            admin = adminList[i]["companyName"]
+            admin = sessionStorage.getItem("companyName")
             if (positionList[i]["companyName"]==admin){
                 jobPositionTable(i)
             }
-        }
-
     }
 }
 
