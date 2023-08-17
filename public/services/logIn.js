@@ -1,5 +1,4 @@
 var button = document.getElementById('btn__entrar')
-let anchor = document.getElementById('entrar__anchor')
 let user = document.getElementById('input__usuario')
 let password = document.getElementById('input__password');
 
@@ -26,12 +25,8 @@ function clearData() {
 }
 
 function login() {
-    const validUser = validate_user(user.value, password.value);
-    if (validUser === true) {
-        validate_user(user.value, password.value);
-    } else {
-        validate_admin(user.value, password.value)
-    }
+    validate_user(user.value, password.value);
+
 }
 
 

@@ -16,7 +16,15 @@ const schema_positions = new mongoose.Schema({
     requirements: {type: String, required: true, unique: false},
     companyName: {type: String, required: true, unique: false},
     companyPhoto: {type: String, required: false, unique: false},
-    status: {type: String, default: "ACTIVO"}
+    status: {type: String, default: "ACTIVO"},
+    applicants: [{
+        applicationStatus: {type:String,default:"-"},
+        userID: {type:String,required:false}
+    }],
+    invitations: [{
+        invitationStatus: {type:String,default:"ENVIADO"},
+        userID: {type:String,required:false}
+    }]
 })
 
 

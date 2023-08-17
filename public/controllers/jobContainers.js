@@ -94,7 +94,13 @@ function createPositionContainers(i) {
     container.appendChild(requirementsTextContainer)
     sec.appendChild(container)
     jobSec.appendChild(sec)
-    statusButton.addEventListener("click",popup)
+
+    if (rol=='User') {
+        statusButton.addEventListener("click",popup)
+    } else {
+        statusButton.disabled = true;
+        statusButton.classList.add('consultedposition__button--inactive')
+    }
 }
 
 const loadPositions = async()=> {
@@ -105,5 +111,5 @@ const loadPositions = async()=> {
         }
     }
 }
-
+rol = sessionStorage.getItem('role')
 loadPositions()
