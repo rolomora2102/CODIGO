@@ -1,3 +1,43 @@
+const validate_user = async (p_email,p_password, p_role) => {
+    await axios ({
+        method: "post",
+        url: "http://localhost:3000/api/users.auth",
+        responseType: "json",
+        data:{
+            email:p_email,
+            password:p_password
+        }
+    }).then((res)=>{
+        console.log(res.data.user.role);
+        if (res.data.result==false) {
+            Swal.fire({
+                title:"Datos Incorrectos",
+                text:res.data.msg,
+                icon:"warning"
+            })
+        } else if (res.data.user.role == 'User') {
+            sessionStorage.setItem("conectado",res.data.result);
+            sessionStorage.setItem("mongo_id",res.data.user._id);
+            sessionStorage.setItem("role",res.data.user.role);
+            window.location.href="./finalUserProfile.html";
+            return true;
+        } else if (res.data.user.role == 'Recruiter') {
+            sessionStorage.setItem("conectado",res.data.result);
+            sessionStorage.setItem("mongo_id",res.data.user._id);
+            sessionStorage.setItem("role",res.data.user.role);
+            window.location.href="./recruiterProfile.html";
+            return true;
+        } else {
+            sessionStorage.setItem("conectado",res.data.result);
+            sessionStorage.setItem("mongo_id",res.data.user._id);
+            sessionStorage.setItem("role",res.data.user.role);
+            window.location.href="./ManagerProfile.html";
+            return true;
+        }
+    })
+}
+
+
 const validate_admin = async (p_companyEmail,p_password) => {
     await axios ({
         method: "post",
