@@ -13,7 +13,7 @@ function jobPositionTable(i) {
     inviteCell.classList.add("jobInvite__container");
 
     let id = document.createElement("div");
-    id.innerHTML = positionList[i]["_id"];
+    id.innerHTML = positionList[i]["id"];
     let name = document.createElement("div");
     name.innerHTML = positionList[i]["name"];
     let editButton = document.createElement("button");
@@ -65,10 +65,16 @@ function jobPositionTable(i) {
 const loadPositions = async()=> {
     tbody.innerHTML="";
     positionList = await getPositions();
+    adminList = await getAdmin();
     for (let i=0;i<positionList.length;i++) {
-        if (positionList[i]["companyName"]=="Intel"){
-            jobPositionTable(i)
+        session = sessionStorage.getItem("mongo_id")
+        if (adminList[i]["_id"]==session) {
+            admin = adminList[i]["companyName"]
+            if (positionList[i]["companyName"]==admin){
+                jobPositionTable(i)
+            }
         }
+
     }
 }
 

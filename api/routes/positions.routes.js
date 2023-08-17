@@ -6,6 +6,7 @@ router.post('/positions',function(req,res){
     let body = req.body;
     
     let position = new Positions({
+     id:body.id,
      name:body.name,
      province:body.province,
      canton:body.canton,

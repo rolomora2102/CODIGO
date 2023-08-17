@@ -1,9 +1,10 @@
-const createPosition= async(p_position, p_province, p_canton, p_district, p_salary,p_studies,p_area,p_workday,p_from,p_until,p_year,p_requirement,p_name,p_photo)=>{
+const createPosition= async(p_id,p_position, p_province, p_canton, p_district, p_salary,p_studies,p_area,p_workday,p_from,p_until,p_year,p_requirement,p_name,p_photo)=>{
     await axios({
         method:"post",
         url:"http://localhost:3000/api/positions",
         responseType:"json",
         data:{
+            id:p_id,
             name:p_position,
             province:p_province,
             canton:p_canton,

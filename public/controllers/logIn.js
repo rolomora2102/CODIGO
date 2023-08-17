@@ -26,19 +26,7 @@ function clearData() {
 }
 
 function login() {
-    if (user.value=='admin' && password.value=='admin') {
-        anchor.getAttribute("href")
-        anchor.setAttribute("href",'./adminProfile.html') 
-    }else if (user.value=='manager' && password.value=='manager') {
-        anchor.getAttribute("href")
-        anchor.setAttribute("href",'./managerProfile.html') 
-    }else if (user.value=='recruiter' && password.value=='recruiter') {
-        anchor.getAttribute("href")
-        anchor.setAttribute("href",'./recruiterProfile.html') 
-    }else if (user.value=='user' && password.value=='user') {
-        anchor.getAttribute("href")
-        anchor.setAttribute("href",'./FinalUserProfile.html') 
-    }
+    validate_admin(user.value,password.value)
 }
 
 

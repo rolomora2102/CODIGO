@@ -77,10 +77,6 @@
             <input class="input_form_info_company" id="input_name_company" type="text" required>
             <label id="label_locate_company" for="locate">Ubicación*: </label>
             <label id="label_phone_Company" for="phone">Teléfono*: </label>
-            <script type="module" src="./controlers/regions.js"></script>
-            <script type="module" src="./controlers/cantonDict.js"></script>
-            <script type="module" src="./controlers/provinceDict.js"></script>
-            <script type="module" src="./controlers/districtDict.js"></script>
             <select  class="input_form_info_company" name="province" id="province-dropdown" required>
               <option value="" disabled selected>Provincia</option>
             </select>
@@ -163,8 +159,15 @@
 
 <!-- <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> -->
 <!-- AQUÍ VAN LOS SCRIPTS • AQUÍ VAN LOS SCRIPTS • AQUÍ VAN LOS SCRIPTS •  -->
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="./controllers/idGen.js"></script>
+<script src="./controllers/adminRegistration.js"></script>
+<script type="module" src="./controllers/regions.js"></script>
+<script type="module" src="./controllers/cantonDict.js"></script>
+<script type="module" src="./controllers/provinceDict.js"></script>
+<script type="module" src="./controllers/districtDict.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
-<script src="./controlers/FormCompany.js"></script>
+<script src="./controllers/FormCompany.js"></script>
 <!-- AQUÍ VAN LOS SCRIPTS • AQUÍ VAN LOS SCRIPTS • AQUÍ VAN LOS SCRIPTS •  -->
 <!-- <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> -->
 

@@ -6,6 +6,8 @@ const bodyParser = require('body-parser');
 //vincular la carpeta de routes
 const users = require('./routes/users.routes')
 const positions = require('./routes/positions.routes')
+const admins = require('./routes/admin.routes')
+const adminAuth = require('./routes/admin.auth')
 //importar dotenv
 require('dotenv').config()
 
@@ -30,7 +32,8 @@ mongoose.connect(process.env.MONGO_URI).
 //localhost:3000/api
 app.use('/api', users);
 app.use('/api', positions);
-
+app.use('/api', admins);
+app.use('/api', adminAuth);
 
 
 PORT = 3000// variable para el puerto
